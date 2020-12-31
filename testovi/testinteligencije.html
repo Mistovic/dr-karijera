@@ -1,0 +1,1374 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+    <!-- Jqueri prije svih skripti -->
+    <script src="../JS/jquery-3.5.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Inteligencije | Dr. za karijeru</title>
+    <link rel="stylesheet" href="../css/testovi.css">
+    <link rel="stylesheet" href="../css/novi.css">
+    <link rel="icon" href="https://www.doktorzakarijeru.com/wp-content/uploads/2018/02/dr_favicon.png">
+
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script src="https://www.chartjs.org/dist/2.7.1/Chart.bundle.js" type="text/javascript"></script>
+   
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+
+    </style>
+    <script src="https://www.chartjs.org/samples/latest/utils.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/amcharts.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/gauge.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/radar.js"></script>
+    <script
+        src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.min.js"></script>
+    <link rel="stylesheet"
+        href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.css"
+        type="text/css" media="all">
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/themes/light.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta name="keywords" content="skola, matematika, ucenje, studiranje">
+    <meta name="description" content="Dr. za karijeru | Test stilova ucenja">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/images/favicon.ico"
+        type="image/x-icon">
+    <link rel="alternate" type="application/rss+xml" title="Overall feed" href="https://testovi.doktorzakarijeru.com/feed">
+    <!-- 
+    <script src="https://testovi.doktorzakarijeru.com/public//javascript/jquery.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.min.js" type="text/javascript"></script> -->
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/sitelib.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/hoverIntent.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/superfish.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.validate.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.countdown.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('ul.sf-menu').superfish();
+        });
+    </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+   
+</head>
+
+<body cz-shortcut-listen="true">
+    <header id="test-header">
+        <!-- HEader za logout i vracanje na pocetnu -->
+        <div id="dashboard-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div id="logo">
+                            <a href="https://testovi.doktorzakarijeru.com/testiranje/pretestchoice">
+                                <img src="../images/relogodr/Doktor_za_karijeru-logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 text-right">
+                        <a id="logout" class="" 
+                        href="https://testovi.doktorzakarijeru.com/siteusers/korisnik/logouttest/0">
+                                            Odjavite se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEader za TEST -->
+
+        <div class="container test-header">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Test inteligencije</h1>
+                </div>
+
+                <div class="col-md-12">
+                    <p class="counter">
+                        <span id="current-question">1</span>/<span id="question-number">61</span>
+                    </p>
+                    <div id="clock"><span></span><span></span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main id="test-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="window">
+                        <div id="deo_1" class="padd">
+                            <br>
+                            <b>Ravenove progresivne matrice</b> su jedan od najboljih i najpopularnijih testova inteligencije svih vremena.
+                            Neverbalnog
+                            su tipa, sa više ponuđenih mogućnosti. Mere ukupnu inteligenciju; zadatak je identifikovati element koji
+                            nedostaje u
+                            datom obrascu. Test uključuje 60 zahteva i traje 40 minuta.
+                            <br><br><br>
+                            <input type="button" id="startbutton" name="startbutton" value="Počni" class="btn">
+                        </div>
+
+                        <form id="checkform" name="checkform"
+                            action="https://testovi.doktorzakarijeru.com/testiranje/test_su_results/kupljeniTestovi" method="post">
+
+
+
+                            <div id="deo_3" class="step-form" style="display: none;">
+                                <div id="deo_2" style="display: none;" class="fld-set">
+                                    <p>Unesite broj godina</p><br><input type="text" name="age" value="" id="age_id">
+                                    <div class="btn-wrap">
+                                        <a class="btn btn-next">Sledeće</a>
+                                    </div>
+                                </div>
+                                <ul class="fld-set">
+                                    <li id="1"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/1.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_1" value="1" id="odgovor1_2"><label
+                                                class="test-answer" for="odgovor1_2">1</label><br><input type="radio" name="pitanje_1"
+                                                value="2" id="odgovor1_3"><label class="test-answer" for="odgovor1_3">2</label><br><input
+                                                type="radio" name="pitanje_1" value="3" id="odgovor1_4"><label class="test-answer"
+                                                for="odgovor1_4">3</label><br><input type="radio" name="pitanje_1" value="4"
+                                                id="odgovor1_5"><label class="test-answer" for="odgovor1_5">4</label><br><input type="radio"
+                                                name="pitanje_1" value="5" id="odgovor1_6"><label class="test-answer"
+                                                for="odgovor1_6">5</label><br><input type="radio" name="pitanje_1" value="6"
+                                                id="odgovor1_7"><label class="test-answer" for="odgovor1_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 1 -->
+                                <ul class="fld-set">
+                                    <li id="2"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/2.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_2" value="1" id="odgovor2_2"><label
+                                                class="test-answer" for="odgovor2_2">1</label><br><input type="radio" name="pitanje_2"
+                                                value="2" id="odgovor2_3"><label class="test-answer" for="odgovor2_3">2</label><br><input
+                                                type="radio" name="pitanje_2" value="3" id="odgovor2_4"><label class="test-answer"
+                                                for="odgovor2_4">3</label><br><input type="radio" name="pitanje_2" value="4"
+                                                id="odgovor2_5"><label class="test-answer" for="odgovor2_5">4</label><br><input type="radio"
+                                                name="pitanje_2" value="5" id="odgovor2_6"><label class="test-answer"
+                                                for="odgovor2_6">5</label><br><input type="radio" name="pitanje_2" value="6"
+                                                id="odgovor2_7"><label class="test-answer" for="odgovor2_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 2 -->
+                                <ul class="fld-set">
+                                    <li id="3"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/3.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_3" value="1" id="odgovor3_2"><label
+                                                class="test-answer" for="odgovor3_2">1</label><br><input type="radio" name="pitanje_3"
+                                                value="2" id="odgovor3_3"><label class="test-answer" for="odgovor3_3">2</label><br><input
+                                                type="radio" name="pitanje_3" value="3" id="odgovor3_4"><label class="test-answer"
+                                                for="odgovor3_4">3</label><br><input type="radio" name="pitanje_3" value="4"
+                                                id="odgovor3_5"><label class="test-answer" for="odgovor3_5">4</label><br><input type="radio"
+                                                name="pitanje_3" value="5" id="odgovor3_6"><label class="test-answer"
+                                                for="odgovor3_6">5</label><br><input type="radio" name="pitanje_3" value="6"
+                                                id="odgovor3_7"><label class="test-answer" for="odgovor3_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 3 -->
+                                <ul class="fld-set">
+                                    <li id="4"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/4.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_4" value="1" id="odgovor4_2"><label
+                                                class="test-answer" for="odgovor4_2">1</label><br><input type="radio" name="pitanje_4"
+                                                value="2" id="odgovor4_3"><label class="test-answer" for="odgovor4_3">2</label><br><input
+                                                type="radio" name="pitanje_4" value="3" id="odgovor4_4"><label class="test-answer"
+                                                for="odgovor4_4">3</label><br><input type="radio" name="pitanje_4" value="4"
+                                                id="odgovor4_5"><label class="test-answer" for="odgovor4_5">4</label><br><input type="radio"
+                                                name="pitanje_4" value="5" id="odgovor4_6"><label class="test-answer"
+                                                for="odgovor4_6">5</label><br><input type="radio" name="pitanje_4" value="6"
+                                                id="odgovor4_7"><label class="test-answer" for="odgovor4_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 4 -->
+                                <ul class="fld-set">
+                                    <li id="5"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/5.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_5" value="1" id="odgovor5_2"><label
+                                                class="test-answer" for="odgovor5_2">1</label><br><input type="radio" name="pitanje_5"
+                                                value="2" id="odgovor5_3"><label class="test-answer" for="odgovor5_3">2</label><br><input
+                                                type="radio" name="pitanje_5" value="3" id="odgovor5_4"><label class="test-answer"
+                                                for="odgovor5_4">3</label><br><input type="radio" name="pitanje_5" value="4"
+                                                id="odgovor5_5"><label class="test-answer" for="odgovor5_5">4</label><br><input type="radio"
+                                                name="pitanje_5" value="5" id="odgovor5_6"><label class="test-answer"
+                                                for="odgovor5_6">5</label><br><input type="radio" name="pitanje_5" value="6"
+                                                id="odgovor5_7"><label class="test-answer" for="odgovor5_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 5 -->
+                                <ul class="fld-set">
+                                    <li id="6"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/6.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_6" value="1" id="odgovor6_2"><label
+                                                class="test-answer" for="odgovor6_2">1</label><br><input type="radio" name="pitanje_6"
+                                                value="2" id="odgovor6_3"><label class="test-answer" for="odgovor6_3">2</label><br><input
+                                                type="radio" name="pitanje_6" value="3" id="odgovor6_4"><label class="test-answer"
+                                                for="odgovor6_4">3</label><br><input type="radio" name="pitanje_6" value="4"
+                                                id="odgovor6_5"><label class="test-answer" for="odgovor6_5">4</label><br><input type="radio"
+                                                name="pitanje_6" value="5" id="odgovor6_6"><label class="test-answer"
+                                                for="odgovor6_6">5</label><br><input type="radio" name="pitanje_6" value="6"
+                                                id="odgovor6_7"><label class="test-answer" for="odgovor6_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 6 -->
+                                <ul class="fld-set">
+                                    <li id="7"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/7.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_7" value="1" id="odgovor7_2"><label
+                                                class="test-answer" for="odgovor7_2">1</label><br><input type="radio" name="pitanje_7"
+                                                value="2" id="odgovor7_3"><label class="test-answer" for="odgovor7_3">2</label><br><input
+                                                type="radio" name="pitanje_7" value="3" id="odgovor7_4"><label class="test-answer"
+                                                for="odgovor7_4">3</label><br><input type="radio" name="pitanje_7" value="4"
+                                                id="odgovor7_5"><label class="test-answer" for="odgovor7_5">4</label><br><input type="radio"
+                                                name="pitanje_7" value="5" id="odgovor7_6"><label class="test-answer"
+                                                for="odgovor7_6">5</label><br><input type="radio" name="pitanje_7" value="6"
+                                                id="odgovor7_7"><label class="test-answer" for="odgovor7_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 7 -->
+                                <ul class="fld-set">
+                                    <li id="8"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/8.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_8" value="1" id="odgovor8_2"><label
+                                                class="test-answer" for="odgovor8_2">1</label><br><input type="radio" name="pitanje_8"
+                                                value="2" id="odgovor8_3"><label class="test-answer" for="odgovor8_3">2</label><br><input
+                                                type="radio" name="pitanje_8" value="3" id="odgovor8_4"><label class="test-answer"
+                                                for="odgovor8_4">3</label><br><input type="radio" name="pitanje_8" value="4"
+                                                id="odgovor8_5"><label class="test-answer" for="odgovor8_5">4</label><br><input type="radio"
+                                                name="pitanje_8" value="5" id="odgovor8_6"><label class="test-answer"
+                                                for="odgovor8_6">5</label><br><input type="radio" name="pitanje_8" value="6"
+                                                id="odgovor8_7"><label class="test-answer" for="odgovor8_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 8 -->
+                                <ul class="fld-set">
+                                    <li id="9"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/9.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_9" value="1" id="odgovor9_2"><label
+                                                class="test-answer" for="odgovor9_2">1</label><br><input type="radio" name="pitanje_9"
+                                                value="2" id="odgovor9_3"><label class="test-answer" for="odgovor9_3">2</label><br><input
+                                                type="radio" name="pitanje_9" value="3" id="odgovor9_4"><label class="test-answer"
+                                                for="odgovor9_4">3</label><br><input type="radio" name="pitanje_9" value="4"
+                                                id="odgovor9_5"><label class="test-answer" for="odgovor9_5">4</label><br><input type="radio"
+                                                name="pitanje_9" value="5" id="odgovor9_6"><label class="test-answer"
+                                                for="odgovor9_6">5</label><br><input type="radio" name="pitanje_9" value="6"
+                                                id="odgovor9_7"><label class="test-answer" for="odgovor9_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 9 -->
+                                <ul class="fld-set">
+                                    <li id="10"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/10.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_10" value="1" id="odgovor10_2"><label
+                                                class="test-answer" for="odgovor10_2">1</label><br><input type="radio" name="pitanje_10"
+                                                value="2" id="odgovor10_3"><label class="test-answer" for="odgovor10_3">2</label><br><input
+                                                type="radio" name="pitanje_10" value="3" id="odgovor10_4"><label class="test-answer"
+                                                for="odgovor10_4">3</label><br><input type="radio" name="pitanje_10" value="4"
+                                                id="odgovor10_5"><label class="test-answer" for="odgovor10_5">4</label><br><input
+                                                type="radio" name="pitanje_10" value="5" id="odgovor10_6"><label class="test-answer"
+                                                for="odgovor10_6">5</label><br><input type="radio" name="pitanje_10" value="6"
+                                                id="odgovor10_7"><label class="test-answer" for="odgovor10_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 10 -->
+                                <ul class="fld-set">
+                                    <li id="11"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/11.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_11" value="1" id="odgovor11_2"><label
+                                                class="test-answer" for="odgovor11_2">1</label><br><input type="radio" name="pitanje_11"
+                                                value="2" id="odgovor11_3"><label class="test-answer" for="odgovor11_3">2</label><br><input
+                                                type="radio" name="pitanje_11" value="3" id="odgovor11_4"><label class="test-answer"
+                                                for="odgovor11_4">3</label><br><input type="radio" name="pitanje_11" value="4"
+                                                id="odgovor11_5"><label class="test-answer" for="odgovor11_5">4</label><br><input
+                                                type="radio" name="pitanje_11" value="5" id="odgovor11_6"><label class="test-answer"
+                                                for="odgovor11_6">5</label><br><input type="radio" name="pitanje_11" value="6"
+                                                id="odgovor11_7"><label class="test-answer" for="odgovor11_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 11 -->
+                                <ul class="fld-set">
+                                    <li id="12"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/12.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_12" value="1" id="odgovor12_2"><label
+                                                class="test-answer" for="odgovor12_2">1</label><br><input type="radio" name="pitanje_12"
+                                                value="2" id="odgovor12_3"><label class="test-answer" for="odgovor12_3">2</label><br><input
+                                                type="radio" name="pitanje_12" value="3" id="odgovor12_4"><label class="test-answer"
+                                                for="odgovor12_4">3</label><br><input type="radio" name="pitanje_12" value="4"
+                                                id="odgovor12_5"><label class="test-answer" for="odgovor12_5">4</label><br><input
+                                                type="radio" name="pitanje_12" value="5" id="odgovor12_6"><label class="test-answer"
+                                                for="odgovor12_6">5</label><br><input type="radio" name="pitanje_12" value="6"
+                                                id="odgovor12_7"><label class="test-answer" for="odgovor12_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 12 -->
+                                <ul class="fld-set">
+                                    <li id="13"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/13.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_13" value="1" id="odgovor13_2"><label
+                                                class="test-answer" for="odgovor13_2">1</label><br><input type="radio" name="pitanje_13"
+                                                value="2" id="odgovor13_3"><label class="test-answer" for="odgovor13_3">2</label><br><input
+                                                type="radio" name="pitanje_13" value="3" id="odgovor13_4"><label class="test-answer"
+                                                for="odgovor13_4">3</label><br><input type="radio" name="pitanje_13" value="4"
+                                                id="odgovor13_5"><label class="test-answer" for="odgovor13_5">4</label><br><input
+                                                type="radio" name="pitanje_13" value="5" id="odgovor13_6"><label class="test-answer"
+                                                for="odgovor13_6">5</label><br><input type="radio" name="pitanje_13" value="6"
+                                                id="odgovor13_7"><label class="test-answer" for="odgovor13_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 13 -->
+                                <ul class="fld-set">
+                                    <li id="14"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/14.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_14" value="1" id="odgovor14_2"><label
+                                                class="test-answer" for="odgovor14_2">1</label><br><input type="radio" name="pitanje_14"
+                                                value="2" id="odgovor14_3"><label class="test-answer" for="odgovor14_3">2</label><br><input
+                                                type="radio" name="pitanje_14" value="3" id="odgovor14_4"><label class="test-answer"
+                                                for="odgovor14_4">3</label><br><input type="radio" name="pitanje_14" value="4"
+                                                id="odgovor14_5"><label class="test-answer" for="odgovor14_5">4</label><br><input
+                                                type="radio" name="pitanje_14" value="5" id="odgovor14_6"><label class="test-answer"
+                                                for="odgovor14_6">5</label><br><input type="radio" name="pitanje_14" value="6"
+                                                id="odgovor14_7"><label class="test-answer" for="odgovor14_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 14 -->
+                                <ul class="fld-set">
+                                    <li id="15"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/15.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_15" value="1" id="odgovor15_2"><label
+                                                class="test-answer" for="odgovor15_2">1</label><br><input type="radio" name="pitanje_15"
+                                                value="2" id="odgovor15_3"><label class="test-answer" for="odgovor15_3">2</label><br><input
+                                                type="radio" name="pitanje_15" value="3" id="odgovor15_4"><label class="test-answer"
+                                                for="odgovor15_4">3</label><br><input type="radio" name="pitanje_15" value="4"
+                                                id="odgovor15_5"><label class="test-answer" for="odgovor15_5">4</label><br><input
+                                                type="radio" name="pitanje_15" value="5" id="odgovor15_6"><label class="test-answer"
+                                                for="odgovor15_6">5</label><br><input type="radio" name="pitanje_15" value="6"
+                                                id="odgovor15_7"><label class="test-answer" for="odgovor15_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 15 -->
+                                <ul class="fld-set">
+                                    <li id="16"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/16.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_16" value="1" id="odgovor16_2"><label
+                                                class="test-answer" for="odgovor16_2">1</label><br><input type="radio" name="pitanje_16"
+                                                value="2" id="odgovor16_3"><label class="test-answer" for="odgovor16_3">2</label><br><input
+                                                type="radio" name="pitanje_16" value="3" id="odgovor16_4"><label class="test-answer"
+                                                for="odgovor16_4">3</label><br><input type="radio" name="pitanje_16" value="4"
+                                                id="odgovor16_5"><label class="test-answer" for="odgovor16_5">4</label><br><input
+                                                type="radio" name="pitanje_16" value="5" id="odgovor16_6"><label class="test-answer"
+                                                for="odgovor16_6">5</label><br><input type="radio" name="pitanje_16" value="6"
+                                                id="odgovor16_7"><label class="test-answer" for="odgovor16_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 16 -->
+                                <ul class="fld-set">
+                                    <li id="17"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/17.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_17" value="1" id="odgovor17_2"><label
+                                                class="test-answer" for="odgovor17_2">1</label><br><input type="radio" name="pitanje_17"
+                                                value="2" id="odgovor17_3"><label class="test-answer" for="odgovor17_3">2</label><br><input
+                                                type="radio" name="pitanje_17" value="3" id="odgovor17_4"><label class="test-answer"
+                                                for="odgovor17_4">3</label><br><input type="radio" name="pitanje_17" value="4"
+                                                id="odgovor17_5"><label class="test-answer" for="odgovor17_5">4</label><br><input
+                                                type="radio" name="pitanje_17" value="5" id="odgovor17_6"><label class="test-answer"
+                                                for="odgovor17_6">5</label><br><input type="radio" name="pitanje_17" value="6"
+                                                id="odgovor17_7"><label class="test-answer" for="odgovor17_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 17 -->
+                                <ul class="fld-set">
+                                    <li id="18"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/18.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_18" value="1" id="odgovor18_2"><label
+                                                class="test-answer" for="odgovor18_2">1</label><br><input type="radio" name="pitanje_18"
+                                                value="2" id="odgovor18_3"><label class="test-answer" for="odgovor18_3">2</label><br><input
+                                                type="radio" name="pitanje_18" value="3" id="odgovor18_4"><label class="test-answer"
+                                                for="odgovor18_4">3</label><br><input type="radio" name="pitanje_18" value="4"
+                                                id="odgovor18_5"><label class="test-answer" for="odgovor18_5">4</label><br><input
+                                                type="radio" name="pitanje_18" value="5" id="odgovor18_6"><label class="test-answer"
+                                                for="odgovor18_6">5</label><br><input type="radio" name="pitanje_18" value="6"
+                                                id="odgovor18_7"><label class="test-answer" for="odgovor18_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 18 -->
+                                <ul class="fld-set">
+                                    <li id="19"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/19.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_19" value="1" id="odgovor19_2"><label
+                                                class="test-answer" for="odgovor19_2">1</label><br><input type="radio" name="pitanje_19"
+                                                value="2" id="odgovor19_3"><label class="test-answer" for="odgovor19_3">2</label><br><input
+                                                type="radio" name="pitanje_19" value="3" id="odgovor19_4"><label class="test-answer"
+                                                for="odgovor19_4">3</label><br><input type="radio" name="pitanje_19" value="4"
+                                                id="odgovor19_5"><label class="test-answer" for="odgovor19_5">4</label><br><input
+                                                type="radio" name="pitanje_19" value="5" id="odgovor19_6"><label class="test-answer"
+                                                for="odgovor19_6">5</label><br><input type="radio" name="pitanje_19" value="6"
+                                                id="odgovor19_7"><label class="test-answer" for="odgovor19_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 19 -->
+                                <ul class="fld-set">
+                                    <li id="20"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/20.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_20" value="1" id="odgovor20_2"><label
+                                                class="test-answer" for="odgovor20_2">1</label><br><input type="radio" name="pitanje_20"
+                                                value="2" id="odgovor20_3"><label class="test-answer" for="odgovor20_3">2</label><br><input
+                                                type="radio" name="pitanje_20" value="3" id="odgovor20_4"><label class="test-answer"
+                                                for="odgovor20_4">3</label><br><input type="radio" name="pitanje_20" value="4"
+                                                id="odgovor20_5"><label class="test-answer" for="odgovor20_5">4</label><br><input
+                                                type="radio" name="pitanje_20" value="5" id="odgovor20_6"><label class="test-answer"
+                                                for="odgovor20_6">5</label><br><input type="radio" name="pitanje_20" value="6"
+                                                id="odgovor20_7"><label class="test-answer" for="odgovor20_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 20 -->
+                                <ul class="fld-set">
+                                    <li id="21"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/21.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_21" value="1" id="odgovor21_2"><label
+                                                class="test-answer" for="odgovor21_2">1</label><br><input type="radio" name="pitanje_21"
+                                                value="2" id="odgovor21_3"><label class="test-answer" for="odgovor21_3">2</label><br><input
+                                                type="radio" name="pitanje_21" value="3" id="odgovor21_4"><label class="test-answer"
+                                                for="odgovor21_4">3</label><br><input type="radio" name="pitanje_21" value="4"
+                                                id="odgovor21_5"><label class="test-answer" for="odgovor21_5">4</label><br><input
+                                                type="radio" name="pitanje_21" value="5" id="odgovor21_6"><label class="test-answer"
+                                                for="odgovor21_6">5</label><br><input type="radio" name="pitanje_21" value="6"
+                                                id="odgovor21_7"><label class="test-answer" for="odgovor21_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 21 -->
+                                <ul class="fld-set">
+                                    <li id="22"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/22.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_22" value="1" id="odgovor22_2"><label
+                                                class="test-answer" for="odgovor22_2">1</label><br><input type="radio" name="pitanje_22"
+                                                value="2" id="odgovor22_3"><label class="test-answer" for="odgovor22_3">2</label><br><input
+                                                type="radio" name="pitanje_22" value="3" id="odgovor22_4"><label class="test-answer"
+                                                for="odgovor22_4">3</label><br><input type="radio" name="pitanje_22" value="4"
+                                                id="odgovor22_5"><label class="test-answer" for="odgovor22_5">4</label><br><input
+                                                type="radio" name="pitanje_22" value="5" id="odgovor22_6"><label class="test-answer"
+                                                for="odgovor22_6">5</label><br><input type="radio" name="pitanje_22" value="6"
+                                                id="odgovor22_7"><label class="test-answer" for="odgovor22_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 22 -->
+                                <ul class="fld-set">
+                                    <li id="23"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/23.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_23" value="1" id="odgovor23_2"><label
+                                                class="test-answer" for="odgovor23_2">1</label><br><input type="radio" name="pitanje_23"
+                                                value="2" id="odgovor23_3"><label class="test-answer" for="odgovor23_3">2</label><br><input
+                                                type="radio" name="pitanje_23" value="3" id="odgovor23_4"><label class="test-answer"
+                                                for="odgovor23_4">3</label><br><input type="radio" name="pitanje_23" value="4"
+                                                id="odgovor23_5"><label class="test-answer" for="odgovor23_5">4</label><br><input
+                                                type="radio" name="pitanje_23" value="5" id="odgovor23_6"><label class="test-answer"
+                                                for="odgovor23_6">5</label><br><input type="radio" name="pitanje_23" value="6"
+                                                id="odgovor23_7"><label class="test-answer" for="odgovor23_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 23 -->
+                                <ul class="fld-set">
+                                    <li id="24"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/24.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_24" value="1" id="odgovor24_2"><label
+                                                class="test-answer" for="odgovor24_2">1</label><br><input type="radio" name="pitanje_24"
+                                                value="2" id="odgovor24_3"><label class="test-answer" for="odgovor24_3">2</label><br><input
+                                                type="radio" name="pitanje_24" value="3" id="odgovor24_4"><label class="test-answer"
+                                                for="odgovor24_4">3</label><br><input type="radio" name="pitanje_24" value="4"
+                                                id="odgovor24_5"><label class="test-answer" for="odgovor24_5">4</label><br><input
+                                                type="radio" name="pitanje_24" value="5" id="odgovor24_6"><label class="test-answer"
+                                                for="odgovor24_6">5</label><br><input type="radio" name="pitanje_24" value="6"
+                                                id="odgovor24_7"><label class="test-answer" for="odgovor24_7">6</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 24 -->
+                                <ul class="fld-set">
+                                    <li id="25"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/25.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_25" value="1" id="odgovor25_2"><label
+                                                class="test-answer" for="odgovor25_2">1</label><br><input type="radio" name="pitanje_25"
+                                                value="2" id="odgovor25_3"><label class="test-answer" for="odgovor25_3">2</label><br><input
+                                                type="radio" name="pitanje_25" value="3" id="odgovor25_4"><label class="test-answer"
+                                                for="odgovor25_4">3</label><br><input type="radio" name="pitanje_25" value="4"
+                                                id="odgovor25_5"><label class="test-answer" for="odgovor25_5">4</label><br><input
+                                                type="radio" name="pitanje_25" value="5" id="odgovor25_6"><label class="test-answer"
+                                                for="odgovor25_6">5</label><br><input type="radio" name="pitanje_25" value="6"
+                                                id="odgovor25_7"><label class="test-answer" for="odgovor25_7">6</label><br><input
+                                                type="radio" name="pitanje_25" value="7" id="odgovor25_8"><label class="test-answer"
+                                                for="odgovor25_8">7</label><br><input type="radio" name="pitanje_25" value="8"
+                                                id="odgovor25_9"><label class="test-answer" for="odgovor25_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 25 -->
+                                <ul class="fld-set">
+                                    <li id="26"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/26.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_26" value="1" id="odgovor26_2"><label
+                                                class="test-answer" for="odgovor26_2">1</label><br><input type="radio" name="pitanje_26"
+                                                value="2" id="odgovor26_3"><label class="test-answer" for="odgovor26_3">2</label><br><input
+                                                type="radio" name="pitanje_26" value="3" id="odgovor26_4"><label class="test-answer"
+                                                for="odgovor26_4">3</label><br><input type="radio" name="pitanje_26" value="4"
+                                                id="odgovor26_5"><label class="test-answer" for="odgovor26_5">4</label><br><input
+                                                type="radio" name="pitanje_26" value="5" id="odgovor26_6"><label class="test-answer"
+                                                for="odgovor26_6">5</label><br><input type="radio" name="pitanje_26" value="6"
+                                                id="odgovor26_7"><label class="test-answer" for="odgovor26_7">6</label><br><input
+                                                type="radio" name="pitanje_26" value="7" id="odgovor26_8"><label class="test-answer"
+                                                for="odgovor26_8">7</label><br><input type="radio" name="pitanje_26" value="8"
+                                                id="odgovor26_9"><label class="test-answer" for="odgovor26_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 26 -->
+                                <ul class="fld-set">
+                                    <li id="27"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/27.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_27" value="1" id="odgovor27_2"><label
+                                                class="test-answer" for="odgovor27_2">1</label><br><input type="radio" name="pitanje_27"
+                                                value="2" id="odgovor27_3"><label class="test-answer" for="odgovor27_3">2</label><br><input
+                                                type="radio" name="pitanje_27" value="3" id="odgovor27_4"><label class="test-answer"
+                                                for="odgovor27_4">3</label><br><input type="radio" name="pitanje_27" value="4"
+                                                id="odgovor27_5"><label class="test-answer" for="odgovor27_5">4</label><br><input
+                                                type="radio" name="pitanje_27" value="5" id="odgovor27_6"><label class="test-answer"
+                                                for="odgovor27_6">5</label><br><input type="radio" name="pitanje_27" value="6"
+                                                id="odgovor27_7"><label class="test-answer" for="odgovor27_7">6</label><br><input
+                                                type="radio" name="pitanje_27" value="7" id="odgovor27_8"><label class="test-answer"
+                                                for="odgovor27_8">7</label><br><input type="radio" name="pitanje_27" value="8"
+                                                id="odgovor27_9"><label class="test-answer" for="odgovor27_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 27 -->
+                                <ul class="fld-set">
+                                    <li id="28"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/28.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_28" value="1" id="odgovor28_2"><label
+                                                class="test-answer" for="odgovor28_2">1</label><br><input type="radio" name="pitanje_28"
+                                                value="2" id="odgovor28_3"><label class="test-answer" for="odgovor28_3">2</label><br><input
+                                                type="radio" name="pitanje_28" value="3" id="odgovor28_4"><label class="test-answer"
+                                                for="odgovor28_4">3</label><br><input type="radio" name="pitanje_28" value="4"
+                                                id="odgovor28_5"><label class="test-answer" for="odgovor28_5">4</label><br><input
+                                                type="radio" name="pitanje_28" value="5" id="odgovor28_6"><label class="test-answer"
+                                                for="odgovor28_6">5</label><br><input type="radio" name="pitanje_28" value="6"
+                                                id="odgovor28_7"><label class="test-answer" for="odgovor28_7">6</label><br><input
+                                                type="radio" name="pitanje_28" value="7" id="odgovor28_8"><label class="test-answer"
+                                                for="odgovor28_8">7</label><br><input type="radio" name="pitanje_28" value="8"
+                                                id="odgovor28_9"><label class="test-answer" for="odgovor28_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 28 -->
+                                <ul class="fld-set">
+                                    <li id="29"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/29.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_29" value="1" id="odgovor29_2"><label
+                                                class="test-answer" for="odgovor29_2">1</label><br><input type="radio" name="pitanje_29"
+                                                value="2" id="odgovor29_3"><label class="test-answer" for="odgovor29_3">2</label><br><input
+                                                type="radio" name="pitanje_29" value="3" id="odgovor29_4"><label class="test-answer"
+                                                for="odgovor29_4">3</label><br><input type="radio" name="pitanje_29" value="4"
+                                                id="odgovor29_5"><label class="test-answer" for="odgovor29_5">4</label><br><input
+                                                type="radio" name="pitanje_29" value="5" id="odgovor29_6"><label class="test-answer"
+                                                for="odgovor29_6">5</label><br><input type="radio" name="pitanje_29" value="6"
+                                                id="odgovor29_7"><label class="test-answer" for="odgovor29_7">6</label><br><input
+                                                type="radio" name="pitanje_29" value="7" id="odgovor29_8"><label class="test-answer"
+                                                for="odgovor29_8">7</label><br><input type="radio" name="pitanje_29" value="8"
+                                                id="odgovor29_9"><label class="test-answer" for="odgovor29_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 29 -->
+                                <ul class="fld-set">
+                                    <li id="30"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/30.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_30" value="1" id="odgovor30_2"><label
+                                                class="test-answer" for="odgovor30_2">1</label><br><input type="radio" name="pitanje_30"
+                                                value="2" id="odgovor30_3"><label class="test-answer" for="odgovor30_3">2</label><br><input
+                                                type="radio" name="pitanje_30" value="3" id="odgovor30_4"><label class="test-answer"
+                                                for="odgovor30_4">3</label><br><input type="radio" name="pitanje_30" value="4"
+                                                id="odgovor30_5"><label class="test-answer" for="odgovor30_5">4</label><br><input
+                                                type="radio" name="pitanje_30" value="5" id="odgovor30_6"><label class="test-answer"
+                                                for="odgovor30_6">5</label><br><input type="radio" name="pitanje_30" value="6"
+                                                id="odgovor30_7"><label class="test-answer" for="odgovor30_7">6</label><br><input
+                                                type="radio" name="pitanje_30" value="7" id="odgovor30_8"><label class="test-answer"
+                                                for="odgovor30_8">7</label><br><input type="radio" name="pitanje_30" value="8"
+                                                id="odgovor30_9"><label class="test-answer" for="odgovor30_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 30 -->
+                                <ul class="fld-set">
+                                    <li id="31"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/31.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_31" value="1" id="odgovor31_2"><label
+                                                class="test-answer" for="odgovor31_2">1</label><br><input type="radio" name="pitanje_31"
+                                                value="2" id="odgovor31_3"><label class="test-answer" for="odgovor31_3">2</label><br><input
+                                                type="radio" name="pitanje_31" value="3" id="odgovor31_4"><label class="test-answer"
+                                                for="odgovor31_4">3</label><br><input type="radio" name="pitanje_31" value="4"
+                                                id="odgovor31_5"><label class="test-answer" for="odgovor31_5">4</label><br><input
+                                                type="radio" name="pitanje_31" value="5" id="odgovor31_6"><label class="test-answer"
+                                                for="odgovor31_6">5</label><br><input type="radio" name="pitanje_31" value="6"
+                                                id="odgovor31_7"><label class="test-answer" for="odgovor31_7">6</label><br><input
+                                                type="radio" name="pitanje_31" value="7" id="odgovor31_8"><label class="test-answer"
+                                                for="odgovor31_8">7</label><br><input type="radio" name="pitanje_31" value="8"
+                                                id="odgovor31_9"><label class="test-answer" for="odgovor31_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 31 -->
+                                <ul class="fld-set">
+                                    <li id="32"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/32.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_32" value="1" id="odgovor32_2"><label
+                                                class="test-answer" for="odgovor32_2">1</label><br><input type="radio" name="pitanje_32"
+                                                value="2" id="odgovor32_3"><label class="test-answer" for="odgovor32_3">2</label><br><input
+                                                type="radio" name="pitanje_32" value="3" id="odgovor32_4"><label class="test-answer"
+                                                for="odgovor32_4">3</label><br><input type="radio" name="pitanje_32" value="4"
+                                                id="odgovor32_5"><label class="test-answer" for="odgovor32_5">4</label><br><input
+                                                type="radio" name="pitanje_32" value="5" id="odgovor32_6"><label class="test-answer"
+                                                for="odgovor32_6">5</label><br><input type="radio" name="pitanje_32" value="6"
+                                                id="odgovor32_7"><label class="test-answer" for="odgovor32_7">6</label><br><input
+                                                type="radio" name="pitanje_32" value="7" id="odgovor32_8"><label class="test-answer"
+                                                for="odgovor32_8">7</label><br><input type="radio" name="pitanje_32" value="8"
+                                                id="odgovor32_9"><label class="test-answer" for="odgovor32_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 32 -->
+                                <ul class="fld-set">
+                                    <li id="33"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/33.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_33" value="1" id="odgovor33_2"><label
+                                                class="test-answer" for="odgovor33_2">1</label><br><input type="radio" name="pitanje_33"
+                                                value="2" id="odgovor33_3"><label class="test-answer" for="odgovor33_3">2</label><br><input
+                                                type="radio" name="pitanje_33" value="3" id="odgovor33_4"><label class="test-answer"
+                                                for="odgovor33_4">3</label><br><input type="radio" name="pitanje_33" value="4"
+                                                id="odgovor33_5"><label class="test-answer" for="odgovor33_5">4</label><br><input
+                                                type="radio" name="pitanje_33" value="5" id="odgovor33_6"><label class="test-answer"
+                                                for="odgovor33_6">5</label><br><input type="radio" name="pitanje_33" value="6"
+                                                id="odgovor33_7"><label class="test-answer" for="odgovor33_7">6</label><br><input
+                                                type="radio" name="pitanje_33" value="7" id="odgovor33_8"><label class="test-answer"
+                                                for="odgovor33_8">7</label><br><input type="radio" name="pitanje_33" value="8"
+                                                id="odgovor33_9"><label class="test-answer" for="odgovor33_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 33 -->
+                                <ul class="fld-set">
+                                    <li id="34"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/34.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_34" value="1" id="odgovor34_2"><label
+                                                class="test-answer" for="odgovor34_2">1</label><br><input type="radio" name="pitanje_34"
+                                                value="2" id="odgovor34_3"><label class="test-answer" for="odgovor34_3">2</label><br><input
+                                                type="radio" name="pitanje_34" value="3" id="odgovor34_4"><label class="test-answer"
+                                                for="odgovor34_4">3</label><br><input type="radio" name="pitanje_34" value="4"
+                                                id="odgovor34_5"><label class="test-answer" for="odgovor34_5">4</label><br><input
+                                                type="radio" name="pitanje_34" value="5" id="odgovor34_6"><label class="test-answer"
+                                                for="odgovor34_6">5</label><br><input type="radio" name="pitanje_34" value="6"
+                                                id="odgovor34_7"><label class="test-answer" for="odgovor34_7">6</label><br><input
+                                                type="radio" name="pitanje_34" value="7" id="odgovor34_8"><label class="test-answer"
+                                                for="odgovor34_8">7</label><br><input type="radio" name="pitanje_34" value="8"
+                                                id="odgovor34_9"><label class="test-answer" for="odgovor34_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 34 -->
+                                <ul class="fld-set">
+                                    <li id="35"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/35.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_35" value="1" id="odgovor35_2"><label
+                                                class="test-answer" for="odgovor35_2">1</label><br><input type="radio" name="pitanje_35"
+                                                value="2" id="odgovor35_3"><label class="test-answer" for="odgovor35_3">2</label><br><input
+                                                type="radio" name="pitanje_35" value="3" id="odgovor35_4"><label class="test-answer"
+                                                for="odgovor35_4">3</label><br><input type="radio" name="pitanje_35" value="4"
+                                                id="odgovor35_5"><label class="test-answer" for="odgovor35_5">4</label><br><input
+                                                type="radio" name="pitanje_35" value="5" id="odgovor35_6"><label class="test-answer"
+                                                for="odgovor35_6">5</label><br><input type="radio" name="pitanje_35" value="6"
+                                                id="odgovor35_7"><label class="test-answer" for="odgovor35_7">6</label><br><input
+                                                type="radio" name="pitanje_35" value="7" id="odgovor35_8"><label class="test-answer"
+                                                for="odgovor35_8">7</label><br><input type="radio" name="pitanje_35" value="8"
+                                                id="odgovor35_9"><label class="test-answer" for="odgovor35_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 35 -->
+                                <ul class="fld-set">
+                                    <li id="36"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/36.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_36" value="1" id="odgovor36_2"><label
+                                                class="test-answer" for="odgovor36_2">1</label><br><input type="radio" name="pitanje_36"
+                                                value="2" id="odgovor36_3"><label class="test-answer" for="odgovor36_3">2</label><br><input
+                                                type="radio" name="pitanje_36" value="3" id="odgovor36_4"><label class="test-answer"
+                                                for="odgovor36_4">3</label><br><input type="radio" name="pitanje_36" value="4"
+                                                id="odgovor36_5"><label class="test-answer" for="odgovor36_5">4</label><br><input
+                                                type="radio" name="pitanje_36" value="5" id="odgovor36_6"><label class="test-answer"
+                                                for="odgovor36_6">5</label><br><input type="radio" name="pitanje_36" value="6"
+                                                id="odgovor36_7"><label class="test-answer" for="odgovor36_7">6</label><br><input
+                                                type="radio" name="pitanje_36" value="7" id="odgovor36_8"><label class="test-answer"
+                                                for="odgovor36_8">7</label><br><input type="radio" name="pitanje_36" value="8"
+                                                id="odgovor36_9"><label class="test-answer" for="odgovor36_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 36 -->
+                                <ul class="fld-set">
+                                    <li id="37"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/37.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_37" value="1" id="odgovor37_2"><label
+                                                class="test-answer" for="odgovor37_2">1</label><br><input type="radio" name="pitanje_37"
+                                                value="2" id="odgovor37_3"><label class="test-answer" for="odgovor37_3">2</label><br><input
+                                                type="radio" name="pitanje_37" value="3" id="odgovor37_4"><label class="test-answer"
+                                                for="odgovor37_4">3</label><br><input type="radio" name="pitanje_37" value="4"
+                                                id="odgovor37_5"><label class="test-answer" for="odgovor37_5">4</label><br><input
+                                                type="radio" name="pitanje_37" value="5" id="odgovor37_6"><label class="test-answer"
+                                                for="odgovor37_6">5</label><br><input type="radio" name="pitanje_37" value="6"
+                                                id="odgovor37_7"><label class="test-answer" for="odgovor37_7">6</label><br><input
+                                                type="radio" name="pitanje_37" value="7" id="odgovor37_8"><label class="test-answer"
+                                                for="odgovor37_8">7</label><br><input type="radio" name="pitanje_37" value="8"
+                                                id="odgovor37_9"><label class="test-answer" for="odgovor37_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 37 -->
+                                <ul class="fld-set">
+                                    <li id="38"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/38.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_38" value="1" id="odgovor38_2"><label
+                                                class="test-answer" for="odgovor38_2">1</label><br><input type="radio" name="pitanje_38"
+                                                value="2" id="odgovor38_3"><label class="test-answer" for="odgovor38_3">2</label><br><input
+                                                type="radio" name="pitanje_38" value="3" id="odgovor38_4"><label class="test-answer"
+                                                for="odgovor38_4">3</label><br><input type="radio" name="pitanje_38" value="4"
+                                                id="odgovor38_5"><label class="test-answer" for="odgovor38_5">4</label><br><input
+                                                type="radio" name="pitanje_38" value="5" id="odgovor38_6"><label class="test-answer"
+                                                for="odgovor38_6">5</label><br><input type="radio" name="pitanje_38" value="6"
+                                                id="odgovor38_7"><label class="test-answer" for="odgovor38_7">6</label><br><input
+                                                type="radio" name="pitanje_38" value="7" id="odgovor38_8"><label class="test-answer"
+                                                for="odgovor38_8">7</label><br><input type="radio" name="pitanje_38" value="8"
+                                                id="odgovor38_9"><label class="test-answer" for="odgovor38_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 38 -->
+                                <ul class="fld-set">
+                                    <li id="39"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/39.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_39" value="1" id="odgovor39_2"><label
+                                                class="test-answer" for="odgovor39_2">1</label><br><input type="radio" name="pitanje_39"
+                                                value="2" id="odgovor39_3"><label class="test-answer" for="odgovor39_3">2</label><br><input
+                                                type="radio" name="pitanje_39" value="3" id="odgovor39_4"><label class="test-answer"
+                                                for="odgovor39_4">3</label><br><input type="radio" name="pitanje_39" value="4"
+                                                id="odgovor39_5"><label class="test-answer" for="odgovor39_5">4</label><br><input
+                                                type="radio" name="pitanje_39" value="5" id="odgovor39_6"><label class="test-answer"
+                                                for="odgovor39_6">5</label><br><input type="radio" name="pitanje_39" value="6"
+                                                id="odgovor39_7"><label class="test-answer" for="odgovor39_7">6</label><br><input
+                                                type="radio" name="pitanje_39" value="7" id="odgovor39_8"><label class="test-answer"
+                                                for="odgovor39_8">7</label><br><input type="radio" name="pitanje_39" value="8"
+                                                id="odgovor39_9"><label class="test-answer" for="odgovor39_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 39 -->
+                                <ul class="fld-set">
+                                    <li id="40"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/40.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_40" value="1" id="odgovor40_2"><label
+                                                class="test-answer" for="odgovor40_2">1</label><br><input type="radio" name="pitanje_40"
+                                                value="2" id="odgovor40_3"><label class="test-answer" for="odgovor40_3">2</label><br><input
+                                                type="radio" name="pitanje_40" value="3" id="odgovor40_4"><label class="test-answer"
+                                                for="odgovor40_4">3</label><br><input type="radio" name="pitanje_40" value="4"
+                                                id="odgovor40_5"><label class="test-answer" for="odgovor40_5">4</label><br><input
+                                                type="radio" name="pitanje_40" value="5" id="odgovor40_6"><label class="test-answer"
+                                                for="odgovor40_6">5</label><br><input type="radio" name="pitanje_40" value="6"
+                                                id="odgovor40_7"><label class="test-answer" for="odgovor40_7">6</label><br><input
+                                                type="radio" name="pitanje_40" value="7" id="odgovor40_8"><label class="test-answer"
+                                                for="odgovor40_8">7</label><br><input type="radio" name="pitanje_40" value="8"
+                                                id="odgovor40_9"><label class="test-answer" for="odgovor40_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 40 -->
+                                <ul class="fld-set">
+                                    <li id="41"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/41.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_41" value="1" id="odgovor41_2"><label
+                                                class="test-answer" for="odgovor41_2">1</label><br><input type="radio" name="pitanje_41"
+                                                value="2" id="odgovor41_3"><label class="test-answer" for="odgovor41_3">2</label><br><input
+                                                type="radio" name="pitanje_41" value="3" id="odgovor41_4"><label class="test-answer"
+                                                for="odgovor41_4">3</label><br><input type="radio" name="pitanje_41" value="4"
+                                                id="odgovor41_5"><label class="test-answer" for="odgovor41_5">4</label><br><input
+                                                type="radio" name="pitanje_41" value="5" id="odgovor41_6"><label class="test-answer"
+                                                for="odgovor41_6">5</label><br><input type="radio" name="pitanje_41" value="6"
+                                                id="odgovor41_7"><label class="test-answer" for="odgovor41_7">6</label><br><input
+                                                type="radio" name="pitanje_41" value="7" id="odgovor41_8"><label class="test-answer"
+                                                for="odgovor41_8">7</label><br><input type="radio" name="pitanje_41" value="8"
+                                                id="odgovor41_9"><label class="test-answer" for="odgovor41_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 41 -->
+                                <ul class="fld-set">
+                                    <li id="42"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/42.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_42" value="1" id="odgovor42_2"><label
+                                                class="test-answer" for="odgovor42_2">1</label><br><input type="radio" name="pitanje_42"
+                                                value="2" id="odgovor42_3"><label class="test-answer" for="odgovor42_3">2</label><br><input
+                                                type="radio" name="pitanje_42" value="3" id="odgovor42_4"><label class="test-answer"
+                                                for="odgovor42_4">3</label><br><input type="radio" name="pitanje_42" value="4"
+                                                id="odgovor42_5"><label class="test-answer" for="odgovor42_5">4</label><br><input
+                                                type="radio" name="pitanje_42" value="5" id="odgovor42_6"><label class="test-answer"
+                                                for="odgovor42_6">5</label><br><input type="radio" name="pitanje_42" value="6"
+                                                id="odgovor42_7"><label class="test-answer" for="odgovor42_7">6</label><br><input
+                                                type="radio" name="pitanje_42" value="7" id="odgovor42_8"><label class="test-answer"
+                                                for="odgovor42_8">7</label><br><input type="radio" name="pitanje_42" value="8"
+                                                id="odgovor42_9"><label class="test-answer" for="odgovor42_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 42 -->
+                                <ul class="fld-set">
+                                    <li id="43"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/43.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_43" value="1" id="odgovor43_2"><label
+                                                class="test-answer" for="odgovor43_2">1</label><br><input type="radio" name="pitanje_43"
+                                                value="2" id="odgovor43_3"><label class="test-answer" for="odgovor43_3">2</label><br><input
+                                                type="radio" name="pitanje_43" value="3" id="odgovor43_4"><label class="test-answer"
+                                                for="odgovor43_4">3</label><br><input type="radio" name="pitanje_43" value="4"
+                                                id="odgovor43_5"><label class="test-answer" for="odgovor43_5">4</label><br><input
+                                                type="radio" name="pitanje_43" value="5" id="odgovor43_6"><label class="test-answer"
+                                                for="odgovor43_6">5</label><br><input type="radio" name="pitanje_43" value="6"
+                                                id="odgovor43_7"><label class="test-answer" for="odgovor43_7">6</label><br><input
+                                                type="radio" name="pitanje_43" value="7" id="odgovor43_8"><label class="test-answer"
+                                                for="odgovor43_8">7</label><br><input type="radio" name="pitanje_43" value="8"
+                                                id="odgovor43_9"><label class="test-answer" for="odgovor43_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 43 -->
+                                <ul class="fld-set">
+                                    <li id="44"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/44.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_44" value="1" id="odgovor44_2"><label
+                                                class="test-answer" for="odgovor44_2">1</label><br><input type="radio" name="pitanje_44"
+                                                value="2" id="odgovor44_3"><label class="test-answer" for="odgovor44_3">2</label><br><input
+                                                type="radio" name="pitanje_44" value="3" id="odgovor44_4"><label class="test-answer"
+                                                for="odgovor44_4">3</label><br><input type="radio" name="pitanje_44" value="4"
+                                                id="odgovor44_5"><label class="test-answer" for="odgovor44_5">4</label><br><input
+                                                type="radio" name="pitanje_44" value="5" id="odgovor44_6"><label class="test-answer"
+                                                for="odgovor44_6">5</label><br><input type="radio" name="pitanje_44" value="6"
+                                                id="odgovor44_7"><label class="test-answer" for="odgovor44_7">6</label><br><input
+                                                type="radio" name="pitanje_44" value="7" id="odgovor44_8"><label class="test-answer"
+                                                for="odgovor44_8">7</label><br><input type="radio" name="pitanje_44" value="8"
+                                                id="odgovor44_9"><label class="test-answer" for="odgovor44_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 44 -->
+                                <ul class="fld-set">
+                                    <li id="45"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/45.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_45" value="1" id="odgovor45_2"><label
+                                                class="test-answer" for="odgovor45_2">1</label><br><input type="radio" name="pitanje_45"
+                                                value="2" id="odgovor45_3"><label class="test-answer" for="odgovor45_3">2</label><br><input
+                                                type="radio" name="pitanje_45" value="3" id="odgovor45_4"><label class="test-answer"
+                                                for="odgovor45_4">3</label><br><input type="radio" name="pitanje_45" value="4"
+                                                id="odgovor45_5"><label class="test-answer" for="odgovor45_5">4</label><br><input
+                                                type="radio" name="pitanje_45" value="5" id="odgovor45_6"><label class="test-answer"
+                                                for="odgovor45_6">5</label><br><input type="radio" name="pitanje_45" value="6"
+                                                id="odgovor45_7"><label class="test-answer" for="odgovor45_7">6</label><br><input
+                                                type="radio" name="pitanje_45" value="7" id="odgovor45_8"><label class="test-answer"
+                                                for="odgovor45_8">7</label><br><input type="radio" name="pitanje_45" value="8"
+                                                id="odgovor45_9"><label class="test-answer" for="odgovor45_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 45 -->
+                                <ul class="fld-set">
+                                    <li id="46"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/46.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_46" value="1" id="odgovor46_2"><label
+                                                class="test-answer" for="odgovor46_2">1</label><br><input type="radio" name="pitanje_46"
+                                                value="2" id="odgovor46_3"><label class="test-answer" for="odgovor46_3">2</label><br><input
+                                                type="radio" name="pitanje_46" value="3" id="odgovor46_4"><label class="test-answer"
+                                                for="odgovor46_4">3</label><br><input type="radio" name="pitanje_46" value="4"
+                                                id="odgovor46_5"><label class="test-answer" for="odgovor46_5">4</label><br><input
+                                                type="radio" name="pitanje_46" value="5" id="odgovor46_6"><label class="test-answer"
+                                                for="odgovor46_6">5</label><br><input type="radio" name="pitanje_46" value="6"
+                                                id="odgovor46_7"><label class="test-answer" for="odgovor46_7">6</label><br><input
+                                                type="radio" name="pitanje_46" value="7" id="odgovor46_8"><label class="test-answer"
+                                                for="odgovor46_8">7</label><br><input type="radio" name="pitanje_46" value="8"
+                                                id="odgovor46_9"><label class="test-answer" for="odgovor46_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 46 -->
+                                <ul class="fld-set">
+                                    <li id="47"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/47.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_47" value="1" id="odgovor47_2"><label
+                                                class="test-answer" for="odgovor47_2">1</label><br><input type="radio" name="pitanje_47"
+                                                value="2" id="odgovor47_3"><label class="test-answer" for="odgovor47_3">2</label><br><input
+                                                type="radio" name="pitanje_47" value="3" id="odgovor47_4"><label class="test-answer"
+                                                for="odgovor47_4">3</label><br><input type="radio" name="pitanje_47" value="4"
+                                                id="odgovor47_5"><label class="test-answer" for="odgovor47_5">4</label><br><input
+                                                type="radio" name="pitanje_47" value="5" id="odgovor47_6"><label class="test-answer"
+                                                for="odgovor47_6">5</label><br><input type="radio" name="pitanje_47" value="6"
+                                                id="odgovor47_7"><label class="test-answer" for="odgovor47_7">6</label><br><input
+                                                type="radio" name="pitanje_47" value="7" id="odgovor47_8"><label class="test-answer"
+                                                for="odgovor47_8">7</label><br><input type="radio" name="pitanje_47" value="8"
+                                                id="odgovor47_9"><label class="test-answer" for="odgovor47_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 47 -->
+                                <ul class="fld-set">
+                                    <li id="48"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/48.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_48" value="1" id="odgovor48_2"><label
+                                                class="test-answer" for="odgovor48_2">1</label><br><input type="radio" name="pitanje_48"
+                                                value="2" id="odgovor48_3"><label class="test-answer" for="odgovor48_3">2</label><br><input
+                                                type="radio" name="pitanje_48" value="3" id="odgovor48_4"><label class="test-answer"
+                                                for="odgovor48_4">3</label><br><input type="radio" name="pitanje_48" value="4"
+                                                id="odgovor48_5"><label class="test-answer" for="odgovor48_5">4</label><br><input
+                                                type="radio" name="pitanje_48" value="5" id="odgovor48_6"><label class="test-answer"
+                                                for="odgovor48_6">5</label><br><input type="radio" name="pitanje_48" value="6"
+                                                id="odgovor48_7"><label class="test-answer" for="odgovor48_7">6</label><br><input
+                                                type="radio" name="pitanje_48" value="7" id="odgovor48_8"><label class="test-answer"
+                                                for="odgovor48_8">7</label><br><input type="radio" name="pitanje_48" value="8"
+                                                id="odgovor48_9"><label class="test-answer" for="odgovor48_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 48 -->
+                                <ul class="fld-set">
+                                    <li id="49"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/49.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_49" value="1" id="odgovor49_2"><label
+                                                class="test-answer" for="odgovor49_2">1</label><br><input type="radio" name="pitanje_49"
+                                                value="2" id="odgovor49_3"><label class="test-answer" for="odgovor49_3">2</label><br><input
+                                                type="radio" name="pitanje_49" value="3" id="odgovor49_4"><label class="test-answer"
+                                                for="odgovor49_4">3</label><br><input type="radio" name="pitanje_49" value="4"
+                                                id="odgovor49_5"><label class="test-answer" for="odgovor49_5">4</label><br><input
+                                                type="radio" name="pitanje_49" value="5" id="odgovor49_6"><label class="test-answer"
+                                                for="odgovor49_6">5</label><br><input type="radio" name="pitanje_49" value="6"
+                                                id="odgovor49_7"><label class="test-answer" for="odgovor49_7">6</label><br><input
+                                                type="radio" name="pitanje_49" value="7" id="odgovor49_8"><label class="test-answer"
+                                                for="odgovor49_8">7</label><br><input type="radio" name="pitanje_49" value="8"
+                                                id="odgovor49_9"><label class="test-answer" for="odgovor49_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 49 -->
+                                <ul class="fld-set">
+                                    <li id="50"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/50.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_50" value="1" id="odgovor50_2"><label
+                                                class="test-answer" for="odgovor50_2">1</label><br><input type="radio" name="pitanje_50"
+                                                value="2" id="odgovor50_3"><label class="test-answer" for="odgovor50_3">2</label><br><input
+                                                type="radio" name="pitanje_50" value="3" id="odgovor50_4"><label class="test-answer"
+                                                for="odgovor50_4">3</label><br><input type="radio" name="pitanje_50" value="4"
+                                                id="odgovor50_5"><label class="test-answer" for="odgovor50_5">4</label><br><input
+                                                type="radio" name="pitanje_50" value="5" id="odgovor50_6"><label class="test-answer"
+                                                for="odgovor50_6">5</label><br><input type="radio" name="pitanje_50" value="6"
+                                                id="odgovor50_7"><label class="test-answer" for="odgovor50_7">6</label><br><input
+                                                type="radio" name="pitanje_50" value="7" id="odgovor50_8"><label class="test-answer"
+                                                for="odgovor50_8">7</label><br><input type="radio" name="pitanje_50" value="8"
+                                                id="odgovor50_9"><label class="test-answer" for="odgovor50_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 50 -->
+                                <ul class="fld-set">
+                                    <li id="51"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/51.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_51" value="1" id="odgovor51_2"><label
+                                                class="test-answer" for="odgovor51_2">1</label><br><input type="radio" name="pitanje_51"
+                                                value="2" id="odgovor51_3"><label class="test-answer" for="odgovor51_3">2</label><br><input
+                                                type="radio" name="pitanje_51" value="3" id="odgovor51_4"><label class="test-answer"
+                                                for="odgovor51_4">3</label><br><input type="radio" name="pitanje_51" value="4"
+                                                id="odgovor51_5"><label class="test-answer" for="odgovor51_5">4</label><br><input
+                                                type="radio" name="pitanje_51" value="5" id="odgovor51_6"><label class="test-answer"
+                                                for="odgovor51_6">5</label><br><input type="radio" name="pitanje_51" value="6"
+                                                id="odgovor51_7"><label class="test-answer" for="odgovor51_7">6</label><br><input
+                                                type="radio" name="pitanje_51" value="7" id="odgovor51_8"><label class="test-answer"
+                                                for="odgovor51_8">7</label><br><input type="radio" name="pitanje_51" value="8"
+                                                id="odgovor51_9"><label class="test-answer" for="odgovor51_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 51 -->
+                                <ul class="fld-set">
+                                    <li id="52"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/52.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_52" value="1" id="odgovor52_2"><label
+                                                class="test-answer" for="odgovor52_2">1</label><br><input type="radio" name="pitanje_52"
+                                                value="2" id="odgovor52_3"><label class="test-answer" for="odgovor52_3">2</label><br><input
+                                                type="radio" name="pitanje_52" value="3" id="odgovor52_4"><label class="test-answer"
+                                                for="odgovor52_4">3</label><br><input type="radio" name="pitanje_52" value="4"
+                                                id="odgovor52_5"><label class="test-answer" for="odgovor52_5">4</label><br><input
+                                                type="radio" name="pitanje_52" value="5" id="odgovor52_6"><label class="test-answer"
+                                                for="odgovor52_6">5</label><br><input type="radio" name="pitanje_52" value="6"
+                                                id="odgovor52_7"><label class="test-answer" for="odgovor52_7">6</label><br><input
+                                                type="radio" name="pitanje_52" value="7" id="odgovor52_8"><label class="test-answer"
+                                                for="odgovor52_8">7</label><br><input type="radio" name="pitanje_52" value="8"
+                                                id="odgovor52_9"><label class="test-answer" for="odgovor52_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 52 -->
+                                <ul class="fld-set">
+                                    <li id="53"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/53.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_53" value="1" id="odgovor53_2"><label
+                                                class="test-answer" for="odgovor53_2">1</label><br><input type="radio" name="pitanje_53"
+                                                value="2" id="odgovor53_3"><label class="test-answer" for="odgovor53_3">2</label><br><input
+                                                type="radio" name="pitanje_53" value="3" id="odgovor53_4"><label class="test-answer"
+                                                for="odgovor53_4">3</label><br><input type="radio" name="pitanje_53" value="4"
+                                                id="odgovor53_5"><label class="test-answer" for="odgovor53_5">4</label><br><input
+                                                type="radio" name="pitanje_53" value="5" id="odgovor53_6"><label class="test-answer"
+                                                for="odgovor53_6">5</label><br><input type="radio" name="pitanje_53" value="6"
+                                                id="odgovor53_7"><label class="test-answer" for="odgovor53_7">6</label><br><input
+                                                type="radio" name="pitanje_53" value="7" id="odgovor53_8"><label class="test-answer"
+                                                for="odgovor53_8">7</label><br><input type="radio" name="pitanje_53" value="8"
+                                                id="odgovor53_9"><label class="test-answer" for="odgovor53_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 53 -->
+                                <ul class="fld-set">
+                                    <li id="54"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/54.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_54" value="1" id="odgovor54_2"><label
+                                                class="test-answer" for="odgovor54_2">1</label><br><input type="radio" name="pitanje_54"
+                                                value="2" id="odgovor54_3"><label class="test-answer" for="odgovor54_3">2</label><br><input
+                                                type="radio" name="pitanje_54" value="3" id="odgovor54_4"><label class="test-answer"
+                                                for="odgovor54_4">3</label><br><input type="radio" name="pitanje_54" value="4"
+                                                id="odgovor54_5"><label class="test-answer" for="odgovor54_5">4</label><br><input
+                                                type="radio" name="pitanje_54" value="5" id="odgovor54_6"><label class="test-answer"
+                                                for="odgovor54_6">5</label><br><input type="radio" name="pitanje_54" value="6"
+                                                id="odgovor54_7"><label class="test-answer" for="odgovor54_7">6</label><br><input
+                                                type="radio" name="pitanje_54" value="7" id="odgovor54_8"><label class="test-answer"
+                                                for="odgovor54_8">7</label><br><input type="radio" name="pitanje_54" value="8"
+                                                id="odgovor54_9"><label class="test-answer" for="odgovor54_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 54 -->
+                                <ul class="fld-set">
+                                    <li id="55"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/55.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_55" value="1" id="odgovor55_2"><label
+                                                class="test-answer" for="odgovor55_2">1</label><br><input type="radio" name="pitanje_55"
+                                                value="2" id="odgovor55_3"><label class="test-answer" for="odgovor55_3">2</label><br><input
+                                                type="radio" name="pitanje_55" value="3" id="odgovor55_4"><label class="test-answer"
+                                                for="odgovor55_4">3</label><br><input type="radio" name="pitanje_55" value="4"
+                                                id="odgovor55_5"><label class="test-answer" for="odgovor55_5">4</label><br><input
+                                                type="radio" name="pitanje_55" value="5" id="odgovor55_6"><label class="test-answer"
+                                                for="odgovor55_6">5</label><br><input type="radio" name="pitanje_55" value="6"
+                                                id="odgovor55_7"><label class="test-answer" for="odgovor55_7">6</label><br><input
+                                                type="radio" name="pitanje_55" value="7" id="odgovor55_8"><label class="test-answer"
+                                                for="odgovor55_8">7</label><br><input type="radio" name="pitanje_55" value="8"
+                                                id="odgovor55_9"><label class="test-answer" for="odgovor55_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 55 -->
+                                <ul class="fld-set">
+                                    <li id="56"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/56.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_56" value="1" id="odgovor56_2"><label
+                                                class="test-answer" for="odgovor56_2">1</label><br><input type="radio" name="pitanje_56"
+                                                value="2" id="odgovor56_3"><label class="test-answer" for="odgovor56_3">2</label><br><input
+                                                type="radio" name="pitanje_56" value="3" id="odgovor56_4"><label class="test-answer"
+                                                for="odgovor56_4">3</label><br><input type="radio" name="pitanje_56" value="4"
+                                                id="odgovor56_5"><label class="test-answer" for="odgovor56_5">4</label><br><input
+                                                type="radio" name="pitanje_56" value="5" id="odgovor56_6"><label class="test-answer"
+                                                for="odgovor56_6">5</label><br><input type="radio" name="pitanje_56" value="6"
+                                                id="odgovor56_7"><label class="test-answer" for="odgovor56_7">6</label><br><input
+                                                type="radio" name="pitanje_56" value="7" id="odgovor56_8"><label class="test-answer"
+                                                for="odgovor56_8">7</label><br><input type="radio" name="pitanje_56" value="8"
+                                                id="odgovor56_9"><label class="test-answer" for="odgovor56_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 56 -->
+                                <ul class="fld-set">
+                                    <li id="57"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/57.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_57" value="1" id="odgovor57_2"><label
+                                                class="test-answer" for="odgovor57_2">1</label><br><input type="radio" name="pitanje_57"
+                                                value="2" id="odgovor57_3"><label class="test-answer" for="odgovor57_3">2</label><br><input
+                                                type="radio" name="pitanje_57" value="3" id="odgovor57_4"><label class="test-answer"
+                                                for="odgovor57_4">3</label><br><input type="radio" name="pitanje_57" value="4"
+                                                id="odgovor57_5"><label class="test-answer" for="odgovor57_5">4</label><br><input
+                                                type="radio" name="pitanje_57" value="5" id="odgovor57_6"><label class="test-answer"
+                                                for="odgovor57_6">5</label><br><input type="radio" name="pitanje_57" value="6"
+                                                id="odgovor57_7"><label class="test-answer" for="odgovor57_7">6</label><br><input
+                                                type="radio" name="pitanje_57" value="7" id="odgovor57_8"><label class="test-answer"
+                                                for="odgovor57_8">7</label><br><input type="radio" name="pitanje_57" value="8"
+                                                id="odgovor57_9"><label class="test-answer" for="odgovor57_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 57 -->
+                                <ul class="fld-set">
+                                    <li id="58"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/58.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_58" value="1" id="odgovor58_2"><label
+                                                class="test-answer" for="odgovor58_2">1</label><br><input type="radio" name="pitanje_58"
+                                                value="2" id="odgovor58_3"><label class="test-answer" for="odgovor58_3">2</label><br><input
+                                                type="radio" name="pitanje_58" value="3" id="odgovor58_4"><label class="test-answer"
+                                                for="odgovor58_4">3</label><br><input type="radio" name="pitanje_58" value="4"
+                                                id="odgovor58_5"><label class="test-answer" for="odgovor58_5">4</label><br><input
+                                                type="radio" name="pitanje_58" value="5" id="odgovor58_6"><label class="test-answer"
+                                                for="odgovor58_6">5</label><br><input type="radio" name="pitanje_58" value="6"
+                                                id="odgovor58_7"><label class="test-answer" for="odgovor58_7">6</label><br><input
+                                                type="radio" name="pitanje_58" value="7" id="odgovor58_8"><label class="test-answer"
+                                                for="odgovor58_8">7</label><br><input type="radio" name="pitanje_58" value="8"
+                                                id="odgovor58_9"><label class="test-answer" for="odgovor58_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 58 -->
+                                <ul class="fld-set">
+                                    <li id="59"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/59.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_59" value="1" id="odgovor59_2"><label
+                                                class="test-answer" for="odgovor59_2">1</label><br><input type="radio" name="pitanje_59"
+                                                value="2" id="odgovor59_3"><label class="test-answer" for="odgovor59_3">2</label><br><input
+                                                type="radio" name="pitanje_59" value="3" id="odgovor59_4"><label class="test-answer"
+                                                for="odgovor59_4">3</label><br><input type="radio" name="pitanje_59" value="4"
+                                                id="odgovor59_5"><label class="test-answer" for="odgovor59_5">4</label><br><input
+                                                type="radio" name="pitanje_59" value="5" id="odgovor59_6"><label class="test-answer"
+                                                for="odgovor59_6">5</label><br><input type="radio" name="pitanje_59" value="6"
+                                                id="odgovor59_7"><label class="test-answer" for="odgovor59_7">6</label><br><input
+                                                type="radio" name="pitanje_59" value="7" id="odgovor59_8"><label class="test-answer"
+                                                for="odgovor59_8">7</label><br><input type="radio" name="pitanje_59" value="8"
+                                                id="odgovor59_9"><label class="test-answer" for="odgovor59_9">8</label><br></div>
+                                        <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 59 -->
+                                <ul class="fld-set">
+                                    <li id="60"><img class="test-question"
+                                            src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/60.gif"
+                                            alt="">
+                                        <div class="flex-text"><input type="radio" name="pitanje_60" value="1" id="odgovor60_2"><label
+                                                class="test-answer" for="odgovor60_2">1</label><br><input type="radio" name="pitanje_60"
+                                                value="2" id="odgovor60_3"><label class="test-answer" for="odgovor60_3">2</label><br><input
+                                                type="radio" name="pitanje_60" value="3" id="odgovor60_4"><label class="test-answer"
+                                                for="odgovor60_4">3</label><br><input type="radio" name="pitanje_60" value="4"
+                                                id="odgovor60_5"><label class="test-answer" for="odgovor60_5">4</label><br><input
+                                                type="radio" name="pitanje_60" value="5" id="odgovor60_6"><label class="test-answer"
+                                                for="odgovor60_6">5</label><br><input type="radio" name="pitanje_60" value="6"
+                                                id="odgovor60_7"><label class="test-answer" for="odgovor60_7">6</label><br><input
+                                                type="radio" name="pitanje_60" value="7" id="odgovor60_8"><label class="test-answer"
+                                                for="odgovor60_8">7</label><br><input type="radio" name="pitanje_60" value="8"
+                                                id="odgovor60_9"><label class="test-answer" for="odgovor60_9">8</label><br>
+                                            <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><button class="dugmeButton btn"
+                                                    onclick="ProveraForme()" type="button" name="save">Pošalji</button></div>
+                                        </div>
+                                    </li>
+                                </ul><!-- Kraj bloka 60 -->
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="../js/step.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#deo_2").hide();
+            $("#deo_3").hide();
+            $("#startbutton").click(function () {
+                $("#deo_1").hide();
+                $("#deo_2").show();
+                $("#deo_3").show();
+
+                var timoutValue = new Date(new Date().valueOf() + 40 * 60 * 1000);
+                $('#clock').countdown(timoutValue)
+                    .on('update.countdown', function (event) {
+                        var $this = $(this).html(event.strftime(''
+                            + '<span>%M</span> min '
+                            + '<span>%S</span> sec'));
+                    })
+                    .on('finish.countdown', function (event) {
+                        $(this).html('Time is up!');
+                        $("#deo_3").hide();
+                    });
+            });
+            $("form").submit(function (e) {
+
+                if ($('#age_id').val() != "") {
+                    if ($('#age_id').val().match('^(0|[1-9][0-9]*)$')) {
+
+                    } else {
+                        e.preventDefault(e);
+                        alert('Molimo unesite broj godina');
+                    }
+                } else {
+                    e.preventDefault(e);
+                    alert('Molimo unesite broj godina');
+                }
+            });
+        });
+
+    </script>
+    <script>
+       function ProveraForme() {
+            var countChecked = function () {
+                var c  = $("input:radio").length;
+                var n = $("input:radio:checked").length;
+                var a = $("input:text").length;
+                var be = $('.fld-set').length;
+                
+                console.log('Ovo je be i N', be, n);
+                if ((n + a) == be) {
+                    document.getElementById("checkform").submit();
+                } else {
+                    for (var i = 1; i < 37; i++) {
+                        if ($('input[name=' + 'pitanje_' + i + ']:checked').length > 0) {
+                            // Unhighlight_row(i);
+                        } else {
+                            // highlight_row(i);
+                        }
+                    }
+                    alert("Niste odgovorili na sva pitanja.");
+                    return false;
+                }
+            };
+            countChecked();
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+<div style="display: none"></div>
+
+</html>

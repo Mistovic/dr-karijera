@@ -1,0 +1,478 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+    <script src="../JS/jquery-3.5.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.doktorzakarijeru.com/wp-content/uploads/2018/02/dr_favicon.png">
+
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script src="https://www.chartjs.org/dist/2.7.1/Chart.bundle.js" type="text/javascript"></script>
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+
+    </style>
+    <script src="https://www.chartjs.org/samples/latest/utils.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/amcharts.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/gauge.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/radar.js"></script>
+    <script
+        src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.min.js"></script>
+    <link rel="stylesheet"
+        href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.css"
+        type="text/css" media="all">
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/themes/light.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Test za inostrano poslovanje (Severna Amerika)</title>
+    <meta name="keywords" content="skola, matematika, ucenje, studiranje">
+    <meta name="description" content="Gimnazija beohgrad">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/images/favicon.ico"
+        type="image/x-icon">
+    <link rel="alternate" type="application/rss+xml" title="Overall feed" href="https://testovi.doktorzakarijeru.com/feed">
+
+    <script src="https://testovi.doktorzakarijeru.com/public//javascript/jquery.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.min.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/sitelib.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/hoverIntent.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/superfish.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.validate.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.countdown.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('ul.sf-menu').superfish();
+        });
+    </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- novo dodato -->
+    <link rel="stylesheet" href="../css/testovi.css">
+    <link rel="stylesheet" href="../css/novi.css">
+</head>
+
+<body>
+
+    <header id="test-header">
+        <div id="dashboard-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div id="logo">
+                            <a href="https://testovi.doktorzakarijeru.com/testiranje/pretestchoice">
+                                <img src="../images/relogodr/Doktor_za_karijeru-logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 text-right">
+                       
+                        <a id="logout" class="" href="https://testovi.doktorzakarijeru.com/siteusers/korisnik/logouttest/0">Odjavite se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container test-header">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Test za inostrano poslovanje (Severna Amerika)</h1>
+                </div>
+                <div class="col-md-12">
+                    <p class="light">
+                        <span id="current-question"></span>/<span id="question-number"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="test-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="window">
+                        <form id="checkform" class="step-form" name="checkform"
+                            action="https://testovi.doktorzakarijeru.com/testiranje/test_in_poslovanje_results/eu/kupljeniTestovi"
+                            method="post">
+                            <ul class="fld-set" style="margin-left:0px;text-align:justify">
+                                <li id="1">
+                                    <label class="test-question">Dr Parker, lekar iz SAD, zaposlio se u gradskom centru u jednoj islamskoj
+                                        zemlji. Nju su
+                                        nastanili imigranti iz udaljenih mesta. Lekar je trebalo da predstavi sebe i svoj rad kako bi
+                                        pridobio
+                                        pacijente. Uložio je napor da prezentacija uspe i da stanovništvo islamske zajednice bude upoznato
+                                        sa
+                                        zapadnom medicinom. Mnogima je i zakazan pregled. Međutim, pacijenti nisu došli ni posle trideset
+                                        minuta
+                                        od otvaranja ordinacije. Zašto?</label>
+
+                                    <br><input type="radio" name="1" value="1" id="odgovor1_1">
+                                    <label class="test-answer" for="odgovor1_1">Navikli su da lekar ide u kućne posete.</label><br><input
+                                        type="radio" name="1" value="2" id="odgovor1_2">
+                                    <label class="test-answer" for="odgovor1_2">Pacijenti ove islamske zemlje nemaju odnos prema vremenu kao
+                                        Amerikanci.</label><br><input type="radio" name="1" value="3" id="odgovor1_3">
+                                    <label class="test-answer" for="odgovor1_3">Mnogi su se predomislili pod pritiskom onih koji nisu
+                                        upoznati sa radom dr
+                                        Parkera.</label><br><input type="radio" name="1" value="4" id="odgovor1_4">
+                                    <label class="test-answer" for="odgovor1_4">Vera im ne dozvoljava da idu kod lekara druge
+                                        veroispovesti.</label><br><input type="radio" name="1" value="5" id="odgovor1_5">
+                                    <label class="test-answer" for="odgovor1_5">Nemaju poverenja u strance.</label></li>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-next">Sledece</a>
+                                </div>
+                            </ul>
+                            <!-- Kraj prvog pitanja -->
+                            <ul class="fld-set" style="margin-left:0px;text-align:justify">
+                                <li id="2">
+                                    <label class="test-question">Jasar, Nigerijac, živi u Kanadi već dve godine kao beskućnik. Krade da bi
+                                        se prehranio i imao
+                                        šta da obuče. Iskoristio je tako trenutak nepažnje prodavačice na pijaci da uzme povrće sa tezge,
+                                        međutim, ona se okrenula i refleksno uzela metlu, da ga udari po ruci. Jasar, umesto da beži,
+                                        ispusti
+                                        ukradeno povrće i počne da moli zblanutu ženu da ga udari još sedam puta. Zašto je to
+                                        tražio?</label><br><input type="radio" name="2" value="1" id="odgovor2_1">
+                                    <label class="test-answer" for="odgovor2_1">Zato što je broj 7 srećan broj u Nigeriji.</label><br><input
+                                        type="radio" name="2" value="2" id="odgovor2_2">
+                                    <label class="test-answer" for="odgovor2_2">U Nigeriji veruju ako muškarca udarite metlom da će postati
+                                        impotentan. Impotencija
+                                        se neće desiti ako ga ista osoba tom istom metlom udari sedam puta.</label><br><input type="radio"
+                                        name="2" value="3" id="odgovor2_3">
+                                    <label class="test-answer" for="odgovor2_3">Iako je bio gladan, Jasar se predomislio i, osećajući se
+                                        krivim, dozvolio je ženi da
+                                        ga istuče za kaznu.</label><br><input
+                                        type="radio" name="2" value="4" id="odgovor2_4">
+                                    <label class="test-answer" for="odgovor2_4">To je bio samo trik – da bi uzeo još nešto sa tezge dok ga
+                                        ona mlati
+                                        metlom.</label><br><input type="radio" name="2" value="5" id="odgovor2_5">
+                                    <label class="test-answer" for="odgovor2_5">Zato što mu ta žena inače daje povrće i voće, pa se dugo
+                                        znaju i hteo je samo da se
+                                        našali s njom.</label></li>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-previous">Prethodno</a>
+                                    <a class="btn btn-next">Sledece</a>
+                                </div>
+                            </ul>
+                            <!-- Kraj drugog pitanja -->
+                            <ul class="fld-set" style="margin-left:0px;text-align:justify">
+                                <li id="3">
+                                    <label class="test-question">Mlada, bogata Angolka se zaljubila na raspustu u Bostonca i oni su, posle
+                                        šestomesečne veze
+                                        preko Skajpa, odlučili da se venčaju. On je želeo da to bude tajno, malo venčanje kod američkog
+                                        matičara. Lepa Jamina je mnogo volela Bena, ali nije mogla na to da pristane. Zašto joj je to bilo
+                                        važno
+                                        ako su se oboje odlučili na brak?</label><br><input type="radio" name="3" value="1"
+                                        id="odgovor3_1">
+                                    <label class="test-answer" for="odgovor3_1">Jamini je bilo neprijatno da kaže Benu da nema novca za
+                                        drugu avionsku kartu u 6
+                                        meseci; plašila se da će otkriti da nije baš toliko bogata.</label><br><input type="radio" name="3"
+                                        value="2"
+                                        id="odgovor3_2">
+                                    <label class="test-answer" for="odgovor3_2">Zato što bi to podrazumevalo dobijanje zelene karte, a
+                                        zelena boja je nesrećna u
+                                        Angoli.</label><br><input type="radio" name="3" value="3" id="odgovor3_3">
+                                    <label class="test-answer" for="odgovor3_3">Jer je Jamina bila premlada i Ben joj je, zapravo, bio samo
+                                        avantura, a dovoljno je
+                                        daleko da niko ne sazna.</label><br><input type="radio" name="3" value="4"
+                                        id="odgovor3_4">
+                                    <label class="test-answer" for="odgovor3_4">Kultura joj ne dozvoljava da se uda u beloj venčanici, već u
+                                        narodnoj nošnji koju
+                                        nije imala u SAD.</label><br><input type="radio" name="3" value="5" id="odgovor3_5">
+                                    <label class="test-answer" for="odgovor3_5">U Angoli se datum prosidbe usaglašava sa mladinim strinom i
+                                        stricem, jer je potrebno
+                                        da se okupi cela porodica.</label></li>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-previous">Prethodno</a>
+                                    <a class="btn btn-next">Sledece</a>
+                                </div>
+                            </ul>
+
+                            <!--  Kraj treceg pitanja -->
+                            <ul class="fld-set" style="margin-left:0px;text-align:justify">
+                                <li id="4">
+                                    <label class="test-question">Peruanka Adrijana odlučila je da poseti Aljasku. Odsela je u hotelu od
+                                        leda. Kada joj je
+                                        osoblje donelo stvari, počelo je nešto da mumla, a potom da izvodi neke pokrete. Adrijana je stajala
+                                        ukopana i pokušavala da shvati šta treba da uradi. Šta je trebalo da uradi?</label><br><input
+                                        type="radio" name="4" value="1" id="odgovor4_1">
+                                    <label class="test-answer" for="odgovor4_1">Da zove obezbeđenje. To se može shvatiti kao
+                                        uznemiravanje.</label><br><input
+                                        type="radio" name="4" value="2"
+                                        id="odgovor4_2">
+                                    <label class="test-answer" for="odgovor4_2">Da da napojnicu. Na Aljasci među Eskimima šamani za bakšiš
+                                        svojim klijentima pevaju
+                                        bajalice.</label><br><input type="radio" name="4" value="3" id="odgovor4_3">
+                                    <label class="test-answer" for="odgovor4_3">Da mu da ruku. Eskim je očekivao da će s njim odigrati ples
+                                        dobrodošlice, što je
+                                        njihov običaj kad im neko dođe u goste.</label><br><input type="radio" name="4" value="4"
+                                        id="odgovor4_4">
+                                    <label class="test-answer" for="odgovor4_4">Da ponavlja za njim. Eskimi su šamani i uvek se prvo pomole
+                                        za dobro zdravlje svog
+                                        gosta.</label><br><input
+                                        type="radio" name="4" value="5" id="odgovor4_5">
+                                    <label class="test-answer" for="odgovor4_5">Da pozove hitnu pomoć. Možda mu je pozlilo od
+                                        hladnoće.</label></li>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-previous">Prethodno</a>
+                                    <a class="btn btn-next">Sledece</a>
+                                </div>
+                            </ul>
+
+                            <!-- Kraj cetvrtog pitanja -->
+                            <ul class="fld-set" style="margin-left:0px;text-align:justify">
+                                <li id="5"><label class="test-question">Hrišćanin iz Kanade i Kineskinja su mladi bračni par koji prvi put
+                                        očekuje prinovu. Bilo je
+                                        proleće, uoči Uskrsa, i ženi je već prošao termin za porođaj. Njena porodica im je bila u poseti i
+                                        donela jaja. Kod njih su bili i Džošuini roditelji u iščekivanju srećnog događaja. Kanađani su
+                                        pomislili
+                                        kako su pažljivi Lusini roditelji kada su im doneli jaja za Uskrs i počeli su popularno „tucanje”.
+                                        Kineska porodica je bila preneražena. U čemu je bio problem?</label><br><input type="radio" name="5"
+                                        value="1" id="odgovor5_1">
+                                    <label class="test-answer" for="odgovor5_1">Uvredili su se što ih kanadska porodica nije sačekala da se
+                                        „tucaju” svi zajedno i
+                                        to je shvatila kao znak neprihvatanja.</label><br><input type="radio"
+                                        name="5" value="2" id="odgovor5_2">
+                                    <label class="test-answer" for="odgovor5_2">Uoči porođaja, članovi familije trudnice dolaze u posetu i
+                                        donose joj na poklon
+                                        jaja. Ovaj ritual simboliše nestrpljivost članova porodice trudnice da dobiju novog
+                                        člana.</label><br><input type="radio" name="5" value="3" id="odgovor5_3">
+                                    <label class="test-answer" for="odgovor5_3">Začudili su se što ih prvo nisu ofarbali – mislili su da će
+                                        oni, kao vičniji tome,
+                                        ukrašavati uskršnja jaja.</label><br><input type="radio"
+                                        name="5" value="4" id="odgovor5_4">
+                                    <label class="test-answer" for="odgovor5_4">Kineska porodica je smatrala da svako treba da se „tuca”
+                                        svojim jajima i nije im
+                                        bilo jasno zašto nisu skuvali svoja.</label><br><input type="radio" name="5" value="5"
+                                        id="odgovor5_5">
+                                    <label class="test-answer" for="odgovor5_5">Naljutili su se zato što su razbili čuvarkuću.</label></li>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-previous">Prethodno</a>
+                                    <a class="btn btn-next">Sledece</a>
+                                </div>
+                            </ul>
+
+                            <!-- Kraj petog pitanja -->
+                            <ul class="fld-set" style="margin-left:0px;text-align:justify">
+                                <li id="6"><label class="test-question">Američko-brazilski bračni par sprema doček Nove godine u svom stanu
+                                        i pozvali su najbliže
+                                        prijatelje. Pol je spremio grašak, kupus, spanać i ćuretinu, a Melina supu od sočiva sa pirinčem i
+                                        oljuštila nar. Njeni prijatelji nisu ni takli ćuretinu, izgovarajući se da su vegetarijanci. Polu je
+                                        to
+                                        bilo sumnjivo. Zašto?</label><br><input type="radio" name="6" value="1" id="odgovor6_1">
+                                    <label class="test-answer" for="odgovor6_1">Smatrao je da bar u novogodišnjoj noći svi treba da budu
+                                        iskreni jedni prema
+                                        drugima.</label><br><input
+                                        type="radio" name="6" value="2" id="odgovor6_2">
+                                    <label class="test-answer" for="odgovor6_2">Nije čuo za post tokom novogodišnjih
+                                        praznika.</label><br><input
+                                        type="radio" name="6" value="3" id="odgovor6_3">
+                                    <label class="test-answer" for="odgovor6_3">Pravi razlog je što, u stvari, Brazilci veruju da ćuretina
+                                        donosi nesreću ako se
+                                        jede u novogodišnjoj noći.</label><br><input
+                                        type="radio" name="6" value="4" id="odgovor6_4">
+                                    <label class="test-answer" for="odgovor6_4">Taj izgovor je shvatio kao znak da nije dobro spremio
+                                        meso.</label><br><input
+                                        type="radio" name="6" value="5" id="odgovor6_5">
+                                    <label class="test-answer" for="odgovor6_5">Procenio je da njeni prijatelji u Novoj godini sebi više
+                                        žele novac, pa su jeli sve
+                                        zeleno, nego što osećaju zahvalnost prema svemu što im je donela godina koja odlazi.</label></li>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-previous">Prethodno</a>
+                                    <a class="btn btn-next">Sledece</a>
+                                </div>
+                            </ul>
+                            <!-- Kraj sestog pitanja -->
+                            <ul class="fld-set" style="margin-left:0px;text-align:justify">
+                                <li id="7">
+                                    <label class="test-question">Marokanac Ali boravio je na Aljasci 6 meseci, zahvaljujući razmeni
+                                        studenata kulturologije.
+                                        Domaćini Inuiti su ga odveli u ribolov. Tada je prisustvovao neobičnom događaju. Ribolovci bi kod
+                                        svake
+                                        mrtve foke izvadili bešiku, a zatim bi bešiku vratili u okean. Ali je bio šokiran.
+                                        Zašto?</label><br><input type="radio" name="7" value="1" id="odgovor7_1">
+                                    <label class="test-answer" for="odgovor7_1">Uplašio se da neće znati kako da profesoru objasni ovaj
+                                        potez i da neće položiti
+                                        praktičan rad.</label><br><input type="radio" name="7" value="2"
+                                        id="odgovor7_2">
+                                    <label class="test-answer" for="odgovor7_2">Ali se plašio krvi i nije mogao da podnese otvaranje fokine
+                                        utrobe.</label><br><input type="radio" name="7" value="3" id="odgovor7_3">
+                                    <label class="test-answer" for="odgovor7_3">Marokanac je neobično voleo foke i bio je protiv njihovog
+                                        lova, a pogotovu je bio
+                                        protiv njihovog mučenja. Premišljao se da li da prijavi Inuite Orki.</label><br><input type="radio"
+                                        name="7" value="4" id="odgovor7_4">
+                                    <label class="test-answer" for="odgovor7_4">Nije znao da su Inuiti verovali u duhove i u to da oni
+                                        kontrolišu sve morske sisare.
+                                        Verovali su da je duh upravo u bešici. Vraćanjem bešike u more obezbedio bi se dobar ulov u
+                                        nadolazećoj
+                                        godini.</label><br><input type="radio" name="7" value="5" id="odgovor7_5">
+                                    <label class="test-answer" for="odgovor7_5">Mislio je da je bešika najukusnija kod mesa foke, pa samim
+                                        tim i najskuplja, zato mu
+                                        nije bilo jasno zašto nju vraćaju.</label></li>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-previous">Prethodno</a>
+                                    <a class="btn btn-next">Sledece</a>
+                                </div>
+                            </ul>
+                            <!-- Kraj sedmog -->
+                            <ul class="fld-set" style="margin-left:0px;text-align:justify">
+                                <li id="8"><label> Elen iz Kanade došla je u porodicu svog dečka u Južnoafričku Republiku. Kako je prevalila
+                                        dug
+                                        put, bila je vrlo umorna, a njegovi roditelji su bili nestrpljivi da je upoznaju. Ispitivali su je
+                                        neprekidno dva sata kada je ona na kraju zevnula, izvinila se i otišla u krevet. Sledećeg jutra
+                                        doneta
+                                        je odluka o boravku samo do kraja nedelje. Gde je greška?</label><br><input type="radio" name="8"
+                                        value="1"
+                                        id="odgovor8_1">
+                                    <label class="test-answer" for="odgovor8_1">U Južnoj Africi zevanje nije samo nepristojno, već se smatra
+                                        i
+                                        uvredom.</label><br><input type="radio" name="8" value="2" id="odgovor8_2">
+                                    <label class="test-answer" for="odgovor8_2">Elen je morala da vodi računa o bontonu i da ne dolazi posle
+                                        21h u nečiju
+                                        kuću.</label><br><input type="radio" name="8" value="3" id="odgovor8_3">
+                                    <label class="test-answer" for="odgovor8_3">Elen nije ništa pogrešila, već je sama odlučila da ode jer
+                                        joj se nije dopalo to
+                                        ispitivanje njegovih roditelja.</label><br><input type="radio" name="8" value="4" id="odgovor8_4">
+                                    <label class="test-answer" for="odgovor8_4">Razočarala se jer joj je dečko rekao da živi sam, kao i svi
+                                        odrasli
+                                        Južnoafrikanci.</label><br><input type="radio" name="8" value="5" id="odgovor8_5">
+                                    <label class="test-answer" for="odgovor8_5">U Kanadi se dečko/devojka ne upoznaju sa roditeljima onog
+                                        drugog.</label>
+                                </li>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-previous">Prethodno</a>
+                                    <a class="btn btn-next">Sledece</a>
+                                </div>
+                            </ul>
+                            <ul class="fld-set" style="margin-left:0px;text-align:justify">
+                                <li id="9"><label class="test-question">Majka malog Urugvajca Anisa uputila se po hitnom pozivu u Kanadu jer
+                                        je njen sin završio u
+                                        bolnici nakon napada epilepsije. Urugvajka to nije ni znala. Otišla je u toalet da se osveži nakon
+                                        dugog
+                                        putovanja. Posle petnaestak minuta boravka u bolnici, prišla joj je glavna medicinska sestra i
+                                        napisala
+                                        račun. Šta je Urugvajka morala da plati?</label><br><input type="radio" name="9" value="1"
+                                        id="odgovor9_1">
+                                    <label class="test-answer" for="odgovor9_1">Za kanadske majke je nedopustivo da ne znaju od čega im
+                                        boluju
+                                        deca.</label><br><input type="radio" name="9" value="2" id="odgovor9_2">
+                                    <label class="test-answer" for="odgovor9_2">Po bolnicama u Kanadi apsolutno je zabranjena upotreba
+                                        parfema.</label><br><input type="radio" name="9" value="3" id="odgovor9_3">
+                                    <label class="test-answer" for="odgovor9_3">Plaća se posebna taksa za intervencije kod napada
+                                        epilepsije, jer to nije uobičajena
+                                        bolest u Kanadi i zahteva angažman posebnog tima lekara.</label><br><input
+                                        type="radio"
+                                        name="9" value="4" id="odgovor9_4">
+                                    <label class="test-answer" for="odgovor9_4">U Kanadi se smatra da su roditelji odgovorni za nastanak
+                                        bolesti njihove dece i zato
+                                        se plaća kazna.</label><br><input type="radio" name="9" value="5" id="odgovor9_5">
+                                    <label class="test-answer" for="odgovor9_5">U Kanadi važi zakon automatskog zaveštanja organa tako da je
+                                        Urugvajka morala da da
+                                        pristanak i plati participaciju.</label></li>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-previous">Prethodno</a>
+                                    <a class="btn btn-next">Sledece</a>
+                                </div>
+                            </ul>
+                            <ul class="fld-set" style="margin-left:0px;text-align:justify">
+                                <li id="10"><label class="test-question">Latinoamerikanka se zaposlila u severnoameričkoj kompaniji i dolazi
+                                        na prvi partnerski
+                                        sastanak. Sastanak je bio zakazan u 7 sati. Amerikanci i Kanađani su već bili tu u 5 do 7, a
+                                        Latinoamerikanka je došla tek oko sat i 40 min. kasnije. Zašto su je partneri ljutito
+                                        gledali?</label><br><input type="radio" name="10"
+                                        value="1"
+                                        id="odgovor10_1">
+                                    <label class="test-answer" for="odgovor10_1">U severnoameričkoj kulturi je pravilo da partneri u drugim
+                                        državama ne mogu biti
+                                        žene.</label><br><input
+                                        type="radio" name="10" value="2" id="odgovor10_2">
+                                    <label class="test-answer" for="odgovor10_2">U SAD i Kanadi je pravilo pojaviti se pet minuta pre
+                                        zakazanog sastanka, dok
+                                        Latinoamerikanci smatraju da mogu da se pojave kad im je volja.</label><br><input type="radio"
+                                        name="10" value="3"
+                                        id="odgovor10_3">
+                                    <label class="test-answer" for="odgovor10_3">Poznato je da su latioameričke žene vrlo privlačne, tako da
+                                        su naslućivali probleme
+                                        u međusobnim odnosima.</label><br><input type="radio" name="10" value="4" id="odgovor10_4">
+                                    <label class="test-answer" for="odgovor10_4">Nisu videli da nosi projekat – nikakvu aktentašnu ili
+                                        fasciklu, jer su severnjaci
+                                        sistematičniji od južnjaka i unapred su smatrali sve ovo izgubljenim vremenom.</label><br><input
+                                        type="radio" name="10" value="5" id="odgovor10_5">
+                                    <label class="test-answer" for="odgovor10_5">Nisu smatrali partnerku adekvatno obučenom jer je poznato
+                                        da se Latinoamerikanke
+                                        laganije oblače zbog vrućina.</label>
+                                </li>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-previous">Prethodno</a>
+                                    <button class="dugmeButton btn" onclick="ProveraForme()" type="button" name="save">Pošalji</button>
+                                </div>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="../JS/step.js"></script>
+    <script>
+        function highlight_row(tr) {
+            document.getElementById(tr).style.backgroundColor = 'rgba(255,0,0,0.2)';
+        }
+        function Unhighlight_row(tr) {
+            document.getElementById(tr).style.backgroundColor = 'white';
+        }
+        function ProveraForme() {
+            var countChecked = function () {
+                var n = $("input:radio:checked").length;
+                if (n == 10) {
+                    document.getElementById("checkform").submit();
+                } else {
+                    for (var i = 1; i < 11; i++) {
+                        if ($('input[name=' + i + ']:checked').length > 0) {
+                            Unhighlight_row(i);
+                        } else {
+                            highlight_row(i);
+                        }
+                    }
+                    alert("Niste odgovorili na sva pitanja.");
+                    return false;
+                }
+            };
+            countChecked();
+        }
+    </script>
+</body>
+
+</html>

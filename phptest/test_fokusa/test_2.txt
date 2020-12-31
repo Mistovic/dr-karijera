@@ -1,0 +1,175 @@
+1	Lako sklapam nova poznanstva.	
+2	Važno je doneti praktičnu odluku, čak i onda kada je ona u suprotnosti sa nečijim osećanjima.	
+3	Trudim se da razumem svoje i postupke drugih ljudi iz mog okruženja.	
+4	Potrebno mi je da se malo osamim, posle intenzivnih razgovora sa drugim ljudima.	
+5	Uglavnom sam opušten/a.	
+6	Mogu lako da „čitam između redova“.	
+7	Veoma teško me nešto oduševi.	
+8	Drugi često kažu da sam nefleksibilan/a.	
+9	Emotivni filmovi me lako rastuže.	
+10	Moj dom i radno okruženje prilično su uredni.
+
+11	Često se osećam prinuđenim/om da branim svoje principe i ideje.	
+12	Često me optužuju da sam neodlučan/a.	
+13	Ne smeta mi da budem u centru pažnje.	
+14	Više volim da planiram nego da sprovodim plan u delo.	
+15	Retko menjam raspoloženje.	
+16	Veoma mi je važno da imam kontrolu nad svojim okruženjem.	
+17	Nisam sklon/a da predstavljam svoju ideju dok nemam sve elemente „složene u glavi”.	
+18	Često sam promenjivog raspoloženja.	
+19	Obično radim stvari spontano ili u žurbi.	
+
+20	Sklon/a sam da u poslu stavljam akcenat na svoja osećanja, pre nego na objektivne činjenice.	
+21	Sve što radim, radim energično.	
+22	Često zavidim drugima.	
+23	Vreme provedeno uz zanimljivu knjigu ili video-igricu često je bolje nego prisustvo nekom društvenom događaju.	
+24	U stanju sam da razvijem plan i da ga se držim, jer smatram da je to najvažniji deo svakog projekta.	
+25	Ideje su često važnije od same realizacije posla.	
+26	Najčešće pružam snažnu emotivnu podršku svojim prijateljima.	
+27	Često vidim dalje od mojih aktuelnih zadataka i projekata.	
+28	Ne pokazujem svoje emocije čak ni bliskim prijateljima.	
+29	Teško ostanem hladne glave u konfliktnim situacijama.	
+30	Stalno razmišljam o posledicama koje će neka moja aktivnost imati u budućnosti.	
+
+31	Ne treba mi mnogo vremena da se uključim u društvene aktivnosti na novom radnom mestu.	
+32	Radije radim nešto na svoj način nego da preuzimam metode drugih ljudi.	
+33	Lako me je isprovocirati.	
+34	Perfekcionista sam.	
+35	Retko sanjarim o hipotetičkim stvarima.	
+36	Ne smeta mi kritika, ako argumenti imaju smisla.	
+37	Radije se rukovodim logičko-matematičkim metodama, nego uobičajenim pravilima.	
+38	Radije improvizujem nego što trošim vreme na detaljan plan.	
+39	Brzo se setim važnih činjenica, događaja i datuma (npr. rođendani).	
+
+40	Često se držim svojih ideala čak i kada mi um govori da idem drugim putem.	
+41	Važnije je biti otvoren za prihvatanje novih iskustava, nego se držati starih opcija.	
+42	Radije radim u timu nego sam/a.	
+43	Retko se osećam nesigurno.	
+44	Sa lakoćom postižem sve što sam definisao/la ličnim rasporedom.	
+45	Pravda je važnija od samilosti.	
+46	Uvek zamislim celovitu sliku pre nego što se pozabavim pojedinačnim elementima.	
+47	Osećam se bolje nakon vremena provedenog sa drugim ljudima.	
+48	Moji postupci često utiču na moja osećanja.	
+49	Veoma sam emotivno stabilan/a.	
+
+50	Ne mogu da podnesem nered i neorganizovanost.	
+51	Imam smisao za modu.	
+52	Povremeno imam potrebu da se izolujem od svog okruženja.	
+53	Veoma mi je teško da sakrijem svoja osećanja.	
+54	Veoma sam rezervisana i tiha osoba.	
+55	U punoj sobi radije ostajem bliže zidovima, izbegavajući centar.	
+56	Radije ću izabrati stari pouzdan pristup nego probati neki novi i nepredvidiv.	
+57	Osećam se veoma nemoćno u stresnim situacijama.	
+58	Ne postoji ništa loše u kršenju nekih pravila ako situacija tako zahteva.	
+59	Ne treba biti empatičan u profesionalnom okruženju.	
+
+60	Često preuzimam incijativu u društvenim događajima.	
+61	Nikada ne kasnim na zakazane sastanke.	
+62	Volim da sam angažovan/a na aktivnom i dinamičnom poslu.	
+63	Volim da imam širok krug poznanika.	
+64	Kad gledam tv sapunice, poistovećujem se sa glavnim likovima.	
+65	Obično reagujem prvi/a na iznenadne događaje kao što su neočekivano pitanje ili zvono telefona.	
+66	Više sam zainteresovan/a za opšte ideje nego za detalje njene realizacije.	
+67	Veoma sam objektivan/a čak i u situacijama koje bi mogle da ugroze dobre odnose sa drugim ljudima.	
+68	Ukoliko se strikno poštuju utvrđena pravila, ishod će biti pozitivan.	
+69	Retko me nešto uznemiri.	
+
+70	Preuzimam odgovornost za sve što radim.	
+71	Često razmišljam o sudbini čovečanstva.	
+72	Verujem da je najbolja odluka ona koja se može lako promeniti.	
+73	Objektivna kritika je uvek korisna.	
+74	Volim da delam odmah, i pre nego što razmislim o drugim opcijama.	
+75	Više verujem razumu nego osećanjima.	
+76	Više se oslanjam na improvizaciju nego na planiranje.	
+77	Svoje slobodno vreme provodim, aktivno se družeći sa većom grupom ljudi.	
+78	Obično planiram unapred svoje zadatke.	
+79	Pomalo sam rezervisana osoba čak i u komunikaciji.	
+
+80	Znam kako da dobro iskoristim svaki minut u toku dana.	
+81	Spreman/a sam da pomognem ljudima, ne tražeći ništa zauzvrat.	
+82	Često razmišljam o komplikovanosti života.	
+83	Često radim poslove u žurbi.	
+84	Osećam se udobno kada poštujem ustaljene norme.	
+85	Lako izražavam svoja osećanja.	
+86	Veoma retko povisim ton.	
+87	Dosadno mi je ako moram da čitam naučne knjige.	
+88	Imam težnju da saosećam sa drugim ljudima.	
+89	Što više razgovaram sa ljudima, bolje se osećam.	
+
+90	Radije se oslanjam na praksu, nego na teorijska znanja.	
+91	U pravilu delujem samo kad imam detaljan i jasan plan.	
+92	Uživam da budem u centru zbivanja (događaja).	
+93	Više volim da eksperimentišem nego da sledim poznate pristupe	
+94	Ne volim da me obaveze ograničavaju.	
+95	Snažno me dirne priča o nevoljama drugih ljudi.	
+96	Vremenski rokovi su mi od relativnog značaja.	
+97	Volim da se izolujem od gužve i buke.	
+98	Lakše učim kada mi neko to praktično pokaže.	
+99	Moram sve da proanaliziram.	
+100	Za mene nema iznenađenja bilo ono dobro ili loše.	
+
+101	Uživam da dovodim stvari u red.	
+102	Osećam se opušteno u velikoj grupi ljudi.	
+103	Dobro kontrolišem svoje želje i iskušenja.	
+104	Lako razumem nove naučne principe.	
+105	Važniji mi je proces traženja rešenja nego samo rešenje.	
+106	Kada rešavam problem, radije sledim poznat pristup nego da tražim novi.	
+107	Pokušavam da čvrsto stojim iza svojih principa.	
+108	Avanturista sam.	
+109	Više volim da radim u malim grupama nego da budem izložen/a velikom broju ljudi.	
+110	Prilikom razmatranja trenutne situacije više pažnje poklanjam sadašnjosti nego budućnosti.	
+
+111	Smatram da je racionalni pristup rešavanju problema najbolji.	
+112	Teško izražavam svoja osećanja.	
+113	Često provodim vreme razmišljajući kako bi stvari mogle biti bolje.	
+114	Moje odluke se zasnivaju više na osećanjima nego na temeljnom planiranju.	
+115	Svoje slobodno vreme volim da provedem sam/a ili opuštajući se u tihom ambijentu.	
+116	Osećam se udobno kada sam/a postavljam norme.	
+117	Jako sam emotivan/a.	
+118	Uvek sam u potrazi za raznim mogućnostima.	
+119	Uvek sam usmeren/a na ono što mi se trenutno događa pre nego na buduće ishode.	
+120	Uvek osećam zadovoljstvo kad sam/a šetam.	
+
+121	Lako komuniciram na društvenim događajima.	
+122	Dosledan/a sam u svojim navikama.	
+123	Radije se uključujem u aktivnosti koje su mi poznate.	
+124	Lako predviđam buduće ishode.	
+125	Kada treba da donesem važnu odluku, pitam sve oko sebe šta bi oni uradili.	
+126	Trudim se da me slučajni događaji ne zateknu nespremnog/u.	
+127	Drugi ljudi smatraju da sam ambiciozan/na.	
+128	Najbolje radim kada sam dobro plaćen/a.	
+129	Za svoj neuspeh uvek krivim druge.	
+130	Drugi kod mene najviše cene pravednost.	
+
+131	Najlakše me razbesni nečija drskost.	
+132	Kada neko kritikuje moj način rada, ne obazirem se na to.	
+133	Najčešće sebe upoređujem sa ljudima koji su različiti od mene.	
+134	Često razmišljam o događajima iz prošlosti koji su uticali na moju sadašnjost.	
+135	Život je za mene vreme stalnih promena i previranja.	
+136	Često se fokusiram na negativne stvari.	
+137	Ne postoji ništa važnije za mene nego da činim stvari za druge.	
+138	Verujem da moj život ima malo smisla.	
+139	Ne volim da skrećem pažnju na sebe.	
+140	Ne volim da priznam da nisam u pravu.	
+
+141	Ostajem miran/a pod pritiskom.	
+142	Veoma mi je važno šta drugi misle o meni.	
+143	Veoma sam zavidljiva osoba.	
+144	Novac mi je veoma važan.	
+145	Volim da ulazim u raspravu.	
+146	Ne uradim uvek ono što obećam da ću uraditi.	
+147	Ljudi mi se uglavnom dive.	
+148	Mislim da imam sve osobine radoholičara.	
+149	Uvek kupujem najbolje i najskuplje stvari.	
+150	Imam snažnu potrebu da se osećam moćno.	
+
+151	Najbolje se osećam kada radim.	
+152	Ne volim da mi neko naređuje.	
+153	Kada mi nešto treba, uvek pitam za pomoć.	
+154	Volim da pravim dramu kako bih privukao/la pažnju.	
+155	Ne volim da prihvatam pomoć od bilo koga.	
+156	Često imam osećaj da sam pod uticajem drugih ljudi.	
+157	Veoma me brinu skriveni motivi drugih ljudi.	
+158	Kada analiziram sebe, uočavam da sam atraktivniji/a od svojih prijatelja.	
+159	Analiziram postupke prijatelja i među njima biram one koji su mi najlojalniji.	
+160	Smatram da svaki uzrok ima svoju posledicu.

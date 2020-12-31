@@ -1,0 +1,328 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+  
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/themes/light.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>DR za karijeru | Registration / Login</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="keywords" content="skola, matematika, ucenje, studiranje">
+    <meta name="description" content="Gimnazija beohgrad">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="https://www.doktorzakarijeru.com/wp-content/uploads/2018/02/dr_favicon.png">
+     <!-- Nova verzija JQ  -->
+     <script src="JS/jquery-3.5.1.min.js"></script>
+     <!-- <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.min.js"
+         type="text/javascript"></script> -->
+    <!-- Skripte sa prosle verzije -->
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script src="https://www.chartjs.org/dist/2.7.1/Chart.bundle.js" type="text/javascript"></script>
+  
+    <script src="https://www.chartjs.org/samples/latest/utils.js" type="text/javascript"></script>
+    <script
+        src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/amcharts.js"></script>
+    <script
+        src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/gauge.js"></script>
+    <script
+        src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/radar.js"></script>
+    <script
+        src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.min.js"></script>
+    <!-- <link rel="stylesheet"
+        href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.css"
+        type="text/css" media="all"> -->
+    <link rel="alternate" type="application/rss+xml" title="Overall feed"
+        href="https://testovi.doktorzakarijeru.com/feed">
+    <script src="https://testovi.doktorzakarijeru.com/public//javascript/jquery.js" type="text/javascript"></script>
+   
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/sitelib.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/hoverIntent.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/superfish.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.validate.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.countdown.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('ul.sf-menu').superfish();
+        });
+    </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <link rel="stylesheet" href="scss/novi.css" type="text/css" charset="utf-8">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <main id="glavni">
+            <div id="glavniUnutrasnji" class="container">
+                <div id="frmRegistracija" class="blokk sadrzaj row" >
+                    <div class="text col-md-6">
+                        <h2>Izabrali ste pravi put da pokrenete svoju karijeru i unapredite svoje potencijale! Registrujte se i započnite testiranje.
+                        </h2><br>
+                        Testovi koji su pred Vama namenjeni su samoproceni Vaših profesionalnih karakteristika, kao i
+                        budućem profesionalnom razvoju. Bilo da se radi o nastavku školovanja na formalnim
+                        obrazovnim akademskim ili strukovnim ustanovama ili drugim obrazovnim centrima namenjenim usvajanju
+                        različitih dodatnih znanja i veština.
+                        Važno je da znamo put kojim treba da idemo kako bismo maksimalno iskoristili naše postojeće
+                        kapacitete ili izgradili nove.
+                    </div>
+
+                    <div id="regFrm" class="col-md-6 col-sm-12">
+                        <div id="slika-reg">
+                            <img src="../images/test-doktora.png" alt="">
+                        </div>
+                        <div class="inpts">
+                            <input class="inputpolje" id="ime" type="text" name="ime" tabindex="1" placeholder=""><label
+                                class="lblInp" for="ime">Upišite ime</label>
+                            <p class="frmText poruka-greska"></p>
+                        </div>
+                        <div class="inpts">
+                            <input class="inputpolje" id="prezime" type="text" name="prezime" tabindex="2"
+                                placeholder=""><label class="lblInp" for="prezime">Upišite prezime</label>
+                            <p class="frmText poruka-greska"></p>
+                        </div>
+
+                        <div class="inpts">
+                            <input class="inputpolje" id="username" type="text" name="username" tabindex="3" placeholder=""><label
+                                class="lblInp" for="ime">Korisničko ime</label>
+                            <p class="frmText poruka-greska"></p>
+                        </div>
+
+                        <div class="inpts">
+                            <input class="inputpolje" id="email" type="text" name="email" tabindex="4"
+                                placeholder=""><label class="lblInp" for="email">Upišite email</label>
+                            <p class="frmText poruka-greska"></p>
+                        </div>
+                        <div class="inpts">
+                            <input class="inputpolje" id="pass" type="password" name="pass" tabindex="5"
+                                placeholder=""><label class="lblInp" for="pass">Izaberite lozinku</label>
+                            <p class="frmText poruka-greska"></p>
+                        </div>
+                        <div class="inpts">
+                            <input class="inputpolje" id="pass2" type="password" name="pass2" tabindex="6"
+                                placeholder=""> <label class="lblInp" for="pass2">Ponovite lozinku</label>
+                            <p class="frmText poruka-greska"></p>
+                        </div>
+
+                        <div class="linija"></div>
+                        <div class="polisa tekstNajmanji flex">
+                            <input type="checkbox" id="potvrdaUslova" name="potvrdaUslova"><label
+                                for="potvrdaUslova">Slažem se sa uslovima
+                                testiranja</label>
+                            <br>
+                        </div>
+
+                        <div class="linija"></div>
+                        <input class="inputDugme" id="register" type="submit" name="register" value="Registruj se"
+                            tabindex="7" style="clear: both">
+
+                        <div class="linija"></div>
+
+                        <p class="frmText tekstNajmanji">Već imate nalog? <a href="#" class="prijava">Prijavite
+                                se.</a>
+                        </p>
+                        <p class="frmText poruka-greska"></p>
+
+                    </div>
+                </div>
+
+
+                <div id="frmPrijava" style="display:none;">
+                    <!-- <h4>Prijava</h4> -->
+                    <div class="wrp">
+                        <div class="inpts">
+                            <input class="inputpolje" id="emailPrijava" type="text" name="emailPrijava" tabindex="1"
+                                placeholder=""><label class="lblInp" for="emailPrijava">Korisničko
+                                ime</label>
+                            <p class="frmText poruka-greska"></p>
+                        </div>
+                        <div class="inpts">
+                            <input class="inputpolje" id="passPrijava" type="password" name="passPrijava" tabindex="5"
+                                placeholder=""><label class="lblInp" for="passPrijava">Lozinka</label>
+                            <p class="frmText poruka-greska"></p>
+                        </div>
+
+
+                        <br clear="left">
+                        <div class="inpts">
+                            <input class="inputDugme" id="logovanje" type="submit" name="logovanje" value="Prijavite se"
+                                tabindex="7">
+                        </div>
+                    </div>
+
+                    <br clear="left">
+                    <p class="frmText textNajmanji">
+                        Niste otvorili lični nalog? <a href="#" class="registracija">Registrujte ste.</a>
+                        Zaboravili
+                        ste <a href="#" class="reset-sifra">lozinku</a>?
+                    </p>
+                </div>
+
+            </div><!-- kraj #sadrzaj -->
+
+
+        </main><!-- kraj #glavniPozadina -->
+        <!-- kraj #glavni -->
+
+        <footer id="footer">
+            <div id="copyright" class="container">
+
+                <p class="tekstNajmanji">Copyright © <a href="https://testovi.doktorzakarijeru.com/">Doktor za
+                        karijeru</a>.
+                    Sva prava zadržana. Designed by <a href="http://www.link.co.rs" target="_blank">LINK group</a>.
+                    Powered
+                    by <a href="http://www.link-softsolutions.com/SoftLink-Content-Management-System---CMS_20_1"
+                        target="_blank">LINK CMS</a>.</p>
+
+            </div><!-- kraj #copyright -->
+        </footer><!-- kraj #footer -->
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".prijava").on('click',function () {
+                $('#frmPrijava').toggle("fast");
+                $('#frmRegistracija').toggle("fast");
+
+            });
+            $(".registracija").on('click',function () {
+                $('#frmRegistracija').toggle("fast");
+                $('#frmPrijava').toggle("fast");
+            });
+        });
+
+        function isValidEmailAddress(emailAddress) {
+            var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+            return pattern.test(emailAddress);
+        };
+        
+        $('#register').click(function (event) {
+            if (!jQuery.trim($('#ime').val()) || !jQuery.trim($('#prezime').val()) || !jQuery.trim($('#email').val()) || !jQuery.trim($('#pass').val()) || !jQuery.trim($('#pass2').val())) {
+                alert("Popunite sva polja formulara");
+                return false;
+            }
+            if (!isValidEmailAddress(jQuery.trim($('#email').val()))) {
+                alert("Email adresa nije validna");
+                return false;
+            }
+            if (jQuery.trim($('#pass').val()).length < 6 || jQuery.trim($('#pass').val()).length > 25) {
+                alert("Sifra moze sadrzati izmedju 6 i 25 karaktera");
+                return false;
+            }
+            if (jQuery.trim($('#pass').val()) != jQuery.trim($('#pass2').val())) {
+                alert("Sifre se ne poklapaju");
+                return false;
+            }
+            if (!$("#potvrdaUslova").is(":checked")) {
+                alert("Molimo Vas da potvrdite da se slažete sa uslovima testiranja");
+                return false;
+            }
+
+            var data = {
+                ime: jQuery.trim($('#ime').val()),
+                prezime: jQuery.trim($('#prezime').val()),
+                email: jQuery.trim($('#email').val()),
+                sifra: jQuery.trim($('#pass').val())
+            };
+
+            $.ajax({
+                url: 'https://testovi.doktorzakarijeru.com/siteusers/korisnik/ajaxregistracija',
+                type: "POST",
+                data: data,
+                success: function (data, textStatus, jqXHR) {
+                    if (data != 1) {
+                        alert(data);
+                    }
+                    else {
+                        window.location = 'https://testovi.doktorzakarijeru.com/testiranje/pretestchoice';
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+
+                }
+            });
+        });
+
+        $('#logovanje').click(function (event) {
+            if (!jQuery.trim($('#emailPrijava').val()) || !jQuery.trim($('#passPrijava').val())) {
+                //$('#ime').css({"background-color":"red","color":"#F2E6E6","border":"black 1px solid"});
+                //$('#ime').val("Popunite sva polja formulara");
+                alert("Popunite sva polja formulara");
+                return false;
+            }
+            /* if(!isValidEmailAddress(jQuery.trim($('#emailPrijava').val())))
+             {
+                 alert("Email adresa nije validna");
+                 return false;
+             }*/
+
+            var data = { email: jQuery.trim($('#emailPrijava').val()), sifra: jQuery.trim($('#passPrijava').val()) };
+
+            $.ajax({
+                url: 'https://testovi.doktorzakarijeru.com/siteusers/korisnik/ajaxlogin',
+                type: "POST",
+                data: data,
+                success: function (data, textStatus, jqXHR) {
+                    if (data == "Pogresna kombinacija emaila i lozinke") {
+                        alert(data);
+                    }
+                    else {
+                        window.location = data;
+                    }
+                    //alert(data);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+
+                }
+            });
+        });      
+    </script>
+
+    <script>
+
+        //Animacija za labele - Vuk Mistovic april 2020
+        (function () {
+            const _ipts = document.getElementsByClassName('inputpolje')
+            const _lbl = document.getElementsByClassName('lblInp')
+
+
+            for (i = 0; i < _ipts.length; i++) (function (i) {
+
+                _ipts[i].onfocus = function () {
+                    _lbl[i].classList.add('focusLbl')
+                }
+
+                _ipts[i].onblur = function () {
+                    _val = _ipts[i].value
+                    if (_val == "") {
+                        _lbl[i].classList.remove('focusLbl')
+                    }
+                }
+
+                _ipts[i].oninput = function () {
+                    _val = _ipts[i].value
+                    if (!(_val == "")) {
+                        _lbl[i].classList.add('focusLbl')
+                    } else {
+                        _lbl[i].classList.remove('focusLbl')
+                    }
+                }
+            }(i))
+        }())
+    </script>
+
+</body>
+<div style="display: none"></div>
+
+</html>

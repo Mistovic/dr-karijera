@@ -1,0 +1,877 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
+
+<head>
+
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script src="https://www.chartjs.org/dist/2.7.1/Chart.bundle.js" type="text/javascript"></script>
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+
+    </style>
+    <script src="https://www.chartjs.org/samples/latest/utils.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/amcharts.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/gauge.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/radar.js"></script>
+    <script
+        src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.min.js"></script>
+    <link rel="stylesheet"
+        href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.css"
+        type="text/css" media="all">
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/themes/light.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--<title>Gimnazija</title>-->
+    <title>Gimnazija</title>
+    <meta name="keywords" content="skola, matematika, ucenje, studiranje">
+    <meta name="description" content="Gimnazija beohgrad">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/images/favicon.ico"
+        type="image/x-icon">
+    <link rel="alternate" type="application/rss+xml" title="Overall feed" href="https://testovi.doktorzakarijeru.com/feed">
+    
+    <script src="https://testovi.doktorzakarijeru.com/public//javascript/jquery.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.min.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/sitelib.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/hoverIntent.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/superfish.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.validate.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.countdown.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('ul.sf-menu').superfish();
+        });
+    </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  
+</head>
+
+<body cz-shortcut-listen="true">
+
+    <div id="header">
+        <div id="headerUnutrasnji">
+            <div id="logo">
+            </div><!-- kraj #logo -->
+
+            <div id="mreze">
+
+
+
+
+            </div><!-- kraj #mreze -->
+
+            <div id="slogan">
+            </div>
+
+
+        </div><!-- kraj #headerUnutrasnji -->
+    </div><!-- kraj #header -->
+    <div id="menu">
+        <div id="menuUnutrasnji">
+
+
+            <div style="width:100px;float:right;margin-top:10px;"><a style="color:white;"
+                    href="https://testovi.doktorzakarijeru.com/siteusers/korisnik/logouttest/0">Odjavite se</a></div>
+        </div><!-- kraj #menuUnutrasnji -->
+    </div><!-- kraj #menu -->
+
+    <div id="glavni">
+        <div id="glavniPozadina">
+            <div id="glavniUnutrasnji">
+
+                <div class="blokk sadrzaj" style="margin-left:10px;margin-right:10px;">
+                    <h2>Test inteligencije</h2>
+                    <br>
+                    <div id="clock"></div>
+                    <div id="deo_1">
+                        <br><br>
+                        Ravenove progresivne matrice su jedan od najboljih i najpopularnijih testova inteligencije svih vremena. Neverbalnog
+                        su tipa, sa više ponuđenih mogućnosti. Mere ukupnu inteligenciju; zadatak je identifikovati element koji nedostaje u
+                        datom obrascu. Test uključuje 60 zahteva i traje 40 minuta.
+                        <br><br><br>
+                        <input type="button" id="startbutton" name="startbutton" value="Počni">
+                    </div>
+
+                    <form id="checkform23" name="checkform12"
+                        action="https://testovi.doktorzakarijeru.com/testiranje/test_inteligencije_results/kupljeniTestovi" method="post">
+                        <div id="deo_2" style="display: none;">
+                            <br>Unesite broj godina<input type="text" name="age" value="" id="age_id">
+                        </div>
+                        <div id="deo_3" style="display: none;">
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/1.gif"
+                                        alt=""><br><input type="radio" name="odgovor1" value="1" id="odgovor.1">
+                                    <label for="odgovor1">1</label><input type="radio" name="odgovor1" value="2" id="odgovor.1">
+                                    <label for="odgovor1">2</label><input type="radio" name="odgovor1" value="3" id="odgovor.1">
+                                    <label for="odgovor1">3</label><input type="radio" name="odgovor1" value="4" id="odgovor.1">
+                                    <label for="odgovor1">4</label><input type="radio" name="odgovor1" value="5" id="odgovor.1">
+                                    <label for="odgovor1">5</label><input type="radio" name="odgovor1" value="6" id="odgovor.1">
+                                    <label for="odgovor1">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/2.gif"
+                                        alt=""><br><input type="radio" name="odgovor2" value="1" id="odgovor.2">
+                                    <label for="odgovor2">1</label><input type="radio" name="odgovor2" value="2" id="odgovor.2">
+                                    <label for="odgovor2">2</label><input type="radio" name="odgovor2" value="3" id="odgovor.2">
+                                    <label for="odgovor2">3</label><input type="radio" name="odgovor2" value="4" id="odgovor.2">
+                                    <label for="odgovor2">4</label><input type="radio" name="odgovor2" value="5" id="odgovor.2">
+                                    <label for="odgovor2">5</label><input type="radio" name="odgovor2" value="6" id="odgovor.2">
+                                    <label for="odgovor2">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/3.gif"
+                                        alt=""><br><input type="radio" name="odgovor3" value="1" id="odgovor.3">
+                                    <label for="odgovor3">1</label><input type="radio" name="odgovor3" value="2" id="odgovor.3">
+                                    <label for="odgovor3">2</label><input type="radio" name="odgovor3" value="3" id="odgovor.3">
+                                    <label for="odgovor3">3</label><input type="radio" name="odgovor3" value="4" id="odgovor.3">
+                                    <label for="odgovor3">4</label><input type="radio" name="odgovor3" value="5" id="odgovor.3">
+                                    <label for="odgovor3">5</label><input type="radio" name="odgovor3" value="6" id="odgovor.3">
+                                    <label for="odgovor3">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/4.gif"
+                                        alt=""><br><input type="radio" name="odgovor4" value="1" id="odgovor.4">
+                                    <label for="odgovor4">1</label><input type="radio" name="odgovor4" value="2" id="odgovor.4">
+                                    <label for="odgovor4">2</label><input type="radio" name="odgovor4" value="3" id="odgovor.4">
+                                    <label for="odgovor4">3</label><input type="radio" name="odgovor4" value="4" id="odgovor.4">
+                                    <label for="odgovor4">4</label><input type="radio" name="odgovor4" value="5" id="odgovor.4">
+                                    <label for="odgovor4">5</label><input type="radio" name="odgovor4" value="6" id="odgovor.4">
+                                    <label for="odgovor4">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/5.gif"
+                                        alt=""><br><input type="radio" name="odgovor5" value="1" id="odgovor.5">
+                                    <label for="odgovor5">1</label><input type="radio" name="odgovor5" value="2" id="odgovor.5">
+                                    <label for="odgovor5">2</label><input type="radio" name="odgovor5" value="3" id="odgovor.5">
+                                    <label for="odgovor5">3</label><input type="radio" name="odgovor5" value="4" id="odgovor.5">
+                                    <label for="odgovor5">4</label><input type="radio" name="odgovor5" value="5" id="odgovor.5">
+                                    <label for="odgovor5">5</label><input type="radio" name="odgovor5" value="6" id="odgovor.5">
+                                    <label for="odgovor5">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/6.gif"
+                                        alt=""><br><input type="radio" name="odgovor6" value="1" id="odgovor.6">
+                                    <label for="odgovor6">1</label><input type="radio" name="odgovor6" value="2" id="odgovor.6">
+                                    <label for="odgovor6">2</label><input type="radio" name="odgovor6" value="3" id="odgovor.6">
+                                    <label for="odgovor6">3</label><input type="radio" name="odgovor6" value="4" id="odgovor.6">
+                                    <label for="odgovor6">4</label><input type="radio" name="odgovor6" value="5" id="odgovor.6">
+                                    <label for="odgovor6">5</label><input type="radio" name="odgovor6" value="6" id="odgovor.6">
+                                    <label for="odgovor6">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/7.gif"
+                                        alt=""><br><input type="radio" name="odgovor7" value="1" id="odgovor.7">
+                                    <label for="odgovor7">1</label><input type="radio" name="odgovor7" value="2" id="odgovor.7">
+                                    <label for="odgovor7">2</label><input type="radio" name="odgovor7" value="3" id="odgovor.7">
+                                    <label for="odgovor7">3</label><input type="radio" name="odgovor7" value="4" id="odgovor.7">
+                                    <label for="odgovor7">4</label><input type="radio" name="odgovor7" value="5" id="odgovor.7">
+                                    <label for="odgovor7">5</label><input type="radio" name="odgovor7" value="6" id="odgovor.7">
+                                    <label for="odgovor7">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/8.gif"
+                                        alt=""><br><input type="radio" name="odgovor8" value="1" id="odgovor.8">
+                                    <label for="odgovor8">1</label><input type="radio" name="odgovor8" value="2" id="odgovor.8">
+                                    <label for="odgovor8">2</label><input type="radio" name="odgovor8" value="3" id="odgovor.8">
+                                    <label for="odgovor8">3</label><input type="radio" name="odgovor8" value="4" id="odgovor.8">
+                                    <label for="odgovor8">4</label><input type="radio" name="odgovor8" value="5" id="odgovor.8">
+                                    <label for="odgovor8">5</label><input type="radio" name="odgovor8" value="6" id="odgovor.8">
+                                    <label for="odgovor8">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/9.gif"
+                                        alt=""><br><input type="radio" name="odgovor9" value="1" id="odgovor.9">
+                                    <label for="odgovor9">1</label><input type="radio" name="odgovor9" value="2" id="odgovor.9">
+                                    <label for="odgovor9">2</label><input type="radio" name="odgovor9" value="3" id="odgovor.9">
+                                    <label for="odgovor9">3</label><input type="radio" name="odgovor9" value="4" id="odgovor.9">
+                                    <label for="odgovor9">4</label><input type="radio" name="odgovor9" value="5" id="odgovor.9">
+                                    <label for="odgovor9">5</label><input type="radio" name="odgovor9" value="6" id="odgovor.9">
+                                    <label for="odgovor9">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/10.gif"
+                                        alt=""><br><input type="radio" name="odgovor10" value="1" id="odgovor.10">
+                                    <label for="odgovor10">1</label><input type="radio" name="odgovor10" value="2" id="odgovor.10">
+                                    <label for="odgovor10">2</label><input type="radio" name="odgovor10" value="3" id="odgovor.10">
+                                    <label for="odgovor10">3</label><input type="radio" name="odgovor10" value="4" id="odgovor.10">
+                                    <label for="odgovor10">4</label><input type="radio" name="odgovor10" value="5" id="odgovor.10">
+                                    <label for="odgovor10">5</label><input type="radio" name="odgovor10" value="6" id="odgovor.10">
+                                    <label for="odgovor10">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/11.gif"
+                                        alt=""><br><input type="radio" name="odgovor11" value="1" id="odgovor.11">
+                                    <label for="odgovor11">1</label><input type="radio" name="odgovor11" value="2" id="odgovor.11">
+                                    <label for="odgovor11">2</label><input type="radio" name="odgovor11" value="3" id="odgovor.11">
+                                    <label for="odgovor11">3</label><input type="radio" name="odgovor11" value="4" id="odgovor.11">
+                                    <label for="odgovor11">4</label><input type="radio" name="odgovor11" value="5" id="odgovor.11">
+                                    <label for="odgovor11">5</label><input type="radio" name="odgovor11" value="6" id="odgovor.11">
+                                    <label for="odgovor11">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/12.gif"
+                                        alt=""><br><input type="radio" name="odgovor12" value="1" id="odgovor.12">
+                                    <label for="odgovor12">1</label><input type="radio" name="odgovor12" value="2" id="odgovor.12">
+                                    <label for="odgovor12">2</label><input type="radio" name="odgovor12" value="3" id="odgovor.12">
+                                    <label for="odgovor12">3</label><input type="radio" name="odgovor12" value="4" id="odgovor.12">
+                                    <label for="odgovor12">4</label><input type="radio" name="odgovor12" value="5" id="odgovor.12">
+                                    <label for="odgovor12">5</label><input type="radio" name="odgovor12" value="6" id="odgovor.12">
+                                    <label for="odgovor12">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/13.gif"
+                                        alt=""><br><input type="radio" name="odgovor13" value="1" id="odgovor.13">
+                                    <label for="odgovor13">1</label><input type="radio" name="odgovor13" value="2" id="odgovor.13">
+                                    <label for="odgovor13">2</label><input type="radio" name="odgovor13" value="3" id="odgovor.13">
+                                    <label for="odgovor13">3</label><input type="radio" name="odgovor13" value="4" id="odgovor.13">
+                                    <label for="odgovor13">4</label><input type="radio" name="odgovor13" value="5" id="odgovor.13">
+                                    <label for="odgovor13">5</label><input type="radio" name="odgovor13" value="6" id="odgovor.13">
+                                    <label for="odgovor13">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/14.gif"
+                                        alt=""><br><input type="radio" name="odgovor14" value="1" id="odgovor.14">
+                                    <label for="odgovor14">1</label><input type="radio" name="odgovor14" value="2" id="odgovor.14">
+                                    <label for="odgovor14">2</label><input type="radio" name="odgovor14" value="3" id="odgovor.14">
+                                    <label for="odgovor14">3</label><input type="radio" name="odgovor14" value="4" id="odgovor.14">
+                                    <label for="odgovor14">4</label><input type="radio" name="odgovor14" value="5" id="odgovor.14">
+                                    <label for="odgovor14">5</label><input type="radio" name="odgovor14" value="6" id="odgovor.14">
+                                    <label for="odgovor14">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/15.gif"
+                                        alt=""><br><input type="radio" name="odgovor15" value="1" id="odgovor.15">
+                                    <label for="odgovor15">1</label><input type="radio" name="odgovor15" value="2" id="odgovor.15">
+                                    <label for="odgovor15">2</label><input type="radio" name="odgovor15" value="3" id="odgovor.15">
+                                    <label for="odgovor15">3</label><input type="radio" name="odgovor15" value="4" id="odgovor.15">
+                                    <label for="odgovor15">4</label><input type="radio" name="odgovor15" value="5" id="odgovor.15">
+                                    <label for="odgovor15">5</label><input type="radio" name="odgovor15" value="6" id="odgovor.15">
+                                    <label for="odgovor15">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/16.gif"
+                                        alt=""><br><input type="radio" name="odgovor16" value="1" id="odgovor.16">
+                                    <label for="odgovor16">1</label><input type="radio" name="odgovor16" value="2" id="odgovor.16">
+                                    <label for="odgovor16">2</label><input type="radio" name="odgovor16" value="3" id="odgovor.16">
+                                    <label for="odgovor16">3</label><input type="radio" name="odgovor16" value="4" id="odgovor.16">
+                                    <label for="odgovor16">4</label><input type="radio" name="odgovor16" value="5" id="odgovor.16">
+                                    <label for="odgovor16">5</label><input type="radio" name="odgovor16" value="6" id="odgovor.16">
+                                    <label for="odgovor16">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/17.gif"
+                                        alt=""><br><input type="radio" name="odgovor17" value="1" id="odgovor.17">
+                                    <label for="odgovor17">1</label><input type="radio" name="odgovor17" value="2" id="odgovor.17">
+                                    <label for="odgovor17">2</label><input type="radio" name="odgovor17" value="3" id="odgovor.17">
+                                    <label for="odgovor17">3</label><input type="radio" name="odgovor17" value="4" id="odgovor.17">
+                                    <label for="odgovor17">4</label><input type="radio" name="odgovor17" value="5" id="odgovor.17">
+                                    <label for="odgovor17">5</label><input type="radio" name="odgovor17" value="6" id="odgovor.17">
+                                    <label for="odgovor17">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/18.gif"
+                                        alt=""><br><input type="radio" name="odgovor18" value="1" id="odgovor.18">
+                                    <label for="odgovor18">1</label><input type="radio" name="odgovor18" value="2" id="odgovor.18">
+                                    <label for="odgovor18">2</label><input type="radio" name="odgovor18" value="3" id="odgovor.18">
+                                    <label for="odgovor18">3</label><input type="radio" name="odgovor18" value="4" id="odgovor.18">
+                                    <label for="odgovor18">4</label><input type="radio" name="odgovor18" value="5" id="odgovor.18">
+                                    <label for="odgovor18">5</label><input type="radio" name="odgovor18" value="6" id="odgovor.18">
+                                    <label for="odgovor18">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/19.gif"
+                                        alt=""><br><input type="radio" name="odgovor19" value="1" id="odgovor.19">
+                                    <label for="odgovor19">1</label><input type="radio" name="odgovor19" value="2" id="odgovor.19">
+                                    <label for="odgovor19">2</label><input type="radio" name="odgovor19" value="3" id="odgovor.19">
+                                    <label for="odgovor19">3</label><input type="radio" name="odgovor19" value="4" id="odgovor.19">
+                                    <label for="odgovor19">4</label><input type="radio" name="odgovor19" value="5" id="odgovor.19">
+                                    <label for="odgovor19">5</label><input type="radio" name="odgovor19" value="6" id="odgovor.19">
+                                    <label for="odgovor19">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/20.gif"
+                                        alt=""><br><input type="radio" name="odgovor20" value="1" id="odgovor.20">
+                                    <label for="odgovor20">1</label><input type="radio" name="odgovor20" value="2" id="odgovor.20">
+                                    <label for="odgovor20">2</label><input type="radio" name="odgovor20" value="3" id="odgovor.20">
+                                    <label for="odgovor20">3</label><input type="radio" name="odgovor20" value="4" id="odgovor.20">
+                                    <label for="odgovor20">4</label><input type="radio" name="odgovor20" value="5" id="odgovor.20">
+                                    <label for="odgovor20">5</label><input type="radio" name="odgovor20" value="6" id="odgovor.20">
+                                    <label for="odgovor20">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/21.gif"
+                                        alt=""><br><input type="radio" name="odgovor21" value="1" id="odgovor.21">
+                                    <label for="odgovor21">1</label><input type="radio" name="odgovor21" value="2" id="odgovor.21">
+                                    <label for="odgovor21">2</label><input type="radio" name="odgovor21" value="3" id="odgovor.21">
+                                    <label for="odgovor21">3</label><input type="radio" name="odgovor21" value="4" id="odgovor.21">
+                                    <label for="odgovor21">4</label><input type="radio" name="odgovor21" value="5" id="odgovor.21">
+                                    <label for="odgovor21">5</label><input type="radio" name="odgovor21" value="6" id="odgovor.21">
+                                    <label for="odgovor21">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/22.gif"
+                                        alt=""><br><input type="radio" name="odgovor22" value="1" id="odgovor.22">
+                                    <label for="odgovor22">1</label><input type="radio" name="odgovor22" value="2" id="odgovor.22">
+                                    <label for="odgovor22">2</label><input type="radio" name="odgovor22" value="3" id="odgovor.22">
+                                    <label for="odgovor22">3</label><input type="radio" name="odgovor22" value="4" id="odgovor.22">
+                                    <label for="odgovor22">4</label><input type="radio" name="odgovor22" value="5" id="odgovor.22">
+                                    <label for="odgovor22">5</label><input type="radio" name="odgovor22" value="6" id="odgovor.22">
+                                    <label for="odgovor22">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/23.gif"
+                                        alt=""><br><input type="radio" name="odgovor23" value="1" id="odgovor.23">
+                                    <label for="odgovor23">1</label><input type="radio" name="odgovor23" value="2" id="odgovor.23">
+                                    <label for="odgovor23">2</label><input type="radio" name="odgovor23" value="3" id="odgovor.23">
+                                    <label for="odgovor23">3</label><input type="radio" name="odgovor23" value="4" id="odgovor.23">
+                                    <label for="odgovor23">4</label><input type="radio" name="odgovor23" value="5" id="odgovor.23">
+                                    <label for="odgovor23">5</label><input type="radio" name="odgovor23" value="6" id="odgovor.23">
+                                    <label for="odgovor23">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/24.gif"
+                                        alt=""><br><input type="radio" name="odgovor24" value="1" id="odgovor.24">
+                                    <label for="odgovor24">1</label><input type="radio" name="odgovor24" value="2" id="odgovor.24">
+                                    <label for="odgovor24">2</label><input type="radio" name="odgovor24" value="3" id="odgovor.24">
+                                    <label for="odgovor24">3</label><input type="radio" name="odgovor24" value="4" id="odgovor.24">
+                                    <label for="odgovor24">4</label><input type="radio" name="odgovor24" value="5" id="odgovor.24">
+                                    <label for="odgovor24">5</label><input type="radio" name="odgovor24" value="6" id="odgovor.24">
+                                    <label for="odgovor24">6</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/25.gif"
+                                        alt=""><br><input type="radio" name="odgovor25" value="1" id="odgovor.25">
+                                    <label for="odgovor25">1</label><input type="radio" name="odgovor25" value="2" id="odgovor.25">
+                                    <label for="odgovor25">2</label><input type="radio" name="odgovor25" value="3" id="odgovor.25">
+                                    <label for="odgovor25">3</label><input type="radio" name="odgovor25" value="4" id="odgovor.25">
+                                    <label for="odgovor25">4</label><input type="radio" name="odgovor25" value="5" id="odgovor.25">
+                                    <label for="odgovor25">5</label><input type="radio" name="odgovor25" value="6" id="odgovor.25">
+                                    <label for="odgovor25">6</label><input type="radio" name="odgovor25" value="7" id="odgovor.25">
+                                    <label for="odgovor25">7</label><input type="radio" name="odgovor25" value="8" id="odgovor.25">
+                                    <label for="odgovor25">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/26.gif"
+                                        alt=""><br><input type="radio" name="odgovor26" value="1" id="odgovor.26">
+                                    <label for="odgovor26">1</label><input type="radio" name="odgovor26" value="2" id="odgovor.26">
+                                    <label for="odgovor26">2</label><input type="radio" name="odgovor26" value="3" id="odgovor.26">
+                                    <label for="odgovor26">3</label><input type="radio" name="odgovor26" value="4" id="odgovor.26">
+                                    <label for="odgovor26">4</label><input type="radio" name="odgovor26" value="5" id="odgovor.26">
+                                    <label for="odgovor26">5</label><input type="radio" name="odgovor26" value="6" id="odgovor.26">
+                                    <label for="odgovor26">6</label><input type="radio" name="odgovor26" value="7" id="odgovor.26">
+                                    <label for="odgovor26">7</label><input type="radio" name="odgovor26" value="8" id="odgovor.26">
+                                    <label for="odgovor26">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/27.gif"
+                                        alt=""><br><input type="radio" name="odgovor27" value="1" id="odgovor.27">
+                                    <label for="odgovor27">1</label><input type="radio" name="odgovor27" value="2" id="odgovor.27">
+                                    <label for="odgovor27">2</label><input type="radio" name="odgovor27" value="3" id="odgovor.27">
+                                    <label for="odgovor27">3</label><input type="radio" name="odgovor27" value="4" id="odgovor.27">
+                                    <label for="odgovor27">4</label><input type="radio" name="odgovor27" value="5" id="odgovor.27">
+                                    <label for="odgovor27">5</label><input type="radio" name="odgovor27" value="6" id="odgovor.27">
+                                    <label for="odgovor27">6</label><input type="radio" name="odgovor27" value="7" id="odgovor.27">
+                                    <label for="odgovor27">7</label><input type="radio" name="odgovor27" value="8" id="odgovor.27">
+                                    <label for="odgovor27">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/28.gif"
+                                        alt=""><br><input type="radio" name="odgovor28" value="1" id="odgovor.28">
+                                    <label for="odgovor28">1</label><input type="radio" name="odgovor28" value="2" id="odgovor.28">
+                                    <label for="odgovor28">2</label><input type="radio" name="odgovor28" value="3" id="odgovor.28">
+                                    <label for="odgovor28">3</label><input type="radio" name="odgovor28" value="4" id="odgovor.28">
+                                    <label for="odgovor28">4</label><input type="radio" name="odgovor28" value="5" id="odgovor.28">
+                                    <label for="odgovor28">5</label><input type="radio" name="odgovor28" value="6" id="odgovor.28">
+                                    <label for="odgovor28">6</label><input type="radio" name="odgovor28" value="7" id="odgovor.28">
+                                    <label for="odgovor28">7</label><input type="radio" name="odgovor28" value="8" id="odgovor.28">
+                                    <label for="odgovor28">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/29.gif"
+                                        alt=""><br><input type="radio" name="odgovor29" value="1" id="odgovor.29">
+                                    <label for="odgovor29">1</label><input type="radio" name="odgovor29" value="2" id="odgovor.29">
+                                    <label for="odgovor29">2</label><input type="radio" name="odgovor29" value="3" id="odgovor.29">
+                                    <label for="odgovor29">3</label><input type="radio" name="odgovor29" value="4" id="odgovor.29">
+                                    <label for="odgovor29">4</label><input type="radio" name="odgovor29" value="5" id="odgovor.29">
+                                    <label for="odgovor29">5</label><input type="radio" name="odgovor29" value="6" id="odgovor.29">
+                                    <label for="odgovor29">6</label><input type="radio" name="odgovor29" value="7" id="odgovor.29">
+                                    <label for="odgovor29">7</label><input type="radio" name="odgovor29" value="8" id="odgovor.29">
+                                    <label for="odgovor29">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/30.gif"
+                                        alt=""><br><input type="radio" name="odgovor30" value="1" id="odgovor.30">
+                                    <label for="odgovor30">1</label><input type="radio" name="odgovor30" value="2" id="odgovor.30">
+                                    <label for="odgovor30">2</label><input type="radio" name="odgovor30" value="3" id="odgovor.30">
+                                    <label for="odgovor30">3</label><input type="radio" name="odgovor30" value="4" id="odgovor.30">
+                                    <label for="odgovor30">4</label><input type="radio" name="odgovor30" value="5" id="odgovor.30">
+                                    <label for="odgovor30">5</label><input type="radio" name="odgovor30" value="6" id="odgovor.30">
+                                    <label for="odgovor30">6</label><input type="radio" name="odgovor30" value="7" id="odgovor.30">
+                                    <label for="odgovor30">7</label><input type="radio" name="odgovor30" value="8" id="odgovor.30">
+                                    <label for="odgovor30">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/31.gif"
+                                        alt=""><br><input type="radio" name="odgovor31" value="1" id="odgovor.31">
+                                    <label for="odgovor31">1</label><input type="radio" name="odgovor31" value="2" id="odgovor.31">
+                                    <label for="odgovor31">2</label><input type="radio" name="odgovor31" value="3" id="odgovor.31">
+                                    <label for="odgovor31">3</label><input type="radio" name="odgovor31" value="4" id="odgovor.31">
+                                    <label for="odgovor31">4</label><input type="radio" name="odgovor31" value="5" id="odgovor.31">
+                                    <label for="odgovor31">5</label><input type="radio" name="odgovor31" value="6" id="odgovor.31">
+                                    <label for="odgovor31">6</label><input type="radio" name="odgovor31" value="7" id="odgovor.31">
+                                    <label for="odgovor31">7</label><input type="radio" name="odgovor31" value="8" id="odgovor.31">
+                                    <label for="odgovor31">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/32.gif"
+                                        alt=""><br><input type="radio" name="odgovor32" value="1" id="odgovor.32">
+                                    <label for="odgovor32">1</label><input type="radio" name="odgovor32" value="2" id="odgovor.32">
+                                    <label for="odgovor32">2</label><input type="radio" name="odgovor32" value="3" id="odgovor.32">
+                                    <label for="odgovor32">3</label><input type="radio" name="odgovor32" value="4" id="odgovor.32">
+                                    <label for="odgovor32">4</label><input type="radio" name="odgovor32" value="5" id="odgovor.32">
+                                    <label for="odgovor32">5</label><input type="radio" name="odgovor32" value="6" id="odgovor.32">
+                                    <label for="odgovor32">6</label><input type="radio" name="odgovor32" value="7" id="odgovor.32">
+                                    <label for="odgovor32">7</label><input type="radio" name="odgovor32" value="8" id="odgovor.32">
+                                    <label for="odgovor32">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/33.gif"
+                                        alt=""><br><input type="radio" name="odgovor33" value="1" id="odgovor.33">
+                                    <label for="odgovor33">1</label><input type="radio" name="odgovor33" value="2" id="odgovor.33">
+                                    <label for="odgovor33">2</label><input type="radio" name="odgovor33" value="3" id="odgovor.33">
+                                    <label for="odgovor33">3</label><input type="radio" name="odgovor33" value="4" id="odgovor.33">
+                                    <label for="odgovor33">4</label><input type="radio" name="odgovor33" value="5" id="odgovor.33">
+                                    <label for="odgovor33">5</label><input type="radio" name="odgovor33" value="6" id="odgovor.33">
+                                    <label for="odgovor33">6</label><input type="radio" name="odgovor33" value="7" id="odgovor.33">
+                                    <label for="odgovor33">7</label><input type="radio" name="odgovor33" value="8" id="odgovor.33">
+                                    <label for="odgovor33">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/34.gif"
+                                        alt=""><br><input type="radio" name="odgovor34" value="1" id="odgovor.34">
+                                    <label for="odgovor34">1</label><input type="radio" name="odgovor34" value="2" id="odgovor.34">
+                                    <label for="odgovor34">2</label><input type="radio" name="odgovor34" value="3" id="odgovor.34">
+                                    <label for="odgovor34">3</label><input type="radio" name="odgovor34" value="4" id="odgovor.34">
+                                    <label for="odgovor34">4</label><input type="radio" name="odgovor34" value="5" id="odgovor.34">
+                                    <label for="odgovor34">5</label><input type="radio" name="odgovor34" value="6" id="odgovor.34">
+                                    <label for="odgovor34">6</label><input type="radio" name="odgovor34" value="7" id="odgovor.34">
+                                    <label for="odgovor34">7</label><input type="radio" name="odgovor34" value="8" id="odgovor.34">
+                                    <label for="odgovor34">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/35.gif"
+                                        alt=""><br><input type="radio" name="odgovor35" value="1" id="odgovor.35">
+                                    <label for="odgovor35">1</label><input type="radio" name="odgovor35" value="2" id="odgovor.35">
+                                    <label for="odgovor35">2</label><input type="radio" name="odgovor35" value="3" id="odgovor.35">
+                                    <label for="odgovor35">3</label><input type="radio" name="odgovor35" value="4" id="odgovor.35">
+                                    <label for="odgovor35">4</label><input type="radio" name="odgovor35" value="5" id="odgovor.35">
+                                    <label for="odgovor35">5</label><input type="radio" name="odgovor35" value="6" id="odgovor.35">
+                                    <label for="odgovor35">6</label><input type="radio" name="odgovor35" value="7" id="odgovor.35">
+                                    <label for="odgovor35">7</label><input type="radio" name="odgovor35" value="8" id="odgovor.35">
+                                    <label for="odgovor35">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/36.gif"
+                                        alt=""><br><input type="radio" name="odgovor36" value="1" id="odgovor.36">
+                                    <label for="odgovor36">1</label><input type="radio" name="odgovor36" value="2" id="odgovor.36">
+                                    <label for="odgovor36">2</label><input type="radio" name="odgovor36" value="3" id="odgovor.36">
+                                    <label for="odgovor36">3</label><input type="radio" name="odgovor36" value="4" id="odgovor.36">
+                                    <label for="odgovor36">4</label><input type="radio" name="odgovor36" value="5" id="odgovor.36">
+                                    <label for="odgovor36">5</label><input type="radio" name="odgovor36" value="6" id="odgovor.36">
+                                    <label for="odgovor36">6</label><input type="radio" name="odgovor36" value="7" id="odgovor.36">
+                                    <label for="odgovor36">7</label><input type="radio" name="odgovor36" value="8" id="odgovor.36">
+                                    <label for="odgovor36">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/37.gif"
+                                        alt=""><br><input type="radio" name="odgovor37" value="1" id="odgovor.37">
+                                    <label for="odgovor37">1</label><input type="radio" name="odgovor37" value="2" id="odgovor.37">
+                                    <label for="odgovor37">2</label><input type="radio" name="odgovor37" value="3" id="odgovor.37">
+                                    <label for="odgovor37">3</label><input type="radio" name="odgovor37" value="4" id="odgovor.37">
+                                    <label for="odgovor37">4</label><input type="radio" name="odgovor37" value="5" id="odgovor.37">
+                                    <label for="odgovor37">5</label><input type="radio" name="odgovor37" value="6" id="odgovor.37">
+                                    <label for="odgovor37">6</label><input type="radio" name="odgovor37" value="7" id="odgovor.37">
+                                    <label for="odgovor37">7</label><input type="radio" name="odgovor37" value="8" id="odgovor.37">
+                                    <label for="odgovor37">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/38.gif"
+                                        alt=""><br><input type="radio" name="odgovor38" value="1" id="odgovor.38">
+                                    <label for="odgovor38">1</label><input type="radio" name="odgovor38" value="2" id="odgovor.38">
+                                    <label for="odgovor38">2</label><input type="radio" name="odgovor38" value="3" id="odgovor.38">
+                                    <label for="odgovor38">3</label><input type="radio" name="odgovor38" value="4" id="odgovor.38">
+                                    <label for="odgovor38">4</label><input type="radio" name="odgovor38" value="5" id="odgovor.38">
+                                    <label for="odgovor38">5</label><input type="radio" name="odgovor38" value="6" id="odgovor.38">
+                                    <label for="odgovor38">6</label><input type="radio" name="odgovor38" value="7" id="odgovor.38">
+                                    <label for="odgovor38">7</label><input type="radio" name="odgovor38" value="8" id="odgovor.38">
+                                    <label for="odgovor38">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/39.gif"
+                                        alt=""><br><input type="radio" name="odgovor39" value="1" id="odgovor.39">
+                                    <label for="odgovor39">1</label><input type="radio" name="odgovor39" value="2" id="odgovor.39">
+                                    <label for="odgovor39">2</label><input type="radio" name="odgovor39" value="3" id="odgovor.39">
+                                    <label for="odgovor39">3</label><input type="radio" name="odgovor39" value="4" id="odgovor.39">
+                                    <label for="odgovor39">4</label><input type="radio" name="odgovor39" value="5" id="odgovor.39">
+                                    <label for="odgovor39">5</label><input type="radio" name="odgovor39" value="6" id="odgovor.39">
+                                    <label for="odgovor39">6</label><input type="radio" name="odgovor39" value="7" id="odgovor.39">
+                                    <label for="odgovor39">7</label><input type="radio" name="odgovor39" value="8" id="odgovor.39">
+                                    <label for="odgovor39">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/40.gif"
+                                        alt=""><br><input type="radio" name="odgovor40" value="1" id="odgovor.40">
+                                    <label for="odgovor40">1</label><input type="radio" name="odgovor40" value="2" id="odgovor.40">
+                                    <label for="odgovor40">2</label><input type="radio" name="odgovor40" value="3" id="odgovor.40">
+                                    <label for="odgovor40">3</label><input type="radio" name="odgovor40" value="4" id="odgovor.40">
+                                    <label for="odgovor40">4</label><input type="radio" name="odgovor40" value="5" id="odgovor.40">
+                                    <label for="odgovor40">5</label><input type="radio" name="odgovor40" value="6" id="odgovor.40">
+                                    <label for="odgovor40">6</label><input type="radio" name="odgovor40" value="7" id="odgovor.40">
+                                    <label for="odgovor40">7</label><input type="radio" name="odgovor40" value="8" id="odgovor.40">
+                                    <label for="odgovor40">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/41.gif"
+                                        alt=""><br><input type="radio" name="odgovor41" value="1" id="odgovor.41">
+                                    <label for="odgovor41">1</label><input type="radio" name="odgovor41" value="2" id="odgovor.41">
+                                    <label for="odgovor41">2</label><input type="radio" name="odgovor41" value="3" id="odgovor.41">
+                                    <label for="odgovor41">3</label><input type="radio" name="odgovor41" value="4" id="odgovor.41">
+                                    <label for="odgovor41">4</label><input type="radio" name="odgovor41" value="5" id="odgovor.41">
+                                    <label for="odgovor41">5</label><input type="radio" name="odgovor41" value="6" id="odgovor.41">
+                                    <label for="odgovor41">6</label><input type="radio" name="odgovor41" value="7" id="odgovor.41">
+                                    <label for="odgovor41">7</label><input type="radio" name="odgovor41" value="8" id="odgovor.41">
+                                    <label for="odgovor41">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/42.gif"
+                                        alt=""><br><input type="radio" name="odgovor42" value="1" id="odgovor.42">
+                                    <label for="odgovor42">1</label><input type="radio" name="odgovor42" value="2" id="odgovor.42">
+                                    <label for="odgovor42">2</label><input type="radio" name="odgovor42" value="3" id="odgovor.42">
+                                    <label for="odgovor42">3</label><input type="radio" name="odgovor42" value="4" id="odgovor.42">
+                                    <label for="odgovor42">4</label><input type="radio" name="odgovor42" value="5" id="odgovor.42">
+                                    <label for="odgovor42">5</label><input type="radio" name="odgovor42" value="6" id="odgovor.42">
+                                    <label for="odgovor42">6</label><input type="radio" name="odgovor42" value="7" id="odgovor.42">
+                                    <label for="odgovor42">7</label><input type="radio" name="odgovor42" value="8" id="odgovor.42">
+                                    <label for="odgovor42">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/43.gif"
+                                        alt=""><br><input type="radio" name="odgovor43" value="1" id="odgovor.43">
+                                    <label for="odgovor43">1</label><input type="radio" name="odgovor43" value="2" id="odgovor.43">
+                                    <label for="odgovor43">2</label><input type="radio" name="odgovor43" value="3" id="odgovor.43">
+                                    <label for="odgovor43">3</label><input type="radio" name="odgovor43" value="4" id="odgovor.43">
+                                    <label for="odgovor43">4</label><input type="radio" name="odgovor43" value="5" id="odgovor.43">
+                                    <label for="odgovor43">5</label><input type="radio" name="odgovor43" value="6" id="odgovor.43">
+                                    <label for="odgovor43">6</label><input type="radio" name="odgovor43" value="7" id="odgovor.43">
+                                    <label for="odgovor43">7</label><input type="radio" name="odgovor43" value="8" id="odgovor.43">
+                                    <label for="odgovor43">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/44.gif"
+                                        alt=""><br><input type="radio" name="odgovor44" value="1" id="odgovor.44">
+                                    <label for="odgovor44">1</label><input type="radio" name="odgovor44" value="2" id="odgovor.44">
+                                    <label for="odgovor44">2</label><input type="radio" name="odgovor44" value="3" id="odgovor.44">
+                                    <label for="odgovor44">3</label><input type="radio" name="odgovor44" value="4" id="odgovor.44">
+                                    <label for="odgovor44">4</label><input type="radio" name="odgovor44" value="5" id="odgovor.44">
+                                    <label for="odgovor44">5</label><input type="radio" name="odgovor44" value="6" id="odgovor.44">
+                                    <label for="odgovor44">6</label><input type="radio" name="odgovor44" value="7" id="odgovor.44">
+                                    <label for="odgovor44">7</label><input type="radio" name="odgovor44" value="8" id="odgovor.44">
+                                    <label for="odgovor44">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/45.gif"
+                                        alt=""><br><input type="radio" name="odgovor45" value="1" id="odgovor.45">
+                                    <label for="odgovor45">1</label><input type="radio" name="odgovor45" value="2" id="odgovor.45">
+                                    <label for="odgovor45">2</label><input type="radio" name="odgovor45" value="3" id="odgovor.45">
+                                    <label for="odgovor45">3</label><input type="radio" name="odgovor45" value="4" id="odgovor.45">
+                                    <label for="odgovor45">4</label><input type="radio" name="odgovor45" value="5" id="odgovor.45">
+                                    <label for="odgovor45">5</label><input type="radio" name="odgovor45" value="6" id="odgovor.45">
+                                    <label for="odgovor45">6</label><input type="radio" name="odgovor45" value="7" id="odgovor.45">
+                                    <label for="odgovor45">7</label><input type="radio" name="odgovor45" value="8" id="odgovor.45">
+                                    <label for="odgovor45">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/46.gif"
+                                        alt=""><br><input type="radio" name="odgovor46" value="1" id="odgovor.46">
+                                    <label for="odgovor46">1</label><input type="radio" name="odgovor46" value="2" id="odgovor.46">
+                                    <label for="odgovor46">2</label><input type="radio" name="odgovor46" value="3" id="odgovor.46">
+                                    <label for="odgovor46">3</label><input type="radio" name="odgovor46" value="4" id="odgovor.46">
+                                    <label for="odgovor46">4</label><input type="radio" name="odgovor46" value="5" id="odgovor.46">
+                                    <label for="odgovor46">5</label><input type="radio" name="odgovor46" value="6" id="odgovor.46">
+                                    <label for="odgovor46">6</label><input type="radio" name="odgovor46" value="7" id="odgovor.46">
+                                    <label for="odgovor46">7</label><input type="radio" name="odgovor46" value="8" id="odgovor.46">
+                                    <label for="odgovor46">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/47.gif"
+                                        alt=""><br><input type="radio" name="odgovor47" value="1" id="odgovor.47">
+                                    <label for="odgovor47">1</label><input type="radio" name="odgovor47" value="2" id="odgovor.47">
+                                    <label for="odgovor47">2</label><input type="radio" name="odgovor47" value="3" id="odgovor.47">
+                                    <label for="odgovor47">3</label><input type="radio" name="odgovor47" value="4" id="odgovor.47">
+                                    <label for="odgovor47">4</label><input type="radio" name="odgovor47" value="5" id="odgovor.47">
+                                    <label for="odgovor47">5</label><input type="radio" name="odgovor47" value="6" id="odgovor.47">
+                                    <label for="odgovor47">6</label><input type="radio" name="odgovor47" value="7" id="odgovor.47">
+                                    <label for="odgovor47">7</label><input type="radio" name="odgovor47" value="8" id="odgovor.47">
+                                    <label for="odgovor47">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/48.gif"
+                                        alt=""><br><input type="radio" name="odgovor48" value="1" id="odgovor.48">
+                                    <label for="odgovor48">1</label><input type="radio" name="odgovor48" value="2" id="odgovor.48">
+                                    <label for="odgovor48">2</label><input type="radio" name="odgovor48" value="3" id="odgovor.48">
+                                    <label for="odgovor48">3</label><input type="radio" name="odgovor48" value="4" id="odgovor.48">
+                                    <label for="odgovor48">4</label><input type="radio" name="odgovor48" value="5" id="odgovor.48">
+                                    <label for="odgovor48">5</label><input type="radio" name="odgovor48" value="6" id="odgovor.48">
+                                    <label for="odgovor48">6</label><input type="radio" name="odgovor48" value="7" id="odgovor.48">
+                                    <label for="odgovor48">7</label><input type="radio" name="odgovor48" value="8" id="odgovor.48">
+                                    <label for="odgovor48">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/49.gif"
+                                        alt=""><br><input type="radio" name="odgovor49" value="1" id="odgovor.49">
+                                    <label for="odgovor49">1</label><input type="radio" name="odgovor49" value="2" id="odgovor.49">
+                                    <label for="odgovor49">2</label><input type="radio" name="odgovor49" value="3" id="odgovor.49">
+                                    <label for="odgovor49">3</label><input type="radio" name="odgovor49" value="4" id="odgovor.49">
+                                    <label for="odgovor49">4</label><input type="radio" name="odgovor49" value="5" id="odgovor.49">
+                                    <label for="odgovor49">5</label><input type="radio" name="odgovor49" value="6" id="odgovor.49">
+                                    <label for="odgovor49">6</label><input type="radio" name="odgovor49" value="7" id="odgovor.49">
+                                    <label for="odgovor49">7</label><input type="radio" name="odgovor49" value="8" id="odgovor.49">
+                                    <label for="odgovor49">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/50.gif"
+                                        alt=""><br><input type="radio" name="odgovor50" value="1" id="odgovor.50">
+                                    <label for="odgovor50">1</label><input type="radio" name="odgovor50" value="2" id="odgovor.50">
+                                    <label for="odgovor50">2</label><input type="radio" name="odgovor50" value="3" id="odgovor.50">
+                                    <label for="odgovor50">3</label><input type="radio" name="odgovor50" value="4" id="odgovor.50">
+                                    <label for="odgovor50">4</label><input type="radio" name="odgovor50" value="5" id="odgovor.50">
+                                    <label for="odgovor50">5</label><input type="radio" name="odgovor50" value="6" id="odgovor.50">
+                                    <label for="odgovor50">6</label><input type="radio" name="odgovor50" value="7" id="odgovor.50">
+                                    <label for="odgovor50">7</label><input type="radio" name="odgovor50" value="8" id="odgovor.50">
+                                    <label for="odgovor50">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/51.gif"
+                                        alt=""><br><input type="radio" name="odgovor51" value="1" id="odgovor.51">
+                                    <label for="odgovor51">1</label><input type="radio" name="odgovor51" value="2" id="odgovor.51">
+                                    <label for="odgovor51">2</label><input type="radio" name="odgovor51" value="3" id="odgovor.51">
+                                    <label for="odgovor51">3</label><input type="radio" name="odgovor51" value="4" id="odgovor.51">
+                                    <label for="odgovor51">4</label><input type="radio" name="odgovor51" value="5" id="odgovor.51">
+                                    <label for="odgovor51">5</label><input type="radio" name="odgovor51" value="6" id="odgovor.51">
+                                    <label for="odgovor51">6</label><input type="radio" name="odgovor51" value="7" id="odgovor.51">
+                                    <label for="odgovor51">7</label><input type="radio" name="odgovor51" value="8" id="odgovor.51">
+                                    <label for="odgovor51">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/52.gif"
+                                        alt=""><br><input type="radio" name="odgovor52" value="1" id="odgovor.52">
+                                    <label for="odgovor52">1</label><input type="radio" name="odgovor52" value="2" id="odgovor.52">
+                                    <label for="odgovor52">2</label><input type="radio" name="odgovor52" value="3" id="odgovor.52">
+                                    <label for="odgovor52">3</label><input type="radio" name="odgovor52" value="4" id="odgovor.52">
+                                    <label for="odgovor52">4</label><input type="radio" name="odgovor52" value="5" id="odgovor.52">
+                                    <label for="odgovor52">5</label><input type="radio" name="odgovor52" value="6" id="odgovor.52">
+                                    <label for="odgovor52">6</label><input type="radio" name="odgovor52" value="7" id="odgovor.52">
+                                    <label for="odgovor52">7</label><input type="radio" name="odgovor52" value="8" id="odgovor.52">
+                                    <label for="odgovor52">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/53.gif"
+                                        alt=""><br><input type="radio" name="odgovor53" value="1" id="odgovor.53">
+                                    <label for="odgovor53">1</label><input type="radio" name="odgovor53" value="2" id="odgovor.53">
+                                    <label for="odgovor53">2</label><input type="radio" name="odgovor53" value="3" id="odgovor.53">
+                                    <label for="odgovor53">3</label><input type="radio" name="odgovor53" value="4" id="odgovor.53">
+                                    <label for="odgovor53">4</label><input type="radio" name="odgovor53" value="5" id="odgovor.53">
+                                    <label for="odgovor53">5</label><input type="radio" name="odgovor53" value="6" id="odgovor.53">
+                                    <label for="odgovor53">6</label><input type="radio" name="odgovor53" value="7" id="odgovor.53">
+                                    <label for="odgovor53">7</label><input type="radio" name="odgovor53" value="8" id="odgovor.53">
+                                    <label for="odgovor53">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/54.gif"
+                                        alt=""><br><input type="radio" name="odgovor54" value="1" id="odgovor.54">
+                                    <label for="odgovor54">1</label><input type="radio" name="odgovor54" value="2" id="odgovor.54">
+                                    <label for="odgovor54">2</label><input type="radio" name="odgovor54" value="3" id="odgovor.54">
+                                    <label for="odgovor54">3</label><input type="radio" name="odgovor54" value="4" id="odgovor.54">
+                                    <label for="odgovor54">4</label><input type="radio" name="odgovor54" value="5" id="odgovor.54">
+                                    <label for="odgovor54">5</label><input type="radio" name="odgovor54" value="6" id="odgovor.54">
+                                    <label for="odgovor54">6</label><input type="radio" name="odgovor54" value="7" id="odgovor.54">
+                                    <label for="odgovor54">7</label><input type="radio" name="odgovor54" value="8" id="odgovor.54">
+                                    <label for="odgovor54">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/55.gif"
+                                        alt=""><br><input type="radio" name="odgovor55" value="1" id="odgovor.55">
+                                    <label for="odgovor55">1</label><input type="radio" name="odgovor55" value="2" id="odgovor.55">
+                                    <label for="odgovor55">2</label><input type="radio" name="odgovor55" value="3" id="odgovor.55">
+                                    <label for="odgovor55">3</label><input type="radio" name="odgovor55" value="4" id="odgovor.55">
+                                    <label for="odgovor55">4</label><input type="radio" name="odgovor55" value="5" id="odgovor.55">
+                                    <label for="odgovor55">5</label><input type="radio" name="odgovor55" value="6" id="odgovor.55">
+                                    <label for="odgovor55">6</label><input type="radio" name="odgovor55" value="7" id="odgovor.55">
+                                    <label for="odgovor55">7</label><input type="radio" name="odgovor55" value="8" id="odgovor.55">
+                                    <label for="odgovor55">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/56.gif"
+                                        alt=""><br><input type="radio" name="odgovor56" value="1" id="odgovor.56">
+                                    <label for="odgovor56">1</label><input type="radio" name="odgovor56" value="2" id="odgovor.56">
+                                    <label for="odgovor56">2</label><input type="radio" name="odgovor56" value="3" id="odgovor.56">
+                                    <label for="odgovor56">3</label><input type="radio" name="odgovor56" value="4" id="odgovor.56">
+                                    <label for="odgovor56">4</label><input type="radio" name="odgovor56" value="5" id="odgovor.56">
+                                    <label for="odgovor56">5</label><input type="radio" name="odgovor56" value="6" id="odgovor.56">
+                                    <label for="odgovor56">6</label><input type="radio" name="odgovor56" value="7" id="odgovor.56">
+                                    <label for="odgovor56">7</label><input type="radio" name="odgovor56" value="8" id="odgovor.56">
+                                    <label for="odgovor56">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/57.gif"
+                                        alt=""><br><input type="radio" name="odgovor57" value="1" id="odgovor.57">
+                                    <label for="odgovor57">1</label><input type="radio" name="odgovor57" value="2" id="odgovor.57">
+                                    <label for="odgovor57">2</label><input type="radio" name="odgovor57" value="3" id="odgovor.57">
+                                    <label for="odgovor57">3</label><input type="radio" name="odgovor57" value="4" id="odgovor.57">
+                                    <label for="odgovor57">4</label><input type="radio" name="odgovor57" value="5" id="odgovor.57">
+                                    <label for="odgovor57">5</label><input type="radio" name="odgovor57" value="6" id="odgovor.57">
+                                    <label for="odgovor57">6</label><input type="radio" name="odgovor57" value="7" id="odgovor.57">
+                                    <label for="odgovor57">7</label><input type="radio" name="odgovor57" value="8" id="odgovor.57">
+                                    <label for="odgovor57">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/58.gif"
+                                        alt=""><br><input type="radio" name="odgovor58" value="1" id="odgovor.58">
+                                    <label for="odgovor58">1</label><input type="radio" name="odgovor58" value="2" id="odgovor.58">
+                                    <label for="odgovor58">2</label><input type="radio" name="odgovor58" value="3" id="odgovor.58">
+                                    <label for="odgovor58">3</label><input type="radio" name="odgovor58" value="4" id="odgovor.58">
+                                    <label for="odgovor58">4</label><input type="radio" name="odgovor58" value="5" id="odgovor.58">
+                                    <label for="odgovor58">5</label><input type="radio" name="odgovor58" value="6" id="odgovor.58">
+                                    <label for="odgovor58">6</label><input type="radio" name="odgovor58" value="7" id="odgovor.58">
+                                    <label for="odgovor58">7</label><input type="radio" name="odgovor58" value="8" id="odgovor.58">
+                                    <label for="odgovor58">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/59.gif"
+                                        alt=""><br><input type="radio" name="odgovor59" value="1" id="odgovor.59">
+                                    <label for="odgovor59">1</label><input type="radio" name="odgovor59" value="2" id="odgovor.59">
+                                    <label for="odgovor59">2</label><input type="radio" name="odgovor59" value="3" id="odgovor.59">
+                                    <label for="odgovor59">3</label><input type="radio" name="odgovor59" value="4" id="odgovor.59">
+                                    <label for="odgovor59">4</label><input type="radio" name="odgovor59" value="5" id="odgovor.59">
+                                    <label for="odgovor59">5</label><input type="radio" name="odgovor59" value="6" id="odgovor.59">
+                                    <label for="odgovor59">6</label><input type="radio" name="odgovor59" value="7" id="odgovor.59">
+                                    <label for="odgovor59">7</label><input type="radio" name="odgovor59" value="8" id="odgovor.59">
+                                    <label for="odgovor59">8</label></li>
+                            </ul>
+                            <ul>
+                                <li><img src="https://testovi.doktorzakarijeru.com/application/modules/testiranje/views/images/60.gif"
+                                        alt=""><br><input type="radio" name="odgovor60" value="1" id="odgovor.60">
+                                    <label for="odgovor60">1</label><input type="radio" name="odgovor60" value="2" id="odgovor.60">
+                                    <label for="odgovor60">2</label><input type="radio" name="odgovor60" value="3" id="odgovor.60">
+                                    <label for="odgovor60">3</label><input type="radio" name="odgovor60" value="4" id="odgovor.60">
+                                    <label for="odgovor60">4</label><input type="radio" name="odgovor60" value="5" id="odgovor.60">
+                                    <label for="odgovor60">5</label><input type="radio" name="odgovor60" value="6" id="odgovor.60">
+                                    <label for="odgovor60">6</label><input type="radio" name="odgovor60" value="7" id="odgovor.60">
+                                    <label for="odgovor60">7</label><input type="radio" name="odgovor60" value="8" id="odgovor.60">
+                                    <label for="odgovor60">8</label></li>
+                            </ul>
+                        </div>
+                        <input class="dugmeButton" type="submit" name="submit" value="Pošalji">
+                    </form>
+                    <div style="float:right;"><a href="https://testovi.doktorzakarijeru.com/testiranje/kupljeniTestovi/">Nazad</a></div>
+
+                    <script>
+
+                        $(document).ready(function () {
+                            $("#deo_2").hide();
+                            $("#deo_3").hide();
+                            $("#startbutton").click(function () {
+                                $("#deo_1").hide();
+                                $("#deo_2").show();
+                                $("#deo_3").show();
+
+                                var timoutValue = new Date(new Date().valueOf() + 40 * 60 * 1000);
+                                $('#clock').countdown(timoutValue)
+                                    .on('update.countdown', function (event) {
+                                        var $this = $(this).html(event.strftime(''
+                                            + '<span>%M</span> min '
+                                            + '<span>%S</span> sec'));
+                                    })
+                                    .on('finish.countdown', function (event) {
+                                        $(this).html('Time is up!');
+                                        $("#deo_3").hide();
+                                    });
+                            });
+                            $("form").submit(function (e) {
+
+                                if ($('#age_id').val() != "") {
+                                    if ($('#age_id').val().match('^(0|[1-9][0-9]*)$')) {
+
+                                    } else {
+                                        e.preventDefault(e);
+                                        alert('Molimo unesite broj godina');
+                                    }
+                                } else {
+                                    e.preventDefault(e);
+                                    alert('Molimo unesite broj godina');
+                                }
+                            });
+                        });
+
+                    </script>
+                </div>
+
+
+
+
+
+            </div><!-- kraj #sadrzaj -->
+
+        </div><!-- kraj #glavniUnutrasnji -->
+    </div><!-- kraj #glavniPozadina -->
+    <!-- kraj #glavni -->
+
+    <div id="footer">
+
+    </div><!-- kraj #footer -->
+
+    <div id="copyright">
+        <div id="copyrightUnutrasnji">
+            <p class="tekstNajmanji">Copyright © <a href="https://testovi.doktorzakarijeru.com/">Doktor za karijeru</a>. Sva prava zadržana.
+                Designed by <a href="http://www.link.co.rs" target="_blank">LINK group</a>. Powered by <a
+                    href="http://www.link-softsolutions.com/SoftLink-Content-Management-System---CMS_20_1" target="_blank">LINK CMS</a>.</p>
+        </div><!-- kraj #copyrightUnutrasnji -->
+    </div><!-- kraj #copyright -->
+
+
+</body>
+<div style="display: none"></div>
+
+</html>

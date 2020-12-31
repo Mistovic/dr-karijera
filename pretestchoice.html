@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/novi.css" />
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="icon" href="https://www.doktorzakarijeru.com/wp-content/uploads/2018/02/dr_favicon.png">
+  <title>Dr za karijeru | Dobrodošli</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <!-- Nova verzija jQuery -->
+  <script src="JS/jquery-3.5.1.min.js"></script>
+  <!-- Skripte sa stare verzije -->
+  <script src="pretestchoice_files/zingchart.min.js.download"></script>
+  <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+  <script src="pretestchoice_files/Chart.bundle.js.download" type="text/javascript"></script>
+  <script src="pretestchoice_files/utils.js.download" type="text/javascript"></script>
+  <script src="pretestchoice_files/amcharts.js.download"></script>
+  <script src="pretestchoice_files/gauge.js.download"></script>
+  <script src="pretestchoice_files/radar.js.download"></script>
+  <script src="pretestchoice_files/export.min.js.download"></script>
+  <link rel="stylesheet" href="pretestchoice_files/export.css" type="text/css" media="all">
+  <script src="pretestchoice_files/light.js.download"></script>
+  <meta name="keywords" content="skola, matematika, ucenje, studiranje">
+  <meta name="description" content="Gimnazija beohgrad">
+  <meta name="robots" content="index,follow">
+
+  <link rel="alternate" type="application/rss+xml" title="Overall feed" href="https://testovi.doktorzakarijeru.com/feed">
+  <link rel="stylesheet" href="scss/main.css" type="text/css" media="screen" charset="utf-8">
+  <script src="pretestchoice_files/jquery.js.download" type="text/javascript"></script>
+
+  <script src="pretestchoice_files/jquery.min.js.download" type="text/javascript"></script>
+
+  <script src="pretestchoice_files/sitelib.js.download" type="text/javascript"></script>
+
+  <script src="pretestchoice_files/hoverIntent.js.download" type="text/javascript"></script>
+  <script src="pretestchoice_files/superfish.js.download" type="text/javascript"></script>
+  <script src="pretestchoice_files/jquery.validate.js.download" type="text/javascript"></script>
+  <script src="pretestchoice_files/jquery.countdown.js.download" type="text/javascript"></script>
+  <script type="text/javascript">
+    jQuery(function () {
+      jQuery('ul.sf-menu').superfish();
+    });
+  </script>
+  <script type="text/javascript" src="pretestchoice_files/jsapi"></script>
+  <!-- END Skripte sa stare verzije -->
+</head>
+
+<body>
+  <div id="page">
+    <!-- NOVI HEADER -->
+    <header id="header">
+      <!-- NOVA navigacija #dashboard-header -->
+      <div id="dashboard-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <div id="logo">
+                <img src="images/relogodr/Doktor_za_karijeru-logo.svg" alt="">
+              </div>
+            </div>
+            <div class="col-10">
+              <button id="btn-expand">xpand</button>
+              <ul class="flex colapsible">
+                <li><a class="menu-item" href="userdata.html">Postavke profila</a></li>
+                <li><a class="menu-item" href="pretestchoice.html">Moji testovi</a></li>
+                <li><a class="menu-item" href="pregledi.html">Pregledi</a></li>
+                <li><a class="menu-item" href="koucing.html">Koučing</a></li>
+                <li><a class="menu-item" href="paketi.html">Paketi</a></li>
+                <li><a class="menu-item" href="pojedinacnitestovi.html">Testovi</a></li>
+                <li><a class="menu-item" href="hrusluge.html">Hr usluge</a></li>
+                <li><a class="menu-item" id="logout" class=""
+                    href="https://testovi.doktorzakarijeru.com/siteusers/korisnik/logouttest/0">Odjavite se</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <!-- END #dashboard-header -->
+
+      <!-- #upper-header je imao sitne izmjene u kalsama -->
+      <div id="upper-header" class="paralax tests-kupljeni">
+        <div class="container">
+          <div class="row">
+            <div data-heading="tests-kupljeni" class="ajax-headings show">
+              <div class="col-lg-12 col-sm-12">
+                <small class="dr-head-mali">Dr. Za karijeru</small>
+                <h1>Dobro došli!</h1>
+                <p>
+                  Na platformi Doktora za karijeru očekuju vas korisni
+                  besplatni testovi, koji će vam pomoći da testirate svoje
+                  sposobnosti, uočite skolonosti koje možda niste znali da
+                  imate i otkrijete u kom pravcu možete da razvijate svoje
+                  talente. Isprobajte ih odmah!
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <!-- <div class="wrap-free row"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #upper-header je imao sitne izmjene u kalsama -->
+      <!-- #top-bar i #podnaslov-header idu samo na stranu pretestchoice.html -->
+      <div id="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="left">
+                <h1 class="list-heading bold">Besplatni testovi</h1>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 test-wrap">
+              <article class="article-wrap">
+                <div class="article-heading">
+                  <img
+                    src="images/besplatni_testovi/4karaktera.jpg"
+                    alt="" />
+                  <h4>Test 4 tipa temperamenta</h4>
+
+                </div>
+                <div class="test-box">
+
+                  <p>
+                    Uradite test 4 tipa temperamentra besplatno na nasoj
+                    platformi
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <a href="#" id="odaberiTestLicnosti" class="btn btn-free">Uradi</a> </div>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 test-wrap">
+              <article class="article-wrap">
+                <div class="article-heading">
+                  <img
+                    src="images/besplatni_testovi/ekvilibrijum.jpg"
+                    alt="" />
+                  <h4>Ekvilibrijum sposobnosti</h4>
+
+                </div>
+                <div class="test-box">
+                  <p>
+                    Uradite test ekvilibrijum sposobnosti besplatno na nasoj
+                    platformi
+                  </p>
+                </div>
+                <div class="article-footer">
+                  <a href="#" id="odaberiTestLicnosti" class="btn btn-free">Uradi</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 test-wrap">
+              <article class="article-wrap">
+                <div class="article-heading">
+                  <img
+                    src="images/besplatni_testovi/Oba_testa.jpg"
+                    alt="" />
+                  <h4>Želim da uradim oba testa</h4>
+                </div>
+                <div class="test-box">
+                  <p>Uradite oba testa</p>
+                </div>
+                <div class="article-footer">
+                  <a href="#" id="odaberiEkvilibrijumTest" class="btn btn-free">Uradi</a>
+                </div>
+              </article>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div id="podnaslov-header">
+        <div class="container">
+          <div class="row">
+            <p class="podtekst-besplatni">
+              Ukoliko želite da saznate više o svojim potencijalima u
+              različitim oblastima, da otkrijete koja je prava karijera za
+              vas, da izaberete personalizovani paket u skladu sa svojim
+              potrebama, isprobajte opcije koje vam stoje na raspolaganju.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #top-bar i #podnaslov-header idu samo na stranu pretestchoice.html -->
+
+      <div id="lower-header">
+        <div class="row">
+          <div class="icon-wrap profile-managing">
+            <div class="icon">
+              <img src="images/ikonice/profile.svg" alt="" />
+            </div>
+            <div class="icon-active">
+              <img src="images/ikonice/profile2.svg" alt="" />
+            </div>
+            <p>Kontrola profila</p>
+            <a href="userdata.html" data-class="profile-managing" class="controler bold">
+            </a>
+          </div>
+
+          <div class="icon-wrap active tests-kupljeni">
+            <div class="icon">
+              <img src="images/ikonice/exam.svg" alt="" />
+            </div>
+            <div class="icon-active">
+              <img src="images/ikonice/exam2.svg" alt="" />
+            </div>
+            <p>Moji testovi i paketi</p>
+            <a href="pretestchoice.html" data-class="tests-kupljeni" class="controler bold"></a>
+          </div>
+
+          <div class="icon-wrap pregledi">
+            <div class="icon">
+              <img src="images/ikonice/support.svg" alt="" />
+            </div>
+            <div class="icon-active">
+              <img src="images/ikonice/support2.svg" alt="" />
+            </div>
+
+            <p>Pregledi</p>
+            <a
+              href="pregledi.html"
+              data-class="pregledi"
+              class="controler bold">
+            </a>
+          </div>
+
+          <div class="icon-wrap kouching">
+            <div class="icon">
+              <img src="images/ikonice/conversation.svg" alt="" />
+            </div>
+            <div class="icon-active">
+              <img src="images/ikonice/conversation2.svg" alt="" />
+            </div>
+            <p>Koučing</p>
+            <a href="koucing.html" data-class="kouching" class="controler bold">
+            </a>
+          </div>
+
+          <div class="icon-wrap paketi">
+            <div class="icon">
+              <img src="images/ikonice/boxbuy.svg" alt="" />
+            </div>
+            <div class="icon-active">
+              <img src="images/ikonice/boxbuy2.svg" alt="" />
+            </div>
+            <p>Paketi</p>
+            <a href="paketi.html" data-class="paketi" class="controler bold"></a>
+          </div>
+
+          <div class="icon-wrap testovi">
+            <div class="icon">
+              <img src="images/ikonice/exambuy.svg" alt="" />
+            </div>
+            <div class="icon-active">
+              <img src="images/ikonice/exambuy2.svg" alt="" />
+            </div>
+
+            <p>Testovi</p>
+            <a href="pojedinacnitestovi.html" data-class="testovi" class="controler bold">
+            </a>
+          </div>
+
+          <div class="icon-wrap b2e-usluge">
+            <div class="icon">
+              <img src="images/ikonice/box.svg" alt="" />
+            </div>
+            <div class="icon-active">
+              <img src="images/ikonice/box2.svg" alt="" />
+            </div>
+            <p>B2B – HR usluge</p>
+            <a href="hrusluge.html" data-class="b2e-usluge" class="controler bold">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END #lower-header (kontroleri-navigacija) -->
+     
+      <!-- Stara navigacija je bila ovdje pa je uklonjena -->
+
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <div class="container">
+
+        <section class="ajaxCont show" id="tests-kupljeni">
+          <h4>Ovde možete pogledati kupljene testove i pakete</h4>
+          <div class="row">
+            <!-- Ovdje dolje  treba prikazati kupljene testove iz sekcije "pojedinacnitestovi.html" -->
+            <div class="col-6 box-izaberi">
+              <div class="wrap-box">
+                <p>Kupljeni</p>
+                <h4>Testovi</h4>
+                <button id="pogledaj-pakete" class="btn">Pogledaj</button>
+              </div>
+             
+            </div>
+
+            <div class="col-6 box-izaberi">
+              <div class="wrap-box">
+                <p>Kupljeni</p>
+                <h4>Paketi</h4>
+                <button id="pogledaj-pakete" class="btn">Pogledaj</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ovdje dolje ce se prikazivati ili kupljeni paketi ili testovi -->
+          <div class="row">
+
+          </div>
+        </section>
+        <!-- End #test-grid -->
+
+      </div>
+    </main>
+    <!-- End Main -->
+
+    <footer id="footer">
+      <p class="tekstNajmanji">Copyright © <a href="https://testovi.doktorzakarijeru.com/">Doktor za
+          karijeru</a>.
+        Sva prava zadržana. Designed by <a href="http://www.link.co.rs" target="_blank">LINK group</a>.
+        Powered
+        by <a href="http://www.link-softsolutions.com/SoftLink-Content-Management-System---CMS_20_1" target="_blank">LINK CMS</a>.</p>
+    </footer>
+    <!-- End Footer -->
+  </div>
+
+  <script></script>
+
+  <script>
+    (function () {
+      const footWr = document.querySelector("#footer");
+      footWr.style = `transition: 0.2s all ease; bottom: -100%;`;
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 10) {
+          footWr.style = `transition: 0.4s all ease; bottom: 0`;
+          // console.log(window.scrollY);
+        } else {
+          footWr.style = `transition: 0.2s all ease; bottom: -100%;`;
+        }
+      });
+    })();
+  </script>
+
+
+
+  <script src="JS/animations.js"></script>
+
+  <script type="text/javascript">
+    $("#userData").click(function (event) {
+      var data = {
+        id: $("#id").val(),
+        ime: jQuery.trim($("#ime").val()),
+        prezime: jQuery.trim($("#prezime").val()),
+      };
+
+      $.ajax({
+        url:
+          "https://testovi.doktorzakarijeru.com/siteusers/korisnik/ajaxreuserdata",
+        type: "POST",
+        data: data,
+        success: function (data, textStatus, jqXHR) {
+          if (data != 1) {
+            alert(data);
+          } else {
+            window.location =
+              "https://testovi.doktorzakarijeru.com/testiranje/pretestchoice";
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) { },
+      });
+    });
+  </script>
+
+  <script>
+    $('#odaberiTestLicnosti').click(function (event) {
+
+      var data = { test: [{ "testVrsta": 0, "testId": 1 }] };
+      $.ajax({
+        url: 'https://testovi.doktorzakarijeru.com/testiranje/insertchosentests',
+        type: "POST",
+        data: data,
+        success: function (data, textStatus, jqXHR) {
+          if (!isNaN(data)) {
+            window.location = 'https://testovi.doktorzakarijeru.com/testiranje/loadtestiranje/' + data + "/pretestchoice/";
+          }
+          else {
+            alert(data);
+          }
+
+
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+
+        }
+      });
+    });
+    $('#odaberiEkvilibrijumTest').click(function (event) {
+
+      var data = { test: [{ "testVrsta": 0, "testId": 2 }] };
+      $.ajax({
+        url: 'https://testovi.doktorzakarijeru.com/testiranje/insertchosentests',
+        type: "POST",
+        data: data,
+        success: function (data, textStatus, jqXHR) {
+          if (!isNaN(data)) {
+            window.location = 'https://testovi.doktorzakarijeru.com/testiranje/loadtestiranje/' + data + "/pretestchoice/";
+          }
+          else {
+            alert(data);
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+
+        }
+      });
+    });
+    $('#odaberiOba').click(function (event) {
+
+      //var data={test:[{"testVrsta":0,"testId":0}]};
+      var data = { test: [{ "testVrsta": 0, "testId": 1 }, { "testVrsta": 0, "testId": 2 }] };
+      $.ajax({
+        url: 'https://testovi.doktorzakarijeru.com/testiranje/insertchosentests',
+        type: "POST",
+        data: data,
+        success: function (data, textStatus, jqXHR) {
+          if (!isNaN(data)) {
+            window.location = 'https://testovi.doktorzakarijeru.com/testiranje/loadtestiranje/' + '0' + "/pretestchoice/";
+          }
+          else {
+            alert(data);
+          }
+
+
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

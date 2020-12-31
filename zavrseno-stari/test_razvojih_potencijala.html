@@ -1,0 +1,1229 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script src="https://www.chartjs.org/dist/2.7.1/Chart.bundle.js" type="text/javascript"></script>
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+
+    </style>
+    <script src="https://www.chartjs.org/samples/latest/utils.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/amcharts.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/gauge.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/radar.js"></script>
+    <script
+        src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.min.js"></script>
+    <link rel="stylesheet"
+        href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.css"
+        type="text/css" media="all">
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/themes/light.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--<title>Gimnazija</title>-->
+    <title>Gimnazija</title>
+    <meta name="keywords" content="skola, matematika, ucenje, studiranje">
+    <meta name="description" content="Gimnazija beohgrad">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/images/favicon.ico"
+        type="image/x-icon">
+    <link rel="alternate" type="application/rss+xml" title="Overall feed" href="https://testovi.doktorzakarijeru.com/feed">
+    <link rel="stylesheet" href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/style/stylesheet.css" type="text/css"
+        media="screen" charset="utf-8">
+    <script src="https://testovi.doktorzakarijeru.com/public//javascript/jquery.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.min.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/sitelib.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/hoverIntent.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/superfish.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.validate.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.countdown.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('ul.sf-menu').superfish();
+        });
+    </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 9px 12px;
+            padding-top: 7px;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #5e5e5e;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #d1dade;
+            -webkit-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            background-image: none !important;
+            border: none;
+            text-shadow: none;
+            box-shadow: none;
+            transition: all 0.12s linear 0s !important;
+            font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .btn-cons {
+            margin-right: 5px;
+            min-width: 120px;
+            margin-bottom: 8px;
+        }
+
+        .btn-default {
+            color: #333;
+            background-color: #fff;
+            border-color: #ccc;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #428bca;
+            border-color: #357ebd;
+        }
+
+        .btn-success {
+            color: #fff;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+        }
+
+        .btn-info {
+            color: #fff;
+            background-color: #5bc0de;
+            border-color: #46b8da;
+        }
+
+        .btn-warning {
+            color: #fff;
+            background-color: #f0ad4e;
+            border-color: #eea236;
+        }
+
+        .btn-danger {
+            color: #fff;
+            background-color: #d9534f;
+            border-color: #d43f3a;
+        }
+
+        .btn-white {
+            color: #5e5e5e;
+            background-color: #fff;
+            border: 1px solid #e5e9ec;
+        }
+
+        .btn-link,
+        .btn-link:active,
+        .btn-link[disabled],
+        fieldset[disabled] .btn-link {
+            background-color: transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .btn-link,
+        .btn-link:hover,
+        .btn-link:focus,
+        .btn-link:active {
+            border-color: transparent;
+        }
+
+        .btn-link,
+        .btn-primary:hover {
+            /*color: #5e5e5e;*/
+            /*background-color: transparent;*/
+            opacity: 0.5;
+            border: none;
+        }
+
+        .btn-link,
+        .btn-link:hover,
+        .btn-link:focus,
+        .btn-link:active {
+            border-color: transparent;
+        }
+
+        .btn-default,
+        .btn-primary,
+        .btn-success,
+        .btn-info,
+        .btn-warning,
+        .btn-danger {
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+        }
+
+    </style>
+</head>
+
+<body cz-shortcut-listen="true">
+
+    <div id="header">
+        <div id="headerUnutrasnji">
+            <div id="logo">
+            </div><!-- kraj #logo -->
+
+            <div id="mreze">
+
+
+
+
+            </div><!-- kraj #mreze -->
+
+            <div id="slogan">
+            </div>
+
+
+        </div><!-- kraj #headerUnutrasnji -->
+    </div><!-- kraj #header -->
+    <div id="menu">
+        <div id="menuUnutrasnji">
+
+
+            <div style="width:100px;float:right;margin-top:10px;"><a style="color:white;"
+                    href="https://testovi.doktorzakarijeru.com/siteusers/korisnik/logouttest/0">Odjavite se</a></div>
+        </div><!-- kraj #menuUnutrasnji -->
+    </div><!-- kraj #menu -->
+
+    <div id="glavni">
+        <div id="glavniPozadina">
+            <div id="glavniUnutrasnji">
+
+                <div class="blokk sadrzaj" style="margin-left:10px;margin-right:10px;">
+                    <h2>Test motivacije za rad</h2>
+                    <script>
+                        function checkboxlimit(checkgroup, limit) {
+                            for (var i = 0; i < checkgroup.length; i++) {
+                                checkgroup[i].onclick = function () {
+                                    var checkedcount = 0
+                                    for (var i = 0; i < checkgroup.length; i++)
+                                        checkedcount += (checkgroup[i].checked) ? 1 : 0
+                                    if (checkedcount > limit) {
+                                        alert("Možete izabrati maksimalno  " + limit + " motivatora.")
+                                        this.checked = false;
+                                    }
+                                }
+                            }
+                        }
+
+                        function highlight_row(tr) {
+                            var tds = document.getElementById(tr).getElementsByTagName('td');
+                            var total = tds.length;
+
+                            for (var i = 0; i < total; i++) {
+                                tds[i].style.backgroundColor = 'rgba(255,0,0,0.2)';
+                            }
+                        }
+                        function Unhighlight_row(tr) {
+                            var tds = document.getElementById(tr).getElementsByTagName('td');
+                            var total = tds.length;
+
+                            for (var i = 0; i < total; i++) {
+                                tds[i].style.backgroundColor = 'white';
+                            }
+                        }
+                        function ProveraForme1() {
+                            var countChecked = function () {
+                                var n = $("input:radio:checked").length;
+                                if (n == 30) {
+                                    //                            document.getElementById("checkform").submit();
+                                    $("#deo_1").hide();
+                                    $("#deo_2").show();
+                                } else {
+                                    for (var i = 1; i < 31; i++) {
+                                        if ($('input[name=' + 'deo1_pitanje' + i + ']:checked').length > 0) {
+                                            Unhighlight_row(i);
+                                        } else {
+                                            highlight_row(i);
+                                        }
+                                    }
+                                    alert("Niste odgovorili na sva pitanja.");
+                                    return false;
+                                }
+                            };
+                            countChecked();
+                        }
+                        function ProveraForme2() {
+                            var countChecked = function () {
+                                var n = $(":checkbox:checked").length;
+                                // console.log(n);
+                                if (n == 10) {
+                                    /*$( "#deo_2" ).hide();
+                                    $( "#deo_3" ).show();*/
+                                    document.getElementById("checkform").submit();
+                                } else {
+                                    alert("Odgovorite na po 2 pitanje svake grupe");
+                                    return false;
+                                }
+                            };
+                            countChecked();
+                        }
+                        function ProveraForme3() {
+                            var countChecked = function () {
+                                var n = 0;
+                                for (var i = 1; i < 21; i++) {
+                                    if ($('input[name=' + 'deo3_pitanje' + i + ']:checked').length > 0) {
+                                        n++;
+                                    }
+                                }
+                                if (n == 20) {
+                                    document.getElementById("checkform").submit();
+                                } else {
+                                    for (var i = 1; i < 21; i++) {
+                                        if ($('input[name=' + 'deo3_pitanje' + i + ']:checked').length > 0) {
+                                            Unhighlight_row('deo3_pitanje' + i);
+                                        } else {
+                                            highlight_row('deo3_pitanje' + i);
+                                        }
+                                    }
+                                    alert("Niste odgovorili na sva pitanja.");
+                                    return false;
+                                }
+                            };
+                            countChecked();
+                        }
+                    </script>
+                    <form id="checkform" name="checkform"
+                        action="https://testovi.doktorzakarijeru.com/testiranje/test_motivacije_results/kupljeniTestovi" method="post">
+                        <div id="deo_1">
+                            <br>Pred Vama se nalazi test motivacije za rad koji se sastoji iz dva dela. Prvi deo testa se odnosi na Vašu
+                            motivisanost različitim aspektima rada. Pored svake stavke nalazi se skala sa ocenama od 1 do 5, na kojoj je
+                            potrebno da označite stepen motivisanosti navedenim aspektom rada.
+                            <br><br>Skala izgleda ovako:
+                            <br>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Nimalo me ne motiviše</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uglavnom me ne motiviše</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nisam siguran</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uglavnom me motiviše</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Veoma me motiviše</td>
+                                        <td>5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <br><br>
+
+
+                            <br>
+                            <table style="width:100%">
+                                <tbody>
+                                    <tr>
+                                        <td style="width:5%;"> </td>
+                                        <td style="width:50%;"><strong>Koliko Vas motiviše…</strong> </td>
+                                        <td style="text-align: center;">Nimalo me ne motiviše</td>
+                                        <td style="text-align: center;">Uglavnom me ne motiviše</td>
+                                        <td style="text-align: center;">Nisam siguran</td>
+                                        <td style="text-align: center;">Uglavnom me motiviše</td>
+                                        <td style="text-align: center;">Veoma me motiviše</td>
+                                    </tr>
+
+                                    <tr id="1">
+                                        <td style="text-align: center;">1</td>
+                                        <td>Zadovoljstvo kada savladate izazove sa kojima ste se susreli tokom obavljanja posla</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje1" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje1" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje1" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje1" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje1" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="2">
+                                        <td style="text-align: center;">2</td>
+                                        <td>Postojanje različitih mogućnosti za napredovanje unutar kompanije</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje2" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje2" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje2" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje2" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje2" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="3">
+                                        <td style="text-align: center;">3</td>
+                                        <td>Sistem nagrađivanja koji podržava isticanje zaposlenih na osnovu njihove produktivnosti i
+                                            zalaganja (npr. proglašavanje radnika meseca, dobijanje bedževa, i sl.)</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje3" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje3" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje3" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje3" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje3" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="4">
+                                        <td style="text-align: center;">4</td>
+                                        <td>Mogućnost učenja od kolega</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje4" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje4" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje4" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje4" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje4" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="5">
+                                        <td style="text-align: center;">5</td>
+                                        <td>Ugovor kojim zasnivate radni odnos (tip ugovora, dužina trajanja i sl.)</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje5" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje5" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje5" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje5" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje5" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="6">
+                                        <td style="text-align: center;">6</td>
+                                        <td>Prepoznavanje doprinosa kompaniji kroz uvećanje zarade ili stimulaciju</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje6" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje6" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje6" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje6" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje6" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="7">
+                                        <td style="text-align: center;">7</td>
+                                        <td>Mogućnost da pri obavljanju posla iskažete svoje veštine i sposobnosti</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje7" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje7" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje7" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje7" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje7" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="8">
+                                        <td style="text-align: center;">8</td>
+                                        <td>Usklađenost finansijske zarade i količine posla koji obavljate</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje8" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje8" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje8" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje8" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje8" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="9">
+                                        <td style="text-align: center;">9</td>
+                                        <td>Osećaj pripadnosti kompaniji i timu saradnika</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje9" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje9" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje9" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje9" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje9" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="10">
+                                        <td style="text-align: center;">10</td>
+                                        <td>Mogućnost preuzimanja širih (dodatnih) ovlašćenja</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje10" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje10" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje10" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje10" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje10" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="11">
+                                        <td style="text-align: center;">11</td>
+                                        <td>Transparentno i jasno izveštavanje o budućnosti kompanije i planiranju otpuštanja</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje11" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje11" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje11" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje11" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje11" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="12">
+                                        <td style="text-align: center;">12</td>
+                                        <td>Prijatan radni prostor</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje12" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje12" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje12" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje12" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje12" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="13">
+                                        <td style="text-align: center;">13</td>
+                                        <td>Česti treninzi i obuke unutar kompanije</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje13" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje13" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje13" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje13" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje13" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="14">
+                                        <td style="text-align: center;">14</td>
+                                        <td>Efikasan sistem nagrađivanja</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje14" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje14" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje14" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje14" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje14" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="15">
+                                        <td style="text-align: center;">15</td>
+                                        <td>Pravedna politika otpuštanja u radnoj organizaciji</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje15" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje15" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje15" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje15" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje15" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="16">
+                                        <td style="text-align: center;">16</td>
+                                        <td>Moderna oprema za rad</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje16" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje16" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje16" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje16" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje16" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="17">
+                                        <td style="text-align: center;">17</td>
+                                        <td>Mogućnost učenja od neposrednih rukovodilaca</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje17" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje17" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje17" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje17" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje17" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="18">
+                                        <td style="text-align: center;">18</td>
+                                        <td>Raznovrsnost radnih zadataka koje obavljate</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje18" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje18" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje18" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje18" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje18" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="19">
+                                        <td style="text-align: center;">19</td>
+                                        <td>Učestvovanje u prestižnim projektima kompanije</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje19" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje19" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje19" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje19" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje19" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="20">
+                                        <td style="text-align: center;">20</td>
+                                        <td>Sigurnost isplate finansijske zarade</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje20" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje20" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje20" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje20" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje20" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="21">
+                                        <td style="text-align: center;">21</td>
+                                        <td>Bezbedni uslovi rada</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje21" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje21" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje21" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje21" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje21" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="22">
+                                        <td style="text-align: center;">22</td>
+                                        <td>Obezbeđeno učešće u stručnim kongresima ili konferencijama </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje22" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje22" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje22" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje22" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje22" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="23">
+                                        <td style="text-align: center;">23</td>
+                                        <td>Radne aktivnosti u skladu sa Vašim znanjima i interesovanjima</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje23" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje23" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje23" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje23" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje23" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="24">
+                                        <td style="text-align: center;">24</td>
+                                        <td>Beneficije i visina plate</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje24" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje24" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje24" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje24" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje24" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="25">
+                                        <td style="text-align: center;">25</td>
+                                        <td>Mogućnost preuzimanja odgovornosti u domenu rukovođenja</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje25" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje25" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje25" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje25" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje25" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="26">
+                                        <td style="text-align: center;">26</td>
+                                        <td>Atmosfera međusobnog podržavanja između kolega</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje26" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje26" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje26" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje26" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje26" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="27">
+                                        <td style="text-align: center;">27</td>
+                                        <td>Samostalnost i sloboda u radu</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje27" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje27" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje27" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje27" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje27" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="28">
+                                        <td style="text-align: center;">28</td>
+                                        <td>Vrsta posla koja obezbeđuje stabilnu budućnost</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje28" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje28" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje28" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje28" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje28" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="29">
+                                        <td style="text-align: center;">29</td>
+                                        <td>Usavršavanje u cilju povećanja stručnosti</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje29" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje29" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje29" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje29" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje29" value="5">
+                                        </td>
+                                    </tr>
+
+                                    <tr id="30">
+                                        <td style="text-align: center;">30</td>
+                                        <td>Mentorisanje novih zaposlenih ili kolega na nižim pozicijama</td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje30" value="1">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje30" value="2">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje30" value="3">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje30" value="4">
+                                        </td>
+                                        <td style="text-align: center;"><input type="radio" name="deo1_pitanje30" value="5">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div style="clear: both; " id="1">
+                                <button class="dugmeButton" onclick="ProveraForme1()" type="button" name="sledeci">Sledeći</button>
+                            </div>
+
+                        </div>
+
+                        <div id="deo_2" style="display: none;">
+                            <br>Drugi deo testa predstavlja listu motivatora u radu. Pročitajte ih pažljivo i označite po dva koja smatrate
+                            najvažnijim - iz svake od četiri ponuđene grupe.
+                            <br><br>
+
+                            <table style="width:100%">
+                                <tbody>
+                                    <tr>
+                                        <td style="width:5%;"> </td>
+                                        <td style="width:70%; background:#cccccc; font-weight: bold; text-align: center;">1</td>
+                                        <td style="text-align: center;" >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">1</td>
+                                        <td>Sigurnost i stabilnost zaposlenja</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa1[]" value="1" id="odgovor1">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa1[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">2</td>
+                                        <td>Nezavisnost i lična kontrola nad svojim radom</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa1[]" value="2" id="odgovor2">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa1[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">3</td>
+                                        <td>Odgovornost nad rukovođenjem određenog broja ljudi</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa1[]" value="3" id="odgovor3">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa1[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">4</td>
+                                        <td>Usklađenost profesionalne pozicije i dugoročnih karijernih planova</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa1[]" value="4" id="odgovor4">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa1[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">5</td>
+                                        <td>Direktna saradnja i komunikacija sa klijentima ili korisnicima</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa1[]" value="5" id="odgovor5">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa1[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">6</td>
+                                        <td>Fiksna finansijska zarada u odnosu na varijabilnu zaradu, tj. bonuse</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa1[]" value="6" id="odgovor6">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa1[]'], 2);
+                                    </script>
+                                    <!--<tr>
+                        <td colspan="7"> </td>
+                    </tr>-->
+                                    <tr>
+                                        <td style="width:5%;"> </td>
+                                        <td style="width:70%; background:#cccccc; font-weight: bold; text-align: center;">2</td>
+                                        <td style="text-align: center;" >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">7</td>
+                                        <td>Organizovanje korporativnih dešavanja - proslava, žurki ili tim bilding-a</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa2[]" value="7" id="odgovor7">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa2[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">8</td>
+                                        <td>Mogućnost da postanete poznati stručnjak u oblasti kojom se bavite</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa2[]" value="8" id="odgovor8">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa2[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">9</td>
+                                        <td>Viša finansijska zarada u odnosu na prosečnu zaradu u regionu</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa2[]" value="9" id="odgovor9">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa2[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">10</td>
+                                        <td>Društveni ugled koji profesionalna pozicija nosi</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa2[]" value="10" id="odgovor10">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa2[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">11</td>
+                                        <td>Značajnost i korisnost posla koji obavljate</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa2[]" value="11" id="odgovor11">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa2[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">12</td>
+                                        <td>Ugovor na neodređeno vreme</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa2[]" value="12" id="odgovor12">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa2[]'], 2);
+                                    </script>
+                                    <!--<tr>
+                        <td colspan="7"> </td>
+                    </tr>-->
+                                    <tr>
+                                        <td style="width:5%;"> </td>
+                                        <td style="width:70%; background:#cccccc; font-weight: bold; text-align: center;">3</td>
+                                        <td style="text-align: center;" >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">13</td>
+                                        <td>Bonusi i stimulacije</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa3[]" value="13" id="odgovor13">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa3[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">14</td>
+                                        <td>Redovna isplata ličnog dohotka</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa3[]" value="14" id="odgovor14">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa3[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">15</td>
+                                        <td>Mogućnost da iskažete svoju kreativnost kroz posao i slobodno izložite svoje predloge</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa3[]" value="15" id="odgovor15">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa3[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">16</td>
+                                        <td>Obavljanje posla koji utiče na stimulaciju i inspiraciju drugih</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa3[]" value="16" id="odgovor16">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa3[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">17</td>
+                                        <td>Mogućnost ostvarivanja ličnih potencijala kroz posao koji obavljate</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa3[]" value="17" id="odgovor17">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa3[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">18</td>
+                                        <td>Pozicija koja uključuje autoritet </td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa3[]" value="18" id="odgovor18">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa3[]'], 2);
+                                    </script>
+                                    <!--<tr>
+                        <td colspan="7"> </td>
+                    </tr>-->
+                                    <tr>
+                                        <td style="width:5%;"> </td>
+                                        <td style="width:70%; background:#cccccc; font-weight: bold; text-align: center;">4</td>
+                                        <td style="text-align: center;" >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">19</td>
+                                        <td>Cenjenje i uvažavanje od strane saradnika</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa4[]" value="19" id="odgovor19">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa4[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">20</td>
+                                        <td>Mogućnosti za širenje znanja i razvijanje novih kompetencija</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa4[]" value="20" id="odgovor20">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa4[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">21</td>
+                                        <td>Efikasan sistem nagrađivanja</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa4[]" value="21" id="odgovor21">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa4[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">22</td>
+                                        <td>Visina pozicije u hijerarhiji firme</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa4[]" value="22" id="odgovor22">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa4[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">23</td>
+                                        <td>Obezbeđena zdravstvena i socijalna zaštita</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa4[]" value="23" id="odgovor23">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa4[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">24</td>
+                                        <td>Vizija kompanije koja se poklapa sa Vašim ličnim vrednostima</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa4[]" value="24" id="odgovor24">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa4[]'], 2);
+                                    </script>
+                                    <!--<tr>
+                        <td colspan="7"> </td>
+                    </tr>-->
+                                    <tr>
+                                        <td style="width:5%;"> </td>
+                                        <td style="width:70%; background:#cccccc; font-weight: bold; text-align: center;">5</td>
+                                        <td style="text-align: center;" >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">25</td>
+                                        <td>Ispunjenost poslom koji obavljate</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa5[]" value="25" id="odgovor25">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa5[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">26</td>
+                                        <td>Izazovne dužnosti koje zahtevaju da učite i da se razvijate</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa5[]" value="26" id="odgovor26">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa5[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">27</td>
+                                        <td>Dobri uslovi rada</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa5[]" value="27" id="odgovor27">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa5[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">28</td>
+                                        <td>Dodatne beneficije (npr. automobil, mobilni telefon, laptop i sl.)</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa5[]" value="28" id="odgovor28">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa5[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">29</td>
+                                        <td>Mogućnost da se pomogne drugima da kvalitetnije obavljaju svoj posao</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa5[]" value="29" id="odgovor29">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa5[]'], 2);
+                                    </script>
+                                    <tr>
+                                        <td style="text-align: center;">30</td>
+                                        <td>Status i ugled u radnoj sredini</td>
+                                        <td style="text-align: center;"><input type="checkbox" name="grupa5[]" value="30" id="odgovor30">
+                                        </td>
+
+                                    </tr>
+                                    <script>
+                                        checkboxlimit(document.forms.checkform['grupa5[]'], 2);
+                                    </script>
+                           
+                                </tbody>
+                            </table>
+
+                            <div style="clear: both;" id="5">
+                                <button class="dugmeButton" onclick="ProveraForme2()" type="button" name="sledeci">Pošalji</button>
+                            </div>
+                        </div>
+                     
+
+                    </form>
+                    <div style="float:right;clear: both"><a
+                            href="https://testovi.doktorzakarijeru.com/testiranje/kupljeniTestovi/">Nazad</a></div>
+
+                    <script>
+                        $(document).ready(function () {
+                            // Handler for .ready() called.
+                            $("#deo_2").hide();
+                            //$( "#deo_3" ).hide();
+                        });
+                    </script>
+
+                </div>
+
+
+
+
+
+            </div><!-- kraj #sadrzaj -->
+
+        </div><!-- kraj #glavniUnutrasnji -->
+    </div><!-- kraj #glavniPozadina -->
+    <!-- kraj #glavni -->
+
+    <div id="footer">
+
+    </div><!-- kraj #footer -->
+
+    <div id="copyright">
+        <div id="copyrightUnutrasnji">
+            <p class="tekstNajmanji">Copyright © <a href="https://testovi.doktorzakarijeru.com/">Doktor za karijeru</a>. Sva prava zadržana.
+                Designed by <a href="http://www.link.co.rs" target="_blank">LINK group</a>. Powered by <a
+                    href="http://www.link-softsolutions.com/SoftLink-Content-Management-System---CMS_20_1" target="_blank">LINK CMS</a>.</p>
+        </div><!-- kraj #copyrightUnutrasnji -->
+    </div><!-- kraj #copyright -->
+
+
+</body>
+
+
+</html>

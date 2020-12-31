@@ -1,0 +1,399 @@
+<html xmlns="http://www. w3. org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+    <!-- Jqueri prije svih skripti -->
+    <script src="../JS/jquery-3.5.1.min.js"></script>
+
+    <link rel="icon" href="https://www.doktorzakarijeru.com/wp-content/uploads/2018/02/dr_favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script src="https://www.chartjs.org/dist/2.7.1/Chart.bundle.js" type="text/javascript"></script>
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+
+    </style>
+  
+    <script src="https://www.chartjs.org/samples/latest/utils.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/amcharts.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/gauge.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/radar.js"></script>
+    <script
+        src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.min.js"></script>
+    <link rel="stylesheet"
+        href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.css"
+        type="text/css" media="all">
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/themes/light.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Test stilova učenja i rešavanja problema | Dr. za karijeru</title>
+    <meta name="keywords" content="skola, matematika, ucenje, studiranje">
+    <meta name="description" content="Gimnazija beohgrad">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/images/favicon.ico"
+        type="image/x-icon">
+    <link rel="alternate" type="application/rss+xml" title="Overall feed" href="https://testovi.doktorzakarijeru.com/feed">
+
+    <!-- <script src="https://testovi.doktorzakarijeru.com/public//javascript/jquery.js" type="text/javascript"></script> -->
+
+    <!-- <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.min.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/sitelib.js" type="text/javascript"></script> -->
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/hoverIntent.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/superfish.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.validate.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.countdown.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('ul.sf-menu').superfish();
+        });
+    </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <link rel="stylesheet" href="../css/testovi.css">
+    <link rel="stylesheet" href="../css/novi.css">
+</head>
+
+<body cz-shortcut-listen="true">
+
+
+    <header id="test-header">
+        <!-- HEader za logout i vracanje na pocetnu -->
+        <div id="dashboard-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div id="logo">
+                            <a href="https://testovi. doktorzakarijeru. com/testiranje/pretestchoice">
+                                <img src="../images/relogodr/Doktor_za_karijeru-logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 text-right">
+
+                        <a id="logout" class="" href="https://testovi.doktorzakarijeru.com/siteusers/korisnik/logouttest/0">Odjavite se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEader za TEST -->
+
+        <div class="container test-header">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Test stilova ucenja i rešavanja problema</h1>
+                    <p class="description">
+                        Označite sve tvrdnje sa kojima ste saglasni, odnosno u kojima se prepoznajete. 
+
+                    </p>
+                </div>
+
+                <div class="col-md-12">
+                    <p class="light">
+                        <span id="current-question">3</span>/<span id="question-number">14</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="test-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="window">
+
+                     
+
+
+                        <form id="checkform" class="step-form" name="checkform"
+                            action="https://testovi. doktorzakarijeru. com/testiranje/test_stilova_ucenja_results/kupljeniTestovi"
+                            method="post">
+
+                            <ul class="fld-set">
+                                <li id="1"><input type="checkbox" name="1" value="0" id="odgovor1_0"><label class="test-answer"
+                                        for="odgovor1_0">1. Imam snažan osećaj za dobro i loše. </label><br><input type="checkbox" name="1"
+                                        value="1" id="odgovor1_1"><label class="test-answer" for="odgovor1_1">2. Često činim stvari
+                                        bez razmišljanja o posledicama. </label><br><input type="checkbox" name="1" value="2"
+                                        id="odgovor1_2"><label class="test-answer" for="odgovor1_2">3. Pokušavam da rešavam probleme
+                                        korak po korak. </label><br><input type="checkbox" name="1" value="3" id="odgovor1_3"><label
+                                        class="test-answer" for="odgovor1_3">4. Verujem da procedure i pravila ljude čine opsesivno
+                                        opterećenim poslom koji rade. </label><br><input type="checkbox" name="1" value="4"
+                                        id="odgovor1_4"><label class="test-answer" for="odgovor1_4">5. Bije me glas da sam direktan/a
+                                        i praktičan/a. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 1 -->
+                            <ul class="fld-set">
+                                <li id="2"><input type="checkbox" name="2" value="0" id="odgovor2_0"><label class="test-answer"
+                                        for="odgovor2_0">6. Verujem da je delovanje zasnovano na intuiciji često jednako dobro kao i
+                                        delovanje zasnovano na pažljivom analiziranju i razmišljanju. </label><br><input type="checkbox"
+                                        name="2" value="1" id="odgovor2_1"><label class="test-answer" for="odgovor2_1">7. Voleo/la bih da
+                                        imam posao na kome imam dovoljno vremena da zadatak temeljno dovedem do kraja. </label><br><input
+                                        type="checkbox" name="2" value="2" id="odgovor2_2"><label class="test-answer"
+                                        for="odgovor2_2">8. Često pitam ljude o njihovim osnovnim stavovima. </label><br><input
+                                        type="checkbox" name="2" value="3" id="odgovor2_3"><label class="test-answer"
+                                        for="odgovor2_3">9. Najvažnije mi je da li nešto funkcioniše u praksi. </label><br><input
+                                        type="checkbox" name="2" value="4" id="odgovor2_4"><label class="test-answer"
+                                        for="odgovor2_4">10. Aktivno tražim nova iskustva. </label><br><input type="checkbox" name="2"
+                                        value="5" id="odgovor2_5"><label class="test-answer" for="odgovor2_5">11. Kada saznam za novu ideju
+                                        ili pristup problemu, odmah počinjem da radim na praktičnoj primeni. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 2 -->
+                            <ul class="fld-set">
+                                <li id="3"><input type="checkbox" name="3" value="0" id="odgovor3_0"><label class="test-answer"
+                                        for="odgovor3_0">12.  Veliku važnost pridajem samodisciplini (redovna ishrana, držim se dnevne
+                                        rutine, idem na spavanje u isto vreme i slično). </label><br><input type="checkbox" name="3"
+                                        value="1" id="odgovor3_1"><label class="test-answer" for="odgovor3_1">13.  Kada nešto radim, nastojim
+                                        da to bude sistematično i potpuno urađeno. </label><br><input type="checkbox" name="3" value="2"
+                                        id="odgovor3_2"><label class="test-answer" for="odgovor3_2">14.  Bolje se slažem sa ljudima
+                                        sklonim analitičkom i racionalnom načinu razmišljanja nego sa ljudima koji su spontani i ponekad
+                                        iracionalni. </label><br><input type="checkbox" name="3" value="3" id="odgovor3_3"><label
+                                        class="test-answer" for="odgovor3_3">15. Pažljiv/a sam sa donošenjem zaključaka na osnovu
+                                        raspoloživih podataka, ne žurim, već prvo dobro razmislim. </label><br><input type="checkbox"
+                                        name="3" value="4" id="odgovor3_4"><label class="test-answer" for="odgovor3_4">16. Volim da
+                                        donosim odluku pošto razmotrim nekoliko alternativa i razmislim o njima. </label><br><input
+                                        type="checkbox" name="3" value="5" id="odgovor3_5"><label class="test-answer"
+                                        for="odgovor3_5">17. Više me privlače nove i neobične ideje nego one koje imaju poznat i praktični
+                                        aspekt. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 3 -->
+                            <ul class="fld-set">
+                                <li id="4"><input type="checkbox" name="4" value="0" id="odgovor4_0"><label class="test-answer"
+                                        for="odgovor4_0">18. Ne volim nejasne situacije, više mi odgovara kad stvari mogu da se rasporede u
+                                        neki već poznat šablon. </label><br><input type="checkbox" name="4" value="1" id="odgovor4_1"><label
+                                        class="test-answer" for="odgovor4_1">19.  Prihvatam propisane procedure i držim ih se, ali samo dok
+                                        smatram da su dobar način da se posao završi. </label><br><input type="checkbox" name="4" value="2"
+                                        id="odgovor4_2"><label class="test-answer" for="odgovor4_2">20. Volim kad je ono što radim u skladu
+                                        sa opštim principima. </label><br><input type="checkbox" name="4" value="3" id="odgovor4_3"><label
+                                        class="test-answer" for="odgovor4_3">21. U diskusijama želim da odmah krenem prema svojim
+                                        ciljevima. </label><br><input type="checkbox" name="4" value="4" id="odgovor4_4"><label
+                                        class="test-answer" for="odgovor4_4">22. Preferiram formalan, pomalo udaljen odnos sa kolegama na
+                                        poslu. </label><br><input type="checkbox" name="4" value="5" id="odgovor4_5"><label
+                                        class="test-answer" for="odgovor4_5">23. Volim izazove novog i drugačijeg, nove pristupe
+                                        problemima. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 4 -->
+                            <ul class="fld-set">
+                                <li id="5"><input type="checkbox" name="5" value="0" id="odgovor5_0"><label class="test-answer"
+                                        for="odgovor5_0">24. Volim spontane ljude koji su spremni na šalu i humor. </label><br><input
+                                        type="checkbox" name="5" value="1" id="odgovor5_1"><label class="test-answer"
+                                        for="odgovor5_1">25. Pre nego što donesem zaključak obraćam pažnju na svaki detalj. </label><br><input
+                                        type="checkbox" name="5" value="2" id="odgovor5_2"><label class="test-answer" for="odgovor5_2">26. Ne
+                                        snalazim se najbolje sa potpuno novim i neobičnim idejama. </label><br><input type="checkbox"
+                                        name="5" value="3" id="odgovor5_3"><label class="test-answer" for="odgovor5_3">27.  Smatram da je
+                                        okolišanje ili ublažavanje težine problema gubitak vremena. </label><br><input type="checkbox"
+                                        name="5" value="4" id="odgovor5_4"><label class="test-answer" for="odgovor5_4">28. Brzo donosim
+                                        zaključke. </label><br><input type="checkbox" name="5" value="5" id="odgovor5_5"><label
+                                        class="test-answer" for="odgovor5_5">29. Volim da budem dobro informisan/a ako treba da donesem
+                                        odluku, što više informacija, to bolje. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 5 -->
+                            <ul class="fld-set">
+                                <li id="6"><input type="checkbox" name="6" value="0" id="odgovor6_0"><label class="test-answer"
+                                        for="odgovor6_0">30. Nervira me kada kolege ne uzimaju za ozbiljno obične, jednostavne
+                                        stvari. </label><br><input type="checkbox" name="6" value="1" id="odgovor6_1"><label
+                                        class="test-answer" for="odgovor6_1">31. Pažljivo slušam šta drugi govore pre nego što iznesem svoje
+                                        mišljenje. </label><br><input type="checkbox" name="6" value="2" id="odgovor6_2"><label
+                                        class="test-answer" for="odgovor6_2">32. Otvoreno pokazujem svoja osećanja. </label><br><input
+                                        type="checkbox" name="6" value="3" id="odgovor6_3"><label class="test-answer" for="odgovor6_3">33. U
+                                        diskusijama vrlo pažljivo pratim kako drugi „vode igru”. </label><br><input type="checkbox" name="6"
+                                        value="4" id="odgovor6_4"><label class="test-answer" for="odgovor6_4">34.  U mojoj ličnosti je da
+                                        reagujem spontano i fleksibilno, a manje mi odgovara da uvek pratim definisan plan i
+                                        procedure. </label><br><input type="checkbox" name="6" value="5" id="odgovor6_5"><label
+                                        class="test-answer" for="odgovor6_5">35. Veoma me privlače: izrada dijagrama toka, kompjutersko
+                                        programiranje i matematika. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 6 -->
+                            <ul class="fld-set">
+                                <li id="7"><input type="checkbox" name="7" value="0" id="odgovor7_0"><label class="test-answer"
+                                        for="odgovor7_0">36.  Ne odgovara mi posao u kome se često „jure” rokovi. </label><br><input
+                                        type="checkbox" name="7" value="1" id="odgovor7_1"><label class="test-answer"
+                                        for="odgovor7_1">37. Vrednujem nečije ideje prema njihovoj praktičnoj
+                                        upotrebljivosti. </label><br><input type="checkbox" name="7" value="2" id="odgovor7_2"><label
+                                        class="test-answer" for="odgovor7_2">38. Tihi, povučeni i često zamišljeni ljudi nisu moj izbor za
+                                        kolege na poslu. </label><br><input type="checkbox" name="7" value="3" id="odgovor7_3"><label
+                                        class="test-answer" for="odgovor7_3">39. Iritiraju me ljudi koji mogu bezbrižno da gledaju kako pored
+                                        njih nešto propada. </label><br><input type="checkbox" name="7" value="4" id="odgovor7_4"><label
+                                        class="test-answer" for="odgovor7_4">40. Najvažnije je da živimo u sadašnjosti, a mnogo manje važno
+                                        je da razmišljamo o prošlosti ili da promišljamo budućnost. </label><br><input type="checkbox"
+                                        name="7" value="5" id="odgovor7_5"><label class="test-answer" for="odgovor7_5">41. Odluke koje se
+                                        donose na osnovu duboke analize i promišljanja bolje su od odluka donetih na osnovu
+                                        intuicije. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 7 -->
+                            <ul class="fld-set">
+                                <li id="8"><input type="checkbox" name="8" value="0" id="odgovor8_0"><label class="test-answer"
+                                        for="odgovor8_0">42. Smatram da sam umnogome perfekcionista. </label><br><input type="checkbox"
+                                        name="8" value="1" id="odgovor8_1"><label class="test-answer" for="odgovor8_1">43. Tokom diskusija
+                                        iznosim mnogo ideja koje mi na pamet dolaze veoma brzo, iznenada i intenzivno. </label><br><input
+                                        type="checkbox" name="8" value="2" id="odgovor8_2"><label class="test-answer" for="odgovor8_2">44. Na
+                                        sastancima uglavnom iznosim praktične, realne ideje. </label><br><input type="checkbox" name="8"
+                                        value="3" id="odgovor8_3"><label class="test-answer" for="odgovor8_3">45.  Pravila, kakva su da su,
+                                        treba da se poštuju pre nego da se krše. </label><br><input type="checkbox" name="8" value="4"
+                                        id="odgovor8_4"><label class="test-answer" for="odgovor8_4">46. Kod donošenja odluka nastojim da
+                                        budem hladan/a, pogledam problem iz svih perspektiva, a tek onda odlučujem. </label><br><input
+                                        type="checkbox" name="8" value="5" id="odgovor8_5"><label class="test-answer" for="odgovor8_5">47. 
+                                        Često nalazim greške i slabosti kod argumenata koje iznose drugi. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 8 -->
+                            <ul class="fld-set">
+                                <li id="9"><input type="checkbox" name="9" value="0" id="odgovor9_0"><label class="test-answer"
+                                        for="odgovor9_0">48. U proseku, više pričam nego što slušam. </label><br><input type="checkbox"
+                                        name="9" value="1" id="odgovor9_1"><label class="test-answer" for="odgovor9_1">49. Često pronalazim
+                                        praktičnije i bolje načine da se neki posao obavi. </label><br><input type="checkbox" name="9"
+                                        value="2" id="odgovor9_2"><label class="test-answer" for="odgovor9_2">50. Smatram da pisani izveštaj
+                                        treba da bude koncizan, kratak i samo na zadatu temu. </label><br><input type="checkbox" name="9"
+                                        value="3" id="odgovor9_3"><label class="test-answer" for="odgovor9_3">51.  Siguran sam da je logičko,
+                                        sistematsko razmišljanje najbolji način za donošenje odluke. </label><br><input type="checkbox"
+                                        name="9" value="4" id="odgovor9_4"><label class="test-answer" for="odgovor9_4">52. Više volim da sa
+                                        ljudima raspravljam o ozbiljnim temama nego da se razgovara neobavezno. </label><br><input
+                                        type="checkbox" name="9" value="5" id="odgovor9_5"><label class="test-answer"
+                                        for="odgovor9_5">53. Cenim one ljude koji su sa obe noge na zemlji. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 9 -->
+                            <ul class="fld-set">
+                                <li id="10"><input type="checkbox" name="10" value="0" id="odgovor10_0"><label class="test-answer"
+                                        for="odgovor10_0">54.  U diskusijama postajem nestrpljiv/a kada ljudi iznose irelevantne stvari ili
+                                        skreću na sporedne teme. </label><br><input type="checkbox" name="10" value="1"
+                                        id="odgovor10_1"><label class="test-answer" for="odgovor10_1">55. Kada treba da predam izveštaj, prvo
+                                        sačinim nekoliko skica, pa tek finalnu verziju predajem. </label><br><input type="checkbox" name="10"
+                                        value="2" id="odgovor10_2"><label class="test-answer" for="odgovor10_2">56. Volim sve da probam da
+                                        vidim kako funkcioniše u praksi. </label><br><input type="checkbox" name="10" value="3"
+                                        id="odgovor10_3"><label class="test-answer" for="odgovor10_3">57.  Volim da rešenja pronalazim na
+                                        logičan način. </label><br><input type="checkbox" name="10" value="4" id="odgovor10_4"><label
+                                        class="test-answer" for="odgovor10_4">58. Smatram da možda i previše volim da
+                                        govorim. </label><br><input type="checkbox" name="10" value="5" id="odgovor10_5"><label
+                                        class="test-answer" for="odgovor10_5">59. Nalazim da sam u diskusijama realist i da izbegavam
+                                        gubljenje fokusa i skretanje sa teme. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 10 -->
+                            <ul class="fld-set">
+                                <li id="11"><input type="checkbox" name="11" value="0" id="odgovor11_0"><label class="test-answer"
+                                        for="odgovor11_0">60. Volim da razmislim o više alternativa pre nego što donesem
+                                        odluku. </label><br><input type="checkbox" name="11" value="1" id="odgovor11_1"><label
+                                        class="test-answer" for="odgovor11_1">61.  U diskusijama nastojim da potisnem emocije i da budem što
+                                        objektivniji/a. </label><br><input type="checkbox" name="11" value="2" id="odgovor11_2"><label
+                                        class="test-answer" for="odgovor11_2">62. Na sastancima uglavnom izbegavam da budem u prvom planu
+                                        diskutovanja, ne tražim reč prečesto. </label><br><input type="checkbox" name="11" value="3"
+                                        id="odgovor11_3"><label class="test-answer" for="odgovor11_3">63. Volim da svakodnevne aktivnosti
+                                        posmatram u perspektivi većeg i važnijeg plana. </label><br><input type="checkbox" name="11"
+                                        value="4" id="odgovor11_4"><label class="test-answer" for="odgovor11_4">64. Ako nešto pođe kako ne
+                                        treba, menjam svoje ponašanje i naučim nešto iz promašaja. </label><br><input type="checkbox"
+                                        name="11" value="5" id="odgovor11_5"><label class="test-answer" for="odgovor11_5">65. Sklon/a sam da
+                                        odbacim neobične i pomalo lude ideje kao nepraktične. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 11 -->
+                            <ul class="fld-set">
+                                <li id="12"><input type="checkbox" name="12" value="0" id="odgovor12_0"><label class="test-answer"
+                                        for="odgovor12_0">66. „Triput-meri-jednom-seci” je najbolja strategija za donošenje
+                                        odluka. </label><br><input type="checkbox" name="12" value="1" id="odgovor12_1"><label
+                                        class="test-answer" for="odgovor12_1">67. Više slušam nego što pričam. </label><br><input
+                                        type="checkbox" name="12" value="2" id="odgovor12_2"><label class="test-answer"
+                                        for="odgovor12_2">68. Ponekad sam oštar/a prema ljudima koji ne umeju da razmišljaju logički,
+                                        analitički i sistematski. </label><br><input type="checkbox" name="12" value="3"
+                                        id="odgovor12_3"><label class="test-answer" for="odgovor12_3">69. Najčešće cilj opravdava
+                                        upotrebljena sredstva. </label><br><input type="checkbox" name="12" value="4" id="odgovor12_4"><label
+                                        class="test-answer" for="odgovor12_4">70.  Smatram da je opravdano povrediti nečija osećanja ako je
+                                        to cena postizanja cilja. </label><br><input type="checkbox" name="12" value="5"
+                                        id="odgovor12_5"><label class="test-answer" for="odgovor12_5">71. Smatram da je preterana
+                                        formalizacija planiranja, već od prvog cilja, parališuća za organizaciju. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 12 -->
+                            <ul class="fld-set">
+                                <li id="13"><input type="checkbox" name="13" value="0" id="odgovor13_0"><label class="test-answer"
+                                        for="odgovor13_0">72. Kad se skupi društvo, često sam u središtu pažnje, plenim
+                                        pažnju. </label><br><input type="checkbox" name="13" value="1" id="odgovor13_1"><label
+                                        class="test-answer" for="odgovor13_1">73. Uradiću sve što je potrebno da se posao
+                                        završi. </label><br><input type="checkbox" name="13" value="2" id="odgovor13_2"><label
+                                        class="test-answer" for="odgovor13_2">74. Metodičan, na detalje usmeren posao često mi je dosadan i
+                                        neinspirativan. </label><br><input type="checkbox" name="13" value="3" id="odgovor13_3"><label
+                                        class="test-answer" for="odgovor13_3">75. Smatram da je kod rešavanja problema važno razmotriti sva
+                                        raspoloživa teorijska znanja, principe i pretpostavke. </label><br><input type="checkbox" name="13"
+                                        value="4" id="odgovor13_4"><label class="test-answer" for="odgovor13_4">76. Uvek me interesuje šta
+                                        drugi misle. </label><br><input type="checkbox" name="13" value="5" id="odgovor13_5"><label
+                                        class="test-answer" for="odgovor13_5">77.  Smatram da sastanak treba voditi prema utvrđenom dnevnom
+                                        redu, sistematično. </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><a class="btn btn-next">Sledece</a></div>
+                                </li>
+                            </ul><!-- Kraj bloka 13 -->
+                            <ul class="fld-set">
+                                <li id="14"><input type="checkbox" name="14" value="0" id="odgovor14_0"><label class="test-answer"
+                                        for="odgovor14_0">78.  Držim se podalje od kontroverznih tema. </label><br><input type="checkbox"
+                                        name="14" value="1" id="odgovor14_1"><label class="test-answer" for="odgovor14_1">79.  Uživam u drami
+                                        i uzbuđenju koje omogućava kriza. </label><br><input type="checkbox" name="14" value="2"
+                                        id="odgovor14_2"><label class="test-answer" for="odgovor14_2">80.  Ljudi smatraju da sam neosetljiv/a
+                                        na njihova osećanja.  </label><br>
+                                    <div class="btn-wrap"><a class="btn btn-previous">Prethodno</a><button class="dugmeButton btn"
+                                            onclick="ProveraForme()" type="button" name="save">Pošalji</button></div>
+                                </li>
+                            </ul><!-- Kraj bloka 14 -->
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div id="footer">
+
+    </div><!-- kraj #footer -->
+
+    <script src="../JS/step.js">
+
+
+        /* Forma u koracima */
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

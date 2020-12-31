@@ -1,0 +1,251 @@
+1	Kako bih što bolje zapamtio gradivo sa predavanja, pomaže mi da pišem sopstvene beleške i podsetnike.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+2	Strane jezike učim sa lakoćom.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+3	Najlakše naučim nešto što mi neko demonstrira i što mogu sam da isprobam.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+4	Smeta mi da učim uz muziku.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+5	Ako treba da izaberem način da naučim neko gradivo, pre bih izabrao da pročitam lekciju nego da odslušam predavanje.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+6	Dobro se orijentišem čak i u nepoznatom prostoru.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+7	Ne volim da učim za stolom ili sedeći.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+8	Kada učim, uvek se naglas preslišavam.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+9	Kada mi treba koncentracija, pomaže mi da se krećem u prostoru.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+10	Kada pokušavam da se setim nečijeg broja telefona, pomaže mi kada pokušam da vizualizujem brojeve.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+11	Volim da slušam podcastove ili audio knjige.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+12	U školi sam uvek pisao beleške na času, crtao mape i crteže kako bih što bolje zapamtio gradivo.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+13	Kada se radi o vestima iz oblasti koje pratim, više volim da ih čujem ih na radiju ili televiziji nego da ih pročitam u novinama.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+14	Kako bih nešto razumeo, pre će mi pomoći da to isprobam u praksi nego da pročitam detaljna uputstva.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+15	Pre ću zapamtiti informaciju koju sam pročitao nego koju sam čuo.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+16	Kada prvi put rukujem nekim uređajem, preferiram da kroz samu upotrebu uređaja otkrijem kako funkcioniše u odnosu na to da temeljno čitam uputstvo.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+17	Kada želim da odlučim na kojoj destinaciji ću da letujem, više volim da dobijem preporuku nego da razgledam brošure u turističkim agencijama.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+18	Volim da neobavezno crtam i žvrljam po papiru kada razgovaram preko telefona ili slušam predavanje.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+19	Lako mi je da razlikujem osobe prema boji njihovog glasa.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+20	Kada polažem test, uvek pokušam da se setim gde se odgovor na pitanje nalazi u lekciji, tj. udžbeniku.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+21	Kada treba da naučim nešto komplikovanije, pomaže mi da napravim skicu, model ili nešto kreativno u vezi sa tim gradivom.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+22	Tokom dužeg putovanja preferiram da razgovaram sa nekim ili slušam muziku više nego da čitam ili posmatram predeo kroz koji putujem.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+23	Preferiram časove na kojima se rade praktični zadaci u odnosu na one na kojima se diskutuje.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+24	Kada nekog upoznajem prvi put veće su šanse da ću upamtiti njegovo lice nego ime.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+25	Kada imam problem pred sobom, više volim da rešenje nađem putem 'pokušaja i pogrešaka' nego metodom 'korak po korak'.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+26	Kada treba da savladam novi softver, više volim da mi neko objasni i demonstrira nego da gledam tutorijal.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+27	Tokom učenja potrebno mi je da pravim česte pauze.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+28	Smatram da je važno da u toku objašnjavanja predavač koristi prezentaciju ili multimedijalni materijal.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+29	Odlično mi idu različite vrste sportova.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+30	Lakše nešto zapamtim kada ponovim naglas više puta nego kada pravim sopstvene beleške.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+31	Odličan sam u igri 'pronađi razliku'.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+32	Kada treba da se snađem u stranom gradu, pre ću pitati prolaznike za pravac nego što ću koristiti mapu.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+33	Uživam da radim sa alatom; volim poslove koji se obavljaju manuelno.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+34	Više me dekoncentriše kada se druge osobe konstantno kreću ili izlaze i ulaze u prostoriju nego kada više osoba govori u glas.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+35	Pisanje me često umara.					
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem
+
+36	Lakše mi je da objasnim nešto kada nacrtam crtež, grafik ili šemu.
+Nimalo se ne slažem 
+Uglavnom se ne slažem	
+Nisam siguran	
+Uglavnom se slažem	
+U potpunosti se slažem

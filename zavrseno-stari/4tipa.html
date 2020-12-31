@@ -1,0 +1,1496 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script src="https://www.chartjs.org/dist/2.7.1/Chart.bundle.js" type="text/javascript"></script>
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+
+    </style>
+    <script src="https://www.chartjs.org/samples/latest/utils.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/amcharts.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/gauge.js"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/radar.js"></script>
+    <script
+        src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.min.js"></script>
+    <link rel="stylesheet"
+        href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/plugins/export/export.css"
+        type="text/css" media="all">
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/amcharts/themes/light.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--<title>Gimnazija</title>-->
+    <title>Gimnazija</title>
+    <meta name="keywords" content="skola, matematika, ucenje, studiranje">
+    <meta name="description" content="Gimnazija beohgrad">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/images/favicon.ico"
+        type="image/x-icon">
+    <link rel="alternate" type="application/rss+xml" title="Overall feed" href="https://testovi.doktorzakarijeru.com/feed">
+    <link rel="stylesheet" href="https://testovi.doktorzakarijeru.com/application/views/gimnazija/style/stylesheet.css" type="text/css"
+        media="screen" charset="utf-8">
+    <script src="https://testovi.doktorzakarijeru.com/public//javascript/jquery.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.min.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/sitelib.js" type="text/javascript"></script>
+
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/hoverIntent.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/superfish.js" type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.validate.js"
+        type="text/javascript"></script>
+    <script src="https://testovi.doktorzakarijeru.com/application/views/gimnazija/javascript/jquery.countdown.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('ul.sf-menu').superfish();
+        });
+    </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 9px 12px;
+            padding-top: 7px;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #5e5e5e;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #d1dade;
+            -webkit-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            background-image: none !important;
+            border: none;
+            text-shadow: none;
+            box-shadow: none;
+            transition: all 0.12s linear 0s !important;
+            font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .btn-cons {
+            margin-right: 5px;
+            min-width: 120px;
+            margin-bottom: 8px;
+        }
+
+        .btn-default {
+            color: #333;
+            background-color: #fff;
+            border-color: #ccc;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #428bca;
+            border-color: #357ebd;
+        }
+
+        .btn-success {
+            color: #fff;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+        }
+
+        .btn-info {
+            color: #fff;
+            background-color: #5bc0de;
+            border-color: #46b8da;
+        }
+
+        .btn-warning {
+            color: #fff;
+            background-color: #f0ad4e;
+            border-color: #eea236;
+        }
+
+        .btn-danger {
+            color: #fff;
+            background-color: #d9534f;
+            border-color: #d43f3a;
+        }
+
+        .btn-white {
+            color: #5e5e5e;
+            background-color: #fff;
+            border: 1px solid #e5e9ec;
+        }
+
+        .btn-link,
+        .btn-link:active,
+        .btn-link[disabled],
+        fieldset[disabled] .btn-link {
+            background-color: transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .btn-link,
+        .btn-link:hover,
+        .btn-link:focus,
+        .btn-link:active {
+            border-color: transparent;
+        }
+
+        .btn-link,
+        .btn-primary:hover {
+            /*color: #5e5e5e;*/
+            /*background-color: transparent;*/
+            opacity: 0.5;
+            border: none;
+        }
+
+        .btn-link,
+        .btn-link:hover,
+        .btn-link:focus,
+        .btn-link:active {
+            border-color: transparent;
+        }
+
+        .btn-default,
+        .btn-primary,
+        .btn-success,
+        .btn-info,
+        .btn-warning,
+        .btn-danger {
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+        }
+
+    </style>
+</head>
+
+<body cz-shortcut-listen="true">
+
+    <div id="header">
+        <div id="headerUnutrasnji">
+            <div id="logo">
+            </div><!-- kraj #logo -->
+
+            <div id="mreze">
+
+
+
+
+            </div><!-- kraj #mreze -->
+
+            <div id="slogan">
+            </div>
+
+
+        </div><!-- kraj #headerUnutrasnji -->
+    </div><!-- kraj #header -->
+    <div id="menu">
+        <div id="menuUnutrasnji">
+
+
+            <div style="width:100px;float:right;margin-top:10px;"><a style="color:white;"
+                    href="https://testovi.doktorzakarijeru.com/siteusers/korisnik/logouttest/0">Odjavite se</a></div>
+        </div><!-- kraj #menuUnutrasnji -->
+    </div><!-- kraj #menu -->
+
+    <div id="glavni">
+        <div id="glavniPozadina">
+            <div id="glavniUnutrasnji">
+
+                <div class="blokk sadrzaj" style="margin-left:10px;margin-right:10px;">
+                    <h2>Test 4 tipa temperamenta</h2>
+                    <script>
+                        function highlight_row(tr) {
+                            document.getElementById(tr).style.backgroundColor = 'rgba(255,0,0,0.2)';
+                        }
+                        function Unhighlight_row(tr) {
+                            document.getElementById(tr).style.backgroundColor = 'rgba(204,204,204,1)';
+                        }
+                        function ProveraForme() {
+                            var countChecked = function () {
+                                var n = $("input:radio:checked").length;
+                                if (n == 30) {
+                                    document.getElementById("checkform").submit();
+                                } else {
+                                    for (var i = 1; i < 31; i++) {
+                                        if ($('input[name=pitanje' + i + ']:checked').length > 0) {
+                                            Unhighlight_row(i);
+                                        } else {
+                                            highlight_row(i);
+                                        }
+                                    }
+                                    alert("Niste odgovorili na sva pitanja.");
+                                    return false;
+                                }
+                            };
+                            countChecked();
+                        }
+                    </script>
+                    <form id="checkform" name="checkform"
+                        action="https://testovi.doktorzakarijeru.com/testiranje/test_licnosti_results/kupljeniTestovi" method="post">
+                        <br>Pred Vama se nalazi test namenjen proceni temperamenta a koji se sastoji od trideset grupa odgovora. Molimo vas
+                        da u svakoj grupi odgovora označite samo jedan od četiri ponuđena opisa temperamenta koji se najviše odnosi na
+                        Vas.<br><br>
+
+
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td id="1" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        1 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>
+                                        Istrajan – stalan i uporan; pre nego što započne nove zadatke, do kraja uradi prethodne </td>
+                                    <td>
+                                        <input type="radio" name="pitanje1" value="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>
+                                        Avanturista – smelo se upušta u nove izazove i poduhvate </td>
+                                    <td>
+                                        <input type="radio" name="pitanje1" value="2">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>
+                                        Prilagodljiv – lako se uklopi u bilo koju situaciju bez obzira da li se prijatno oseća u njoj ili ne
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="pitanje1" value="3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>
+                                        Ubedljiv – otvoreno i ubedljivo govori, veoma je sugestivan u komunikaciji </td>
+                                    <td>
+                                        <input type="radio" name="pitanje1" value="4">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="2" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        2 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td>
+                                        Zabavan – stalno se šali, ima razvijen smisao za humor </td>
+                                    <td>
+                                        <input type="radio" name="pitanje2" value="5">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>
+                                        Takmičar – u svakoj situaciji vidi mogućnost takmičenja i uvek teži pobedi </td>
+                                    <td>
+                                        <input type="radio" name="pitanje2" value="6">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7.</td>
+                                    <td>
+                                        Požrtvovan – spreman je da se odrekne svojih potreba i želja da bi zadovoljio potrebe drugih </td>
+                                    <td>
+                                        <input type="radio" name="pitanje2" value="7">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8.</td>
+                                    <td>
+                                        Uzdržan – suzdržava se u izražavanju osećanja </td>
+                                    <td>
+                                        <input type="radio" name="pitanje2" value="8">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="3" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        3 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9.</td>
+                                    <td>
+                                        Lojalan – veran i odan prijatelj </td>
+                                    <td>
+                                        <input type="radio" name="pitanje3" value="9">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10.</td>
+                                    <td>
+                                        Temeljan – voli da dobro ispita sve opcije i činjenice pre nego što donese konačnu odluku </td>
+                                    <td>
+                                        <input type="radio" name="pitanje3" value="10">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11.</td>
+                                    <td>
+                                        Ekspresivan – lako iskazuje i često deli svoja osećanja sa drugima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje3" value="11">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12.</td>
+                                    <td>
+                                        Vizionar – uvek ima ciljeve i planove pred sobom </td>
+                                    <td>
+                                        <input type="radio" name="pitanje3" value="12">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="4" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        4 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>13.</td>
+                                    <td>
+                                        Radoholičar – stalno radi, trudi se, najčešće je nesposoban da se opusti </td>
+                                    <td>
+                                        <input type="radio" name="pitanje4" value="13">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>14.</td>
+                                    <td>
+                                        Kreativan – interesuju ga muzika i umetnost i često ima kreativne hobije </td>
+                                    <td>
+                                        <input type="radio" name="pitanje4" value="14">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15.</td>
+                                    <td>
+                                        Pun razumevanja – prihvata način razmišljanja i ponašanja drugih, ne raspravlja se sa njima niti
+                                        pokušava da ih promeni </td>
+                                    <td>
+                                        <input type="radio" name="pitanje4" value="15">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>16.</td>
+                                    <td>
+                                        Popularan – on je glavni u društvu i uvek je dobrodošao gost </td>
+                                    <td>
+                                        <input type="radio" name="pitanje4" value="16">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="5" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        5 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>17.</td>
+                                    <td>
+                                        Kontemplativan – karakteriše ga duboko promišljanje; često je zatvoren, ne voli površne razgovore i
+                                        interesovanja </td>
+                                    <td>
+                                        <input type="radio" name="pitanje5" value="17">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>18.</td>
+                                    <td>
+                                        Idealista – stvari zamišlja u najsavršenijim formama, teži harmoniji </td>
+                                    <td>
+                                        <input type="radio" name="pitanje5" value="18">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>19.</td>
+                                    <td>
+                                        Introvert – preferira aktivnosti u kući, samostalno ili u uskom krugu prijatelja </td>
+                                    <td>
+                                        <input type="radio" name="pitanje5" value="19">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>20.</td>
+                                    <td>
+                                        Borac protiv nepravde – ne voli socijalnu nejednakost </td>
+                                    <td>
+                                        <input type="radio" name="pitanje5" value="20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="6" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        6 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>21.</td>
+                                    <td>
+                                        Nestalan – stalno traži nova zanimanja i interesovanja jer u jednom poslu ne pronalazi trajnu radost
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="pitanje6" value="21">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>22.</td>
+                                    <td>
+                                        Nezainteresovan – ne obraća pažnju na druge, nerado se uključuje u društvene tokove i dešavanja
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="pitanje6" value="22">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>23.</td>
+                                    <td>
+                                        Pesimista – nada se boljem ali uvek prvo pomisli na tamnu stranu stvari </td>
+                                    <td>
+                                        <input type="radio" name="pitanje6" value="23">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>24.</td>
+                                    <td>
+                                        Tvrdoglav – beskompromisan u ostvarenju svojih zamisli, ne uvažava mišljenje drugih </td>
+                                    <td>
+                                        <input type="radio" name="pitanje6" value="24">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="7" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        7 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>25.</td>
+                                    <td>
+                                        Letargičan – spor, teško ga je motivisati za pokret </td>
+                                    <td>
+                                        <input type="radio" name="pitanje7" value="25">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>26.</td>
+                                    <td>
+                                        Uobražen – o sebi ima visoko mišljenje, ubeđen je da je uvek u pravu i da je jedina odgovarajuća
+                                        osoba koja može da izvrši zadatak </td>
+                                    <td>
+                                        <input type="radio" name="pitanje7" value="26">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>27.</td>
+                                    <td>
+                                        Neorganizovan – lako zaboravlja gde je ostavio neku stvar ili na dogovor koji ima sa drugom osobom
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="pitanje7" value="27">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>28.</td>
+                                    <td>
+                                        Džangrizav – stalno kritikuje i osuđuje druge </td>
+                                    <td>
+                                        <input type="radio" name="pitanje7" value="28">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="8" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        8 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>29.</td>
+                                    <td>
+                                        Sugestibilan – lako menja mišljenja pod uticajem drugih </td>
+                                    <td>
+                                        <input type="radio" name="pitanje8" value="29">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>30.</td>
+                                    <td>
+                                        Osvetoljubiv – svesno ili nesvesno gaji u sebi ljutnju, kažnjava počinioce obično na indirektan
+                                        način - uskraćivanjem ljubavi ili prijateljstva </td>
+                                    <td>
+                                        <input type="radio" name="pitanje8" value="30">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>31.</td>
+                                    <td>
+                                        Povučen – ne voli da bude u centru pažnje, radije se drži po strani </td>
+                                    <td>
+                                        <input type="radio" name="pitanje8" value="31">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>32.</td>
+                                    <td>
+                                        Diskutant – stalno stvara situacije za diskusije ili rasprave </td>
+                                    <td>
+                                        <input type="radio" name="pitanje8" value="32">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="9" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        9 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>33.</td>
+                                    <td>
+                                        Predusretljiv – rado izlazi u susret željama i potrebama drugih </td>
+                                    <td>
+                                        <input type="radio" name="pitanje9" value="33">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>34.</td>
+                                    <td>
+                                        Pomirljiv – miroljubiv, trudi se da stavi odnos sa drugom osobom iznad razlika u stavovima ili
+                                        vrednostima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje9" value="34">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>35.</td>
+                                    <td>
+                                        Omiljen – simpatičan, dopadljiv, često u centru pažnje </td>
+                                    <td>
+                                        <input type="radio" name="pitanje9" value="35">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>36.</td>
+                                    <td>
+                                        Hrabar – spreman da prihvati rizik, ne posustaje pred preprekama i izazovima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje9" value="36">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="10" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        10 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>37.</td>
+                                    <td>
+                                        Nekonfliktan – izbegava konflikte sa drugima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje10" value="37">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>38.</td>
+                                    <td>
+                                        Tolerantan na pritisak – izdržljiv, ne smeta mu da radi pod pritiskom </td>
+                                    <td>
+                                        <input type="radio" name="pitanje10" value="38">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>39.</td>
+                                    <td>
+                                        Moralan – važno mu je da u svakoj situaciji rasuđuje ili postupi ispravno i odgovorno </td>
+                                    <td>
+                                        <input type="radio" name="pitanje10" value="39">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>40.</td>
+                                    <td>
+                                        Optimista – veruje u pozitivan ishod ili razvoj nečega i ubeđuje druge da će sve krenuti nabolje
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="pitanje10" value="40">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="11" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        11 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>41.</td>
+                                    <td>
+                                        Spor – ne zamara sebe brzim radom i razmišljanjem </td>
+                                    <td>
+                                        <input type="radio" name="pitanje11" value="41">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>42.</td>
+                                    <td>
+                                        Anksiozan – često je nervozan, uznemiren ili zabrinut </td>
+                                    <td>
+                                        <input type="radio" name="pitanje11" value="42">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>43.</td>
+                                    <td>
+                                        Manipulativan – na prevrtljiv način okrene situaciju u svoju korist kako bi pronašao sebi
+                                        odgovarajuće rešenje </td>
+                                    <td>
+                                        <input type="radio" name="pitanje11" value="43">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>44.</td>
+                                    <td>
+                                        Napadan – stalno želi da bude u centru pažnje </td>
+                                    <td>
+                                        <input type="radio" name="pitanje11" value="44">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="12" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        12 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>45.</td>
+                                    <td>
+                                        Društven – lako ostvaruje socijalne kontakte i brzo sklapa prijateljstva </td>
+                                    <td>
+                                        <input type="radio" name="pitanje12" value="45">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>46.</td>
+                                    <td>
+                                        Strpljiv – nepovoljne okolnosti ga ne izbacuju iz ravnoteže, ostaje smiren i dosledan </td>
+                                    <td>
+                                        <input type="radio" name="pitanje12" value="46">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>47.</td>
+                                    <td>
+                                        Odaje poštovanje – prema drugima se odnosi sa poštovanjem i uvažavanjem </td>
+                                    <td>
+                                        <input type="radio" name="pitanje12" value="47">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>48.</td>
+                                    <td>
+                                        Dosetljiv – u svakoj situaciji reaguje brzo i efikasno </td>
+                                    <td>
+                                        <input type="radio" name="pitanje12" value="48">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="13" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        13 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>49.</td>
+                                    <td>
+                                        Uravnotežen – izbegava krajnosti </td>
+                                    <td>
+                                        <input type="radio" name="pitanje13" value="49">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>50.</td>
+                                    <td>
+                                        Samouveren – svestan svojih sposobnosti, veruje u uspeh </td>
+                                    <td>
+                                        <input type="radio" name="pitanje13" value="50">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>51.</td>
+                                    <td>
+                                        Vedar – uvek je dobro raspoložen i pozitivno utiče na druge </td>
+                                    <td>
+                                        <input type="radio" name="pitanje13" value="51">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>52.</td>
+                                    <td>
+                                        Organizovan – voli da organizuje i planira, ne voli kada ga u tome ometaju </td>
+                                    <td>
+                                        <input type="radio" name="pitanje13" value="52">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="14" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        14 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>53.</td>
+                                    <td>
+                                        Usamljen – često ga muči osećaj usamljenosti i nedovoljne bliskosti sa drugim ljudima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje14" value="53">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>54.</td>
+                                    <td>
+                                        Prgav – brzo izgubi pribranost i ima česte izlive besa </td>
+                                    <td>
+                                        <input type="radio" name="pitanje14" value="54">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>55.</td>
+                                    <td>
+                                        Tvrdoglav – teško ga je u bilo čemu ubediti u suprotno, odlučno istrajava u svojoj odluci </td>
+                                    <td>
+                                        <input type="radio" name="pitanje14" value="55">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>56.</td>
+                                    <td>
+                                        Sumnjičav – nesiguran, ne veruje u uspeh </td>
+                                    <td>
+                                        <input type="radio" name="pitanje14" value="56">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="15" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        15 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>57.</td>
+                                    <td>
+                                        Odlučan – brzo donosi odluke i zaključke onda kada je potrebno doneti odluku za sebe ali i za druge
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="pitanje15" value="57">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>58.</td>
+                                    <td>
+                                        Altruističan – iskreno se brine o drugim ljudima u svojoj okolini </td>
+                                    <td>
+                                        <input type="radio" name="pitanje15" value="58">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>59.</td>
+                                    <td>
+                                        Miran – smiren i staložen, čak i pod pritiskom </td>
+                                    <td>
+                                        <input type="radio" name="pitanje15" value="59">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>60.</td>
+                                    <td>
+                                        Harizmatičan – sa očaravajućom ličnošću (šarmom), snagom svoje ličnosti uspeva da pridobije druge
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="pitanje15" value="60">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="16" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        16 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>61.</td>
+                                    <td>
+                                        Planer – pre nego što krene sa ostvarivanjem cilja ili zamisli, voli da napravi detaljan plan; više
+                                        se bavi pripremama i planiranjem, nego realizacijom </td>
+                                    <td>
+                                        <input type="radio" name="pitanje16" value="61">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>62.</td>
+                                    <td>
+                                        Govorljiv – obično priča vesele priče i zabavlja okolinu; ima potrebu da prekine tišinu da bi se
+                                        drugi osećali opuštenije </td>
+                                    <td>
+                                        <input type="radio" name="pitanje16" value="62">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>63.</td>
+                                    <td>
+                                        Socijalno dominantan – vodi glavnu reč u društvu, ističe svoje mišljenje i stavove </td>
+                                    <td>
+                                        <input type="radio" name="pitanje16" value="63">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>64.</td>
+                                    <td>
+                                        Diplomata – u odnosu prema drugima iskazuje taktičnost i strpljenje </td>
+                                    <td>
+                                        <input type="radio" name="pitanje16" value="64">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="17" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        17 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>65.</td>
+                                    <td>
+                                        Lenj – svaki posao procenjuje u zavisnosti od toga koliko truda u njega treba da uloži, ne voli
+                                        previše da se angažuje </td>
+                                    <td>
+                                        <input type="radio" name="pitanje17" value="65">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>66.</td>
+                                    <td>
+                                        Cepidlaka – zadržava se na sitnicama, nebitnim stvarima daje veći značaj </td>
+                                    <td>
+                                        <input type="radio" name="pitanje17" value="66">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>67.</td>
+                                    <td>
+                                        Skreće pažnju na sebe – nametljiv, voli da bude u centru pažnje </td>
+                                    <td>
+                                        <input type="radio" name="pitanje17" value="67">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>68.</td>
+                                    <td>
+                                        Uvredljiv – lako se uvredi zbog nesporazuma </td>
+                                    <td>
+                                        <input type="radio" name="pitanje17" value="68">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="18" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        18 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>69.</td>
+                                    <td>
+                                        Bučan – često je najglasnija osoba u društvu </td>
+                                    <td>
+                                        <input type="radio" name="pitanje18" value="69">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>70.</td>
+                                    <td>
+                                        Nesiguran – često razmišlja o potencijalnim opasnostima ili ima pad samopouzdanja </td>
+                                    <td>
+                                        <input type="radio" name="pitanje18" value="70">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>71.</td>
+                                    <td>
+                                        Neosetljiv – ne ulaže previše napora u odnose sa drugima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje18" value="71">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>72.</td>
+                                    <td>
+                                        Svadljiv – odlučno, vatreno i energično brani svoje stavove, često se konfrontira </td>
+                                    <td>
+                                        <input type="radio" name="pitanje18" value="72">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="19" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        19 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>73.</td>
+                                    <td>
+                                        Netaktičan – naprasit, nepromišljen i oštar u komunikaciji sa drugima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje19" value="73">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>74.</td>
+                                    <td>
+                                        Željan popularnosti – važno mu je da ostavi utisak na druge, žudi za priznanjima od strane drugih
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="pitanje19" value="74">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>75.</td>
+                                    <td>
+                                        Nepoverljiv – često gaji neprijateljske stavove prema drugima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje19" value="75">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>76.</td>
+                                    <td>
+                                        Pasivno agresivan – ne iskazuje otvoreno ljutnju, indirektno kažnjava druge kada pogreše </td>
+                                    <td>
+                                        <input type="radio" name="pitanje19" value="76">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="20" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        20 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>77.</td>
+                                    <td>
+                                        Saosećajan – iskazuje razumevanje za emocije i stanja drugih </td>
+                                    <td>
+                                        <input type="radio" name="pitanje20" value="77">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>78.</td>
+                                    <td>
+                                        Ležeran – bezbrižan i opušten </td>
+                                    <td>
+                                        <input type="radio" name="pitanje20" value="78">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>79.</td>
+                                    <td>
+                                        Vođa – voli da rukovodi, upravlja i organizuje; preferira pozicije od autoriteta </td>
+                                    <td>
+                                        <input type="radio" name="pitanje20" value="79">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>80.</td>
+                                    <td>
+                                        Podsticajan – na druge ima podsticajni, pozitivan uticaj </td>
+                                    <td>
+                                        <input type="radio" name="pitanje20" value="80">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="21" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        21 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>81.</td>
+                                    <td>
+                                        Nepokolebljiv – čvrst u odlukama koje je doneo </td>
+                                    <td>
+                                        <input type="radio" name="pitanje21" value="81">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>82.</td>
+                                    <td>
+                                        Svestran – ima puno različitih interesovanja i višestruko je talentovan </td>
+                                    <td>
+                                        <input type="radio" name="pitanje21" value="82">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>83.</td>
+                                    <td>
+                                        Ljubazan – neusiljen, lako se sporazumeva sa ljudima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje21" value="83">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>84.</td>
+                                    <td>
+                                        Intuitivan – veruje unutrašnjem osećaju, intuiciji </td>
+                                    <td>
+                                        <input type="radio" name="pitanje21" value="84">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="22" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        22 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>85.</td>
+                                    <td>
+                                        Ekstravert – ne voli samoću, preferira da bude u društvu </td>
+                                    <td>
+                                        <input type="radio" name="pitanje22" value="85">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>86.</td>
+                                    <td>
+                                        Precizan – sve radi sistematski, pažnju posvećuje svim detaljima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje22" value="86">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>87.</td>
+                                    <td>
+                                        Aktivan – pokretan, brzo mu dosade nedinamične situacije </td>
+                                    <td>
+                                        <input type="radio" name="pitanje22" value="87">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>88.</td>
+                                    <td>
+                                        Neutralan – ne voli da se suprotstavlja drugima, ne stavlja se ni na čiju stranu </td>
+                                    <td>
+                                        <input type="radio" name="pitanje22" value="88">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="23" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        23 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>89.</td>
+                                    <td>
+                                        Vlastoljubiv – u svemu i svakoga želi da usmerava, želi da se domogne vlasti </td>
+                                    <td>
+                                        <input type="radio" name="pitanje23" value="89">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>90.</td>
+                                    <td>
+                                        Osetljiv – burno emotivno reaguje, sklon je razvoju depresivnih osećanja </td>
+                                    <td>
+                                        <input type="radio" name="pitanje23" value="90">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>91.</td>
+                                    <td>
+                                        Prokrastinator – sklon je odlaganju zadataka i obaveza </td>
+                                    <td>
+                                        <input type="radio" name="pitanje23" value="91">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>92.</td>
+                                    <td>
+                                        Nesiguran – plaši se odbacivanja od strane drugih </td>
+                                    <td>
+                                        <input type="radio" name="pitanje23" value="92">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="24" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        24 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>93.</td>
+                                    <td>
+                                        Perferkcionista – izuzetno mnogo zahteva od sebe i drugih, želi da sve uvek bude savršeno </td>
+                                    <td>
+                                        <input type="radio" name="pitanje24" value="93">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>94.</td>
+                                    <td>
+                                        Rečit – lepo se izražava i ima širok vokabular </td>
+                                    <td>
+                                        <input type="radio" name="pitanje24" value="94">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>95.</td>
+                                    <td>
+                                        Povučen – retko pokreće razgovor, radije će odgovarati na pitanja nego inicirati razgovor </td>
+                                    <td>
+                                        <input type="radio" name="pitanje24" value="95">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>96.</td>
+                                    <td>
+                                        Neumoran – izdržljiv i istrajan; ne odustaje dok ne ostvari svoj cilj </td>
+                                    <td>
+                                        <input type="radio" name="pitanje24" value="96">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="25" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        25 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>97.</td>
+                                    <td>
+                                        Neambiciozan – karijerni uspeh ne stavlja visoko na listu prioriteta, nema jasno definisane ciljeve
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="pitanje25" value="97">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>98.</td>
+                                    <td>
+                                        Sklon kontrolišućem ponašanju – voli da kontroliše druge kao i da im naređuje </td>
+                                    <td>
+                                        <input type="radio" name="pitanje25" value="98">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>99.</td>
+                                    <td>
+                                        Brbljiv – neprekidno govori, zabavlja druge, ne može da ćuti </td>
+                                    <td>
+                                        <input type="radio" name="pitanje25" value="99">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>100.</td>
+                                    <td>
+                                        Utučen – često je bezvoljan i neraspoložen </td>
+                                    <td>
+                                        <input type="radio" name="pitanje25" value="100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="26" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        26 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>101.</td>
+                                    <td>
+                                        Energičan – pun životnog poleta, aktivan i društven </td>
+                                    <td>
+                                        <input type="radio" name="pitanje26" value="101">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>102.</td>
+                                    <td>
+                                        Učtiv – trudi se da se ponaša po bontonu i prema važećim normama ponašanja </td>
+                                    <td>
+                                        <input type="radio" name="pitanje26" value="102">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>103.</td>
+                                    <td>
+                                        Direktan – neposredan u komunikaciji, usmeren ka cilju </td>
+                                    <td>
+                                        <input type="radio" name="pitanje26" value="103">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>104.</td>
+                                    <td>
+                                        Uporan – istrajan i nepopustljiv u onome što zamisli </td>
+                                    <td>
+                                        <input type="radio" name="pitanje26" value="104">
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td id="27" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        27 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>105.</td>
+                                    <td>
+                                        Impulsivan – brzo i bez mnogo razmišljanja donosi odluke, često je nepromišljen </td>
+                                    <td>
+                                        <input type="radio" name="pitanje27" value="105">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>106.</td>
+                                    <td>
+                                        Samokritičan – sklon je kritikovanju sebe i preispitivanju sopstvene vrednosti </td>
+                                    <td>
+                                        <input type="radio" name="pitanje27" value="106">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>107.</td>
+                                    <td>
+                                        Ravnodušan – većina stvari ne dopire do njega </td>
+                                    <td>
+                                        <input type="radio" name="pitanje27" value="107">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>108.</td>
+                                    <td>
+                                        Nestrpljiv – nema puno strpljenja da sačeka da dobije ono što želi, važno mu je da sve dobije odmah
+                                        i bez čekanja </td>
+                                    <td>
+                                        <input type="radio" name="pitanje27" value="108">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="28" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        28 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>109.</td>
+                                    <td>
+                                        Medijator – stalno se trudi da pomiri suprotnosti da bi se izbegli konflikti </td>
+                                    <td>
+                                        <input type="radio" name="pitanje28" value="109">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>110.</td>
+                                    <td>
+                                        Savestan – uvek poštuje dogovore, pravila i procedure i preuzima odgovornost za svoje postupke </td>
+                                    <td>
+                                        <input type="radio" name="pitanje28" value="110">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>111.</td>
+                                    <td>
+                                        Timski orijentisan – najefikasniji je kada radi u grupi, odlično sarađuje sa drugima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje28" value="111">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>112.</td>
+                                    <td>
+                                        Temperamentan – brzo reaguje i lako se iznervira </td>
+                                    <td>
+                                        <input type="radio" name="pitanje28" value="112">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="29" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        29 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>113.</td>
+                                    <td>
+                                        Prilagodljiv – lako se adaptira na novu sredinu ili na nove saradnike, nova sredina ga sa lakoćom
+                                        prihvata </td>
+                                    <td>
+                                        <input type="radio" name="pitanje29" value="113">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>114.</td>
+                                    <td>
+                                        Ambiciozan – ima visok motiv postignuća, teži visokom karijernom uspehu </td>
+                                    <td>
+                                        <input type="radio" name="pitanje29" value="114">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>115.</td>
+                                    <td>
+                                        Uslužan – spreman je da pomogne i da se prilagodi drugima </td>
+                                    <td>
+                                        <input type="radio" name="pitanje29" value="115">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>116.</td>
+                                    <td>
+                                        Pouzdan – drugi se uvek mogu osloniti na njega </td>
+                                    <td>
+                                        <input type="radio" name="pitanje29" value="116">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="30" style="background:#cccccc; font-weight: bold; text-align: center;" colspan="2">
+                                        30 </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>117.</td>
+                                    <td>
+                                        Neodlučan – teško mu je da brzo i bez dvoumljenja donese odluku </td>
+                                    <td>
+                                        <input type="radio" name="pitanje30" value="117">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>118.</td>
+                                    <td>
+                                        Sumnjičav – sumnjičavo prilazi ljudima i idejama, teško prihvata novitete i promene </td>
+                                    <td>
+                                        <input type="radio" name="pitanje30" value="118">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>119.</td>
+                                    <td>
+                                        Nestrpljiv – ne voli čekanje niti okolnosti koje ga na bilo koji način sprečavaju da ekspresno
+                                        ostvari ono što je naumio </td>
+                                    <td>
+                                        <input type="radio" name="pitanje30" value="119">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>120.</td>
+                                    <td>
+                                        Nepromišljen – brzoplet je, čini stvari bez mnogo razmišljanja </td>
+                                    <td>
+                                        <input type="radio" name="pitanje30" value="120">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div>
+                            <button class="dugmeButton" onclick="ProveraForme()" type="button" name="save">Pošalji</button>
+                        </div>
+
+                    </form>
+                    <div style="float:right;"><a href="https://testovi.doktorzakarijeru.com/testiranje/kupljeniTestovi/">Nazad</a></div>
+
+                </div>
+
+
+
+
+
+            </div><!-- kraj #sadrzaj -->
+
+        </div><!-- kraj #glavniUnutrasnji -->
+    </div><!-- kraj #glavniPozadina -->
+    <!-- kraj #glavni -->
+
+    <div id="footer">
+
+    </div><!-- kraj #footer -->
+
+    <div id="copyright">
+        <div id="copyrightUnutrasnji">
+            <p class="tekstNajmanji">Copyright © <a href="https://testovi.doktorzakarijeru.com/">Doktor za karijeru</a>. Sva prava zadržana.
+                Designed by <a href="http://www.link.co.rs" target="_blank">LINK group</a>. Powered by <a
+                    href="http://www.link-softsolutions.com/SoftLink-Content-Management-System---CMS_20_1" target="_blank">LINK CMS</a>.</p>
+        </div><!-- kraj #copyrightUnutrasnji -->
+    </div><!-- kraj #copyright -->
+
+
+</body>
+<div style="display: none"></div>
+
+</html>
